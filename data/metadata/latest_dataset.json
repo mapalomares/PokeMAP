@@ -1,0 +1,7498 @@
+{
+  "1": {
+    "Nombre": "Bulbasaur",
+    "Tipo": "planta/veneno",
+    "Nivel": "normal",
+    "Ataque Base": 118,
+    "Defensa Base": 111,
+    "Stamina Base": 128
+  },
+  "2": {
+    "Nombre": "Ivysaur",
+    "Tipo": "planta/veneno",
+    "Nivel": "normal",
+    "Ataque Base": 151,
+    "Defensa Base": 143,
+    "Stamina Base": 155
+  },
+  "3": {
+    "Nombre": "Venusaur",
+    "Tipo": "planta/veneno",
+    "Nivel": "normal",
+    "Ataque Base": 198,
+    "Defensa Base": 189,
+    "Stamina Base": 190
+  },
+  "4": {
+    "Nombre": "Charmander",
+    "Tipo": "fuego",
+    "Nivel": "normal",
+    "Ataque Base": 116,
+    "Defensa Base": 93,
+    "Stamina Base": 118
+  },
+  "5": {
+    "Nombre": "Charmeleon",
+    "Tipo": "fuego",
+    "Nivel": "normal",
+    "Ataque Base": 158,
+    "Defensa Base": 126,
+    "Stamina Base": 151
+  },
+  "6": {
+    "Nombre": "Charizard",
+    "Tipo": "fuego/volador",
+    "Nivel": "normal",
+    "Ataque Base": 223,
+    "Defensa Base": 173,
+    "Stamina Base": 186
+  },
+  "7": {
+    "Nombre": "Squirtle",
+    "Tipo": "agua",
+    "Nivel": "normal",
+    "Ataque Base": 94,
+    "Defensa Base": 121,
+    "Stamina Base": 127
+  },
+  "8": {
+    "Nombre": "Wartortle",
+    "Tipo": "agua",
+    "Nivel": "normal",
+    "Ataque Base": 126,
+    "Defensa Base": 155,
+    "Stamina Base": 153
+  },
+  "9": {
+    "Nombre": "Blastoise",
+    "Tipo": "agua",
+    "Nivel": "normal",
+    "Ataque Base": 171,
+    "Defensa Base": 207,
+    "Stamina Base": 188
+  },
+  "10": {
+    "Nombre": "Caterpie",
+    "Tipo": "bicho",
+    "Nivel": "normal",
+    "Ataque Base": 55,
+    "Defensa Base": 55,
+    "Stamina Base": 128
+  },
+  "11": {
+    "Nombre": "Metapod",
+    "Tipo": "bicho",
+    "Nivel": "normal",
+    "Ataque Base": 45,
+    "Defensa Base": 80,
+    "Stamina Base": 137
+  },
+  "12": {
+    "Nombre": "Butterfree",
+    "Tipo": "bicho/volador",
+    "Nivel": "normal",
+    "Ataque Base": 167,
+    "Defensa Base": 137,
+    "Stamina Base": 155
+  },
+  "13": {
+    "Nombre": "Weedle",
+    "Tipo": "bicho/veneno",
+    "Nivel": "normal",
+    "Ataque Base": 63,
+    "Defensa Base": 50,
+    "Stamina Base": 120
+  },
+  "14": {
+    "Nombre": "Kakuna",
+    "Tipo": "bicho/veneno",
+    "Nivel": "normal",
+    "Ataque Base": 46,
+    "Defensa Base": 75,
+    "Stamina Base": 128
+  },
+  "15": {
+    "Nombre": "Beedrill",
+    "Tipo": "bicho/veneno",
+    "Nivel": "normal",
+    "Ataque Base": 169,
+    "Defensa Base": 130,
+    "Stamina Base": 163
+  },
+  "16": {
+    "Nombre": "Pidgey",
+    "Tipo": "normal/volador",
+    "Nivel": "normal",
+    "Ataque Base": 85,
+    "Defensa Base": 73,
+    "Stamina Base": 120
+  },
+  "17": {
+    "Nombre": "Pidgeotto",
+    "Tipo": "normal/volador",
+    "Nivel": "normal",
+    "Ataque Base": 117,
+    "Defensa Base": 105,
+    "Stamina Base": 160
+  },
+  "18": {
+    "Nombre": "Pidgeot",
+    "Tipo": "normal/volador",
+    "Nivel": "normal",
+    "Ataque Base": 166,
+    "Defensa Base": 154,
+    "Stamina Base": 195
+  },
+  "19": {
+    "Nombre": "Rattata",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 103,
+    "Defensa Base": 70,
+    "Stamina Base": 102
+  },
+  "20": {
+    "Nombre": "Raticate",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 161,
+    "Defensa Base": 139,
+    "Stamina Base": 146
+  },
+  "21": {
+    "Nombre": "Spearow",
+    "Tipo": "normal/volador",
+    "Nivel": "normal",
+    "Ataque Base": 112,
+    "Defensa Base": 60,
+    "Stamina Base": 120
+  },
+  "22": {
+    "Nombre": "Fearow",
+    "Tipo": "normal/volador",
+    "Nivel": "normal",
+    "Ataque Base": 182,
+    "Defensa Base": 133,
+    "Stamina Base": 163
+  },
+  "23": {
+    "Nombre": "Ekans",
+    "Tipo": "veneno",
+    "Nivel": "normal",
+    "Ataque Base": 110,
+    "Defensa Base": 97,
+    "Stamina Base": 111
+  },
+  "24": {
+    "Nombre": "Arbok",
+    "Tipo": "veneno",
+    "Nivel": "normal",
+    "Ataque Base": 167,
+    "Defensa Base": 153,
+    "Stamina Base": 155
+  },
+  "25": {
+    "Nombre": "Pikachu",
+    "Tipo": "electrico",
+    "Nivel": "normal",
+    "Ataque Base": 112,
+    "Defensa Base": 96,
+    "Stamina Base": 111
+  },
+  "26": {
+    "Nombre": "Raichu",
+    "Tipo": "electrico",
+    "Nivel": "normal",
+    "Ataque Base": 193,
+    "Defensa Base": 151,
+    "Stamina Base": 155
+  },
+  "27": {
+    "Nombre": "Sandshrew",
+    "Tipo": "tierra",
+    "Nivel": "normal",
+    "Ataque Base": 126,
+    "Defensa Base": 120,
+    "Stamina Base": 137
+  },
+  "28": {
+    "Nombre": "Sandslash",
+    "Tipo": "tierra",
+    "Nivel": "normal",
+    "Ataque Base": 182,
+    "Defensa Base": 175,
+    "Stamina Base": 181
+  },
+  "29": {
+    "Nombre": "Nidoran♀",
+    "Tipo": "veneno",
+    "Nivel": "normal",
+    "Ataque Base": 86,
+    "Defensa Base": 89,
+    "Stamina Base": 146
+  },
+  "30": {
+    "Nombre": "Nidorina",
+    "Tipo": "veneno",
+    "Nivel": "normal",
+    "Ataque Base": 117,
+    "Defensa Base": 120,
+    "Stamina Base": 172
+  },
+  "31": {
+    "Nombre": "Nidoqueen",
+    "Tipo": "veneno/tierra",
+    "Nivel": "normal",
+    "Ataque Base": 180,
+    "Defensa Base": 173,
+    "Stamina Base": 207
+  },
+  "32": {
+    "Nombre": "Nidoran♂",
+    "Tipo": "veneno",
+    "Nivel": "normal",
+    "Ataque Base": 105,
+    "Defensa Base": 76,
+    "Stamina Base": 130
+  },
+  "33": {
+    "Nombre": "Nidorino",
+    "Tipo": "veneno",
+    "Nivel": "normal",
+    "Ataque Base": 137,
+    "Defensa Base": 111,
+    "Stamina Base": 156
+  },
+  "34": {
+    "Nombre": "Nidoking",
+    "Tipo": "veneno/tierra",
+    "Nivel": "normal",
+    "Ataque Base": 204,
+    "Defensa Base": 156,
+    "Stamina Base": 191
+  },
+  "35": {
+    "Nombre": "Clefairy",
+    "Tipo": "hada",
+    "Nivel": "normal",
+    "Ataque Base": 107,
+    "Defensa Base": 108,
+    "Stamina Base": 172
+  },
+  "36": {
+    "Nombre": "Clefable",
+    "Tipo": "hada",
+    "Nivel": "normal",
+    "Ataque Base": 178,
+    "Defensa Base": 162,
+    "Stamina Base": 216
+  },
+  "37": {
+    "Nombre": "Vulpix",
+    "Tipo": "fuego",
+    "Nivel": "normal",
+    "Ataque Base": 96,
+    "Defensa Base": 109,
+    "Stamina Base": 116
+  },
+  "38": {
+    "Nombre": "Ninetales",
+    "Tipo": "fuego",
+    "Nivel": "normal",
+    "Ataque Base": 169,
+    "Defensa Base": 190,
+    "Stamina Base": 177
+  },
+  "39": {
+    "Nombre": "Jigglypuff",
+    "Tipo": "normal/hada",
+    "Nivel": "normal",
+    "Ataque Base": 80,
+    "Defensa Base": 41,
+    "Stamina Base": 251
+  },
+  "40": {
+    "Nombre": "Wigglytuff",
+    "Tipo": "normal/hada",
+    "Nivel": "normal",
+    "Ataque Base": 156,
+    "Defensa Base": 90,
+    "Stamina Base": 295
+  },
+  "41": {
+    "Nombre": "Zubat",
+    "Tipo": "veneno/volador",
+    "Nivel": "normal",
+    "Ataque Base": 83,
+    "Defensa Base": 73,
+    "Stamina Base": 120
+  },
+  "42": {
+    "Nombre": "Golbat",
+    "Tipo": "veneno/volador",
+    "Nivel": "normal",
+    "Ataque Base": 161,
+    "Defensa Base": 150,
+    "Stamina Base": 181
+  },
+  "43": {
+    "Nombre": "Oddish",
+    "Tipo": "planta/veneno",
+    "Nivel": "normal",
+    "Ataque Base": 131,
+    "Defensa Base": 112,
+    "Stamina Base": 128
+  },
+  "44": {
+    "Nombre": "Gloom",
+    "Tipo": "planta/veneno",
+    "Nivel": "normal",
+    "Ataque Base": 153,
+    "Defensa Base": 136,
+    "Stamina Base": 155
+  },
+  "45": {
+    "Nombre": "Vileplume",
+    "Tipo": "planta/veneno",
+    "Nivel": "normal",
+    "Ataque Base": 202,
+    "Defensa Base": 167,
+    "Stamina Base": 181
+  },
+  "46": {
+    "Nombre": "Paras",
+    "Tipo": "bicho/planta",
+    "Nivel": "normal",
+    "Ataque Base": 121,
+    "Defensa Base": 99,
+    "Stamina Base": 111
+  },
+  "47": {
+    "Nombre": "Parasect",
+    "Tipo": "bicho/planta",
+    "Nivel": "normal",
+    "Ataque Base": 165,
+    "Defensa Base": 146,
+    "Stamina Base": 155
+  },
+  "48": {
+    "Nombre": "Venonat",
+    "Tipo": "bicho/veneno",
+    "Nivel": "normal",
+    "Ataque Base": 100,
+    "Defensa Base": 100,
+    "Stamina Base": 155
+  },
+  "49": {
+    "Nombre": "Venomoth",
+    "Tipo": "bicho/veneno",
+    "Nivel": "normal",
+    "Ataque Base": 179,
+    "Defensa Base": 143,
+    "Stamina Base": 172
+  },
+  "50": {
+    "Nombre": "Diglett",
+    "Tipo": "tierra",
+    "Nivel": "normal",
+    "Ataque Base": 109,
+    "Defensa Base": 78,
+    "Stamina Base": 67
+  },
+  "51": {
+    "Nombre": "Dugtrio",
+    "Tipo": "tierra",
+    "Nivel": "normal",
+    "Ataque Base": 167,
+    "Defensa Base": 136,
+    "Stamina Base": 111
+  },
+  "52": {
+    "Nombre": "Meowth",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 92,
+    "Defensa Base": 78,
+    "Stamina Base": 120
+  },
+  "53": {
+    "Nombre": "Persian",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 150,
+    "Defensa Base": 136,
+    "Stamina Base": 163
+  },
+  "54": {
+    "Nombre": "Psyduck",
+    "Tipo": "agua",
+    "Nivel": "normal",
+    "Ataque Base": 122,
+    "Defensa Base": 95,
+    "Stamina Base": 137
+  },
+  "55": {
+    "Nombre": "Golduck",
+    "Tipo": "agua",
+    "Nivel": "normal",
+    "Ataque Base": 191,
+    "Defensa Base": 162,
+    "Stamina Base": 190
+  },
+  "56": {
+    "Nombre": "Mankey",
+    "Tipo": "lucha",
+    "Nivel": "normal",
+    "Ataque Base": 148,
+    "Defensa Base": 82,
+    "Stamina Base": 120
+  },
+  "57": {
+    "Nombre": "Primeape",
+    "Tipo": "lucha",
+    "Nivel": "normal",
+    "Ataque Base": 207,
+    "Defensa Base": 138,
+    "Stamina Base": 163
+  },
+  "58": {
+    "Nombre": "Growlithe",
+    "Tipo": "fuego",
+    "Nivel": "normal",
+    "Ataque Base": 136,
+    "Defensa Base": 93,
+    "Stamina Base": 146
+  },
+  "59": {
+    "Nombre": "Arcanine",
+    "Tipo": "fuego",
+    "Nivel": "normal",
+    "Ataque Base": 227,
+    "Defensa Base": 166,
+    "Stamina Base": 207
+  },
+  "60": {
+    "Nombre": "Poliwag",
+    "Tipo": "agua",
+    "Nivel": "normal",
+    "Ataque Base": 101,
+    "Defensa Base": 82,
+    "Stamina Base": 120
+  },
+  "61": {
+    "Nombre": "Poliwhirl",
+    "Tipo": "agua",
+    "Nivel": "normal",
+    "Ataque Base": 130,
+    "Defensa Base": 123,
+    "Stamina Base": 163
+  },
+  "62": {
+    "Nombre": "Poliwrath",
+    "Tipo": "agua/lucha",
+    "Nivel": "normal",
+    "Ataque Base": 182,
+    "Defensa Base": 184,
+    "Stamina Base": 207
+  },
+  "63": {
+    "Nombre": "Abra",
+    "Tipo": "psiquico",
+    "Nivel": "normal",
+    "Ataque Base": 195,
+    "Defensa Base": 82,
+    "Stamina Base": 93
+  },
+  "64": {
+    "Nombre": "Kadabra",
+    "Tipo": "psiquico",
+    "Nivel": "normal",
+    "Ataque Base": 232,
+    "Defensa Base": 117,
+    "Stamina Base": 120
+  },
+  "65": {
+    "Nombre": "Alakazam",
+    "Tipo": "psiquico",
+    "Nivel": "normal",
+    "Ataque Base": 271,
+    "Defensa Base": 167,
+    "Stamina Base": 146
+  },
+  "66": {
+    "Nombre": "Machop",
+    "Tipo": "lucha",
+    "Nivel": "normal",
+    "Ataque Base": 137,
+    "Defensa Base": 82,
+    "Stamina Base": 172
+  },
+  "67": {
+    "Nombre": "Machoke",
+    "Tipo": "lucha",
+    "Nivel": "normal",
+    "Ataque Base": 177,
+    "Defensa Base": 125,
+    "Stamina Base": 190
+  },
+  "68": {
+    "Nombre": "Machamp",
+    "Tipo": "lucha",
+    "Nivel": "normal",
+    "Ataque Base": 234,
+    "Defensa Base": 159,
+    "Stamina Base": 207
+  },
+  "69": {
+    "Nombre": "Bellsprout",
+    "Tipo": "planta/veneno",
+    "Nivel": "normal",
+    "Ataque Base": 139,
+    "Defensa Base": 61,
+    "Stamina Base": 137
+  },
+  "70": {
+    "Nombre": "Weepinbell",
+    "Tipo": "planta/veneno",
+    "Nivel": "normal",
+    "Ataque Base": 172,
+    "Defensa Base": 92,
+    "Stamina Base": 163
+  },
+  "71": {
+    "Nombre": "Victreebel",
+    "Tipo": "planta/veneno",
+    "Nivel": "normal",
+    "Ataque Base": 207,
+    "Defensa Base": 135,
+    "Stamina Base": 190
+  },
+  "72": {
+    "Nombre": "Tentacool",
+    "Tipo": "agua/veneno",
+    "Nivel": "normal",
+    "Ataque Base": 97,
+    "Defensa Base": 149,
+    "Stamina Base": 120
+  },
+  "73": {
+    "Nombre": "Tentacruel",
+    "Tipo": "agua/veneno",
+    "Nivel": "normal",
+    "Ataque Base": 166,
+    "Defensa Base": 209,
+    "Stamina Base": 190
+  },
+  "74": {
+    "Nombre": "Geodude",
+    "Tipo": "roca/tierra",
+    "Nivel": "normal",
+    "Ataque Base": 132,
+    "Defensa Base": 132,
+    "Stamina Base": 120
+  },
+  "75": {
+    "Nombre": "Graveler",
+    "Tipo": "roca/tierra",
+    "Nivel": "normal",
+    "Ataque Base": 164,
+    "Defensa Base": 164,
+    "Stamina Base": 146
+  },
+  "76": {
+    "Nombre": "Golem",
+    "Tipo": "roca/tierra",
+    "Nivel": "normal",
+    "Ataque Base": 211,
+    "Defensa Base": 198,
+    "Stamina Base": 190
+  },
+  "77": {
+    "Nombre": "Ponyta",
+    "Tipo": "fuego",
+    "Nivel": "normal",
+    "Ataque Base": 170,
+    "Defensa Base": 127,
+    "Stamina Base": 137
+  },
+  "78": {
+    "Nombre": "Rapidash",
+    "Tipo": "fuego",
+    "Nivel": "normal",
+    "Ataque Base": 207,
+    "Defensa Base": 162,
+    "Stamina Base": 163
+  },
+  "79": {
+    "Nombre": "Slowpoke",
+    "Tipo": "agua/psiquico",
+    "Nivel": "normal",
+    "Ataque Base": 109,
+    "Defensa Base": 98,
+    "Stamina Base": 207
+  },
+  "80": {
+    "Nombre": "Slowbro",
+    "Tipo": "agua/psiquico",
+    "Nivel": "normal",
+    "Ataque Base": 177,
+    "Defensa Base": 180,
+    "Stamina Base": 216
+  },
+  "81": {
+    "Nombre": "Magnemite",
+    "Tipo": "electrico/acero",
+    "Nivel": "normal",
+    "Ataque Base": 165,
+    "Defensa Base": 121,
+    "Stamina Base": 93
+  },
+  "82": {
+    "Nombre": "Magneton",
+    "Tipo": "electrico/acero",
+    "Nivel": "normal",
+    "Ataque Base": 223,
+    "Defensa Base": 169,
+    "Stamina Base": 137
+  },
+  "83": {
+    "Nombre": "Farfetch’d",
+    "Tipo": "normal/volador",
+    "Nivel": "normal",
+    "Ataque Base": 124,
+    "Defensa Base": 115,
+    "Stamina Base": 141
+  },
+  "84": {
+    "Nombre": "Doduo",
+    "Tipo": "normal/volador",
+    "Nivel": "normal",
+    "Ataque Base": 158,
+    "Defensa Base": 83,
+    "Stamina Base": 111
+  },
+  "85": {
+    "Nombre": "Dodrio",
+    "Tipo": "normal/volador",
+    "Nivel": "normal",
+    "Ataque Base": 218,
+    "Defensa Base": 140,
+    "Stamina Base": 155
+  },
+  "86": {
+    "Nombre": "Seel",
+    "Tipo": "agua",
+    "Nivel": "normal",
+    "Ataque Base": 85,
+    "Defensa Base": 121,
+    "Stamina Base": 163
+  },
+  "87": {
+    "Nombre": "Dewgong",
+    "Tipo": "agua/hielo",
+    "Nivel": "normal",
+    "Ataque Base": 139,
+    "Defensa Base": 177,
+    "Stamina Base": 207
+  },
+  "88": {
+    "Nombre": "Grimer",
+    "Tipo": "veneno",
+    "Nivel": "normal",
+    "Ataque Base": 135,
+    "Defensa Base": 90,
+    "Stamina Base": 190
+  },
+  "89": {
+    "Nombre": "Muk",
+    "Tipo": "veneno",
+    "Nivel": "normal",
+    "Ataque Base": 190,
+    "Defensa Base": 172,
+    "Stamina Base": 233
+  },
+  "90": {
+    "Nombre": "Shellder",
+    "Tipo": "agua",
+    "Nivel": "normal",
+    "Ataque Base": 116,
+    "Defensa Base": 134,
+    "Stamina Base": 102
+  },
+  "91": {
+    "Nombre": "Cloyster",
+    "Tipo": "agua/hielo",
+    "Nivel": "normal",
+    "Ataque Base": 186,
+    "Defensa Base": 256,
+    "Stamina Base": 137
+  },
+  "92": {
+    "Nombre": "Gastly",
+    "Tipo": "fantasma/veneno",
+    "Nivel": "normal",
+    "Ataque Base": 186,
+    "Defensa Base": 67,
+    "Stamina Base": 102
+  },
+  "93": {
+    "Nombre": "Haunter",
+    "Tipo": "fantasma/veneno",
+    "Nivel": "normal",
+    "Ataque Base": 223,
+    "Defensa Base": 107,
+    "Stamina Base": 128
+  },
+  "94": {
+    "Nombre": "Gengar",
+    "Tipo": "fantasma/veneno",
+    "Nivel": "normal",
+    "Ataque Base": 261,
+    "Defensa Base": 149,
+    "Stamina Base": 155
+  },
+  "95": {
+    "Nombre": "Onix",
+    "Tipo": "roca/tierra",
+    "Nivel": "normal",
+    "Ataque Base": 85,
+    "Defensa Base": 232,
+    "Stamina Base": 111
+  },
+  "96": {
+    "Nombre": "Drowzee",
+    "Tipo": "psiquico",
+    "Nivel": "normal",
+    "Ataque Base": 89,
+    "Defensa Base": 136,
+    "Stamina Base": 155
+  },
+  "97": {
+    "Nombre": "Hypno",
+    "Tipo": "psiquico",
+    "Nivel": "normal",
+    "Ataque Base": 144,
+    "Defensa Base": 193,
+    "Stamina Base": 198
+  },
+  "98": {
+    "Nombre": "Krabby",
+    "Tipo": "agua",
+    "Nivel": "normal",
+    "Ataque Base": 181,
+    "Defensa Base": 124,
+    "Stamina Base": 102
+  },
+  "99": {
+    "Nombre": "Kingler",
+    "Tipo": "agua",
+    "Nivel": "normal",
+    "Ataque Base": 240,
+    "Defensa Base": 181,
+    "Stamina Base": 146
+  },
+  "100": {
+    "Nombre": "Voltorb",
+    "Tipo": "electrico",
+    "Nivel": "normal",
+    "Ataque Base": 109,
+    "Defensa Base": 111,
+    "Stamina Base": 120
+  },
+  "101": {
+    "Nombre": "Electrode",
+    "Tipo": "electrico",
+    "Nivel": "normal",
+    "Ataque Base": 173,
+    "Defensa Base": 173,
+    "Stamina Base": 155
+  },
+  "102": {
+    "Nombre": "Exeggcute",
+    "Tipo": "planta/psiquico",
+    "Nivel": "normal",
+    "Ataque Base": 107,
+    "Defensa Base": 125,
+    "Stamina Base": 155
+  },
+  "103": {
+    "Nombre": "Exeggutor",
+    "Tipo": "planta/psiquico",
+    "Nivel": "normal",
+    "Ataque Base": 233,
+    "Defensa Base": 149,
+    "Stamina Base": 216
+  },
+  "104": {
+    "Nombre": "Cubone",
+    "Tipo": "tierra",
+    "Nivel": "normal",
+    "Ataque Base": 90,
+    "Defensa Base": 144,
+    "Stamina Base": 137
+  },
+  "105": {
+    "Nombre": "Marowak",
+    "Tipo": "tierra",
+    "Nivel": "normal",
+    "Ataque Base": 144,
+    "Defensa Base": 186,
+    "Stamina Base": 155
+  },
+  "106": {
+    "Nombre": "Hitmonlee",
+    "Tipo": "lucha",
+    "Nivel": "normal",
+    "Ataque Base": 224,
+    "Defensa Base": 181,
+    "Stamina Base": 137
+  },
+  "107": {
+    "Nombre": "Hitmonchan",
+    "Tipo": "lucha",
+    "Nivel": "normal",
+    "Ataque Base": 193,
+    "Defensa Base": 197,
+    "Stamina Base": 137
+  },
+  "108": {
+    "Nombre": "Lickitung",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 108,
+    "Defensa Base": 137,
+    "Stamina Base": 207
+  },
+  "109": {
+    "Nombre": "Koffing",
+    "Tipo": "veneno",
+    "Nivel": "normal",
+    "Ataque Base": 119,
+    "Defensa Base": 141,
+    "Stamina Base": 120
+  },
+  "110": {
+    "Nombre": "Weezing",
+    "Tipo": "veneno",
+    "Nivel": "normal",
+    "Ataque Base": 174,
+    "Defensa Base": 197,
+    "Stamina Base": 163
+  },
+  "111": {
+    "Nombre": "Rhyhorn",
+    "Tipo": "tierra/roca",
+    "Nivel": "normal",
+    "Ataque Base": 140,
+    "Defensa Base": 127,
+    "Stamina Base": 190
+  },
+  "112": {
+    "Nombre": "Rhydon",
+    "Tipo": "tierra/roca",
+    "Nivel": "normal",
+    "Ataque Base": 222,
+    "Defensa Base": 171,
+    "Stamina Base": 233
+  },
+  "113": {
+    "Nombre": "Chansey",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 60,
+    "Defensa Base": 128,
+    "Stamina Base": 487
+  },
+  "114": {
+    "Nombre": "Tangela",
+    "Tipo": "planta",
+    "Nivel": "normal",
+    "Ataque Base": 183,
+    "Defensa Base": 169,
+    "Stamina Base": 163
+  },
+  "115": {
+    "Nombre": "Kangaskhan",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 181,
+    "Defensa Base": 165,
+    "Stamina Base": 233
+  },
+  "116": {
+    "Nombre": "Horsea",
+    "Tipo": "agua",
+    "Nivel": "normal",
+    "Ataque Base": 129,
+    "Defensa Base": 103,
+    "Stamina Base": 102
+  },
+  "117": {
+    "Nombre": "Seadra",
+    "Tipo": "agua",
+    "Nivel": "normal",
+    "Ataque Base": 187,
+    "Defensa Base": 156,
+    "Stamina Base": 146
+  },
+  "118": {
+    "Nombre": "Goldeen",
+    "Tipo": "agua",
+    "Nivel": "normal",
+    "Ataque Base": 123,
+    "Defensa Base": 110,
+    "Stamina Base": 128
+  },
+  "119": {
+    "Nombre": "Seaking",
+    "Tipo": "agua",
+    "Nivel": "normal",
+    "Ataque Base": 175,
+    "Defensa Base": 147,
+    "Stamina Base": 190
+  },
+  "120": {
+    "Nombre": "Staryu",
+    "Tipo": "agua",
+    "Nivel": "normal",
+    "Ataque Base": 137,
+    "Defensa Base": 112,
+    "Stamina Base": 102
+  },
+  "121": {
+    "Nombre": "Starmie",
+    "Tipo": "agua/psiquico",
+    "Nivel": "normal",
+    "Ataque Base": 210,
+    "Defensa Base": 184,
+    "Stamina Base": 155
+  },
+  "122": {
+    "Nombre": "Mr. Mime",
+    "Tipo": "psiquico/hada",
+    "Nivel": "normal",
+    "Ataque Base": 192,
+    "Defensa Base": 205,
+    "Stamina Base": 120
+  },
+  "123": {
+    "Nombre": "Scyther",
+    "Tipo": "bicho/volador",
+    "Nivel": "normal",
+    "Ataque Base": 218,
+    "Defensa Base": 170,
+    "Stamina Base": 172
+  },
+  "124": {
+    "Nombre": "Jynx",
+    "Tipo": "hielo/psiquico",
+    "Nivel": "normal",
+    "Ataque Base": 223,
+    "Defensa Base": 151,
+    "Stamina Base": 163
+  },
+  "125": {
+    "Nombre": "Electabuzz",
+    "Tipo": "electrico",
+    "Nivel": "normal",
+    "Ataque Base": 198,
+    "Defensa Base": 158,
+    "Stamina Base": 163
+  },
+  "126": {
+    "Nombre": "Magmar",
+    "Tipo": "fuego",
+    "Nivel": "normal",
+    "Ataque Base": 206,
+    "Defensa Base": 154,
+    "Stamina Base": 163
+  },
+  "127": {
+    "Nombre": "Pinsir",
+    "Tipo": "bicho",
+    "Nivel": "normal",
+    "Ataque Base": 238,
+    "Defensa Base": 182,
+    "Stamina Base": 163
+  },
+  "128": {
+    "Nombre": "Tauros",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 198,
+    "Defensa Base": 183,
+    "Stamina Base": 181
+  },
+  "129": {
+    "Nombre": "Magikarp",
+    "Tipo": "agua",
+    "Nivel": "normal",
+    "Ataque Base": 29,
+    "Defensa Base": 85,
+    "Stamina Base": 85
+  },
+  "130": {
+    "Nombre": "Gyarados",
+    "Tipo": "agua/volador",
+    "Nivel": "normal",
+    "Ataque Base": 237,
+    "Defensa Base": 186,
+    "Stamina Base": 216
+  },
+  "131": {
+    "Nombre": "Lapras",
+    "Tipo": "agua/hielo",
+    "Nivel": "normal",
+    "Ataque Base": 165,
+    "Defensa Base": 174,
+    "Stamina Base": 277
+  },
+  "132": {
+    "Nombre": "Ditto",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 91,
+    "Defensa Base": 91,
+    "Stamina Base": 134
+  },
+  "133": {
+    "Nombre": "Eevee",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 104,
+    "Defensa Base": 114,
+    "Stamina Base": 146
+  },
+  "134": {
+    "Nombre": "Vaporeon",
+    "Tipo": "agua",
+    "Nivel": "normal",
+    "Ataque Base": 205,
+    "Defensa Base": 161,
+    "Stamina Base": 277
+  },
+  "135": {
+    "Nombre": "Jolteon",
+    "Tipo": "electrico",
+    "Nivel": "normal",
+    "Ataque Base": 232,
+    "Defensa Base": 182,
+    "Stamina Base": 163
+  },
+  "136": {
+    "Nombre": "Flareon",
+    "Tipo": "fuego",
+    "Nivel": "normal",
+    "Ataque Base": 246,
+    "Defensa Base": 179,
+    "Stamina Base": 163
+  },
+  "137": {
+    "Nombre": "Porygon",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 153,
+    "Defensa Base": 136,
+    "Stamina Base": 163
+  },
+  "138": {
+    "Nombre": "Omanyte",
+    "Tipo": "roca/agua",
+    "Nivel": "normal",
+    "Ataque Base": 155,
+    "Defensa Base": 153,
+    "Stamina Base": 111
+  },
+  "139": {
+    "Nombre": "Omastar",
+    "Tipo": "roca/agua",
+    "Nivel": "normal",
+    "Ataque Base": 207,
+    "Defensa Base": 201,
+    "Stamina Base": 172
+  },
+  "140": {
+    "Nombre": "Kabuto",
+    "Tipo": "roca/agua",
+    "Nivel": "normal",
+    "Ataque Base": 148,
+    "Defensa Base": 140,
+    "Stamina Base": 102
+  },
+  "141": {
+    "Nombre": "Kabutops",
+    "Tipo": "roca/agua",
+    "Nivel": "normal",
+    "Ataque Base": 220,
+    "Defensa Base": 186,
+    "Stamina Base": 155
+  },
+  "142": {
+    "Nombre": "Aerodactyl",
+    "Tipo": "roca/volador",
+    "Nivel": "normal",
+    "Ataque Base": 221,
+    "Defensa Base": 159,
+    "Stamina Base": 190
+  },
+  "143": {
+    "Nombre": "Snorlax",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 190,
+    "Defensa Base": 169,
+    "Stamina Base": 330
+  },
+  "144": {
+    "Nombre": "Articuno",
+    "Tipo": "hielo/volador",
+    "Nivel": "legendario",
+    "Ataque Base": 192,
+    "Defensa Base": 236,
+    "Stamina Base": 207
+  },
+  "145": {
+    "Nombre": "Zapdos",
+    "Tipo": "electrico/volador",
+    "Nivel": "legendario",
+    "Ataque Base": 253,
+    "Defensa Base": 185,
+    "Stamina Base": 207
+  },
+  "146": {
+    "Nombre": "Moltres",
+    "Tipo": "fuego/volador",
+    "Nivel": "legendario",
+    "Ataque Base": 251,
+    "Defensa Base": 181,
+    "Stamina Base": 207
+  },
+  "147": {
+    "Nombre": "Dratini",
+    "Tipo": "dragon",
+    "Nivel": "normal",
+    "Ataque Base": 119,
+    "Defensa Base": 91,
+    "Stamina Base": 121
+  },
+  "148": {
+    "Nombre": "Dragonair",
+    "Tipo": "dragon",
+    "Nivel": "normal",
+    "Ataque Base": 163,
+    "Defensa Base": 135,
+    "Stamina Base": 156
+  },
+  "149": {
+    "Nombre": "Dragonite",
+    "Tipo": "dragon/volador",
+    "Nivel": "normal",
+    "Ataque Base": 263,
+    "Defensa Base": 198,
+    "Stamina Base": 209
+  },
+  "150": {
+    "Nombre": "Mewtwo",
+    "Tipo": "psiquico",
+    "Nivel": "legendario",
+    "Ataque Base": 300,
+    "Defensa Base": 182,
+    "Stamina Base": 214
+  },
+  "151": {
+    "Nombre": "Mew",
+    "Tipo": "psiquico",
+    "Nivel": "singular",
+    "Ataque Base": 210,
+    "Defensa Base": 210,
+    "Stamina Base": 225
+  },
+  "152": {
+    "Nombre": "Chikorita",
+    "Tipo": "planta",
+    "Nivel": "normal",
+    "Ataque Base": 92,
+    "Defensa Base": 122,
+    "Stamina Base": 128
+  },
+  "153": {
+    "Nombre": "Bayleef",
+    "Tipo": "planta",
+    "Nivel": "normal",
+    "Ataque Base": 122,
+    "Defensa Base": 155,
+    "Stamina Base": 155
+  },
+  "154": {
+    "Nombre": "Meganium",
+    "Tipo": "planta",
+    "Nivel": "normal",
+    "Ataque Base": 168,
+    "Defensa Base": 202,
+    "Stamina Base": 190
+  },
+  "155": {
+    "Nombre": "Cyndaquil",
+    "Tipo": "fuego",
+    "Nivel": "normal",
+    "Ataque Base": 116,
+    "Defensa Base": 93,
+    "Stamina Base": 118
+  },
+  "156": {
+    "Nombre": "Quilava",
+    "Tipo": "fuego",
+    "Nivel": "normal",
+    "Ataque Base": 158,
+    "Defensa Base": 126,
+    "Stamina Base": 151
+  },
+  "157": {
+    "Nombre": "Typhlosion",
+    "Tipo": "fuego",
+    "Nivel": "normal",
+    "Ataque Base": 223,
+    "Defensa Base": 173,
+    "Stamina Base": 186
+  },
+  "158": {
+    "Nombre": "Totodile",
+    "Tipo": "agua",
+    "Nivel": "normal",
+    "Ataque Base": 117,
+    "Defensa Base": 109,
+    "Stamina Base": 137
+  },
+  "159": {
+    "Nombre": "Croconaw",
+    "Tipo": "agua",
+    "Nivel": "normal",
+    "Ataque Base": 150,
+    "Defensa Base": 142,
+    "Stamina Base": 163
+  },
+  "160": {
+    "Nombre": "Feraligatr",
+    "Tipo": "agua",
+    "Nivel": "normal",
+    "Ataque Base": 205,
+    "Defensa Base": 188,
+    "Stamina Base": 198
+  },
+  "161": {
+    "Nombre": "Sentret",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 79,
+    "Defensa Base": 73,
+    "Stamina Base": 111
+  },
+  "162": {
+    "Nombre": "Furret",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 148,
+    "Defensa Base": 125,
+    "Stamina Base": 198
+  },
+  "163": {
+    "Nombre": "Hoothoot",
+    "Tipo": "normal/volador",
+    "Nivel": "normal",
+    "Ataque Base": 67,
+    "Defensa Base": 88,
+    "Stamina Base": 155
+  },
+  "164": {
+    "Nombre": "Noctowl",
+    "Tipo": "normal/volador",
+    "Nivel": "normal",
+    "Ataque Base": 145,
+    "Defensa Base": 156,
+    "Stamina Base": 225
+  },
+  "165": {
+    "Nombre": "Ledyba",
+    "Tipo": "bicho/volador",
+    "Nivel": "normal",
+    "Ataque Base": 72,
+    "Defensa Base": 118,
+    "Stamina Base": 120
+  },
+  "166": {
+    "Nombre": "Ledian",
+    "Tipo": "bicho/volador",
+    "Nivel": "normal",
+    "Ataque Base": 107,
+    "Defensa Base": 179,
+    "Stamina Base": 146
+  },
+  "167": {
+    "Nombre": "Spinarak",
+    "Tipo": "bicho/veneno",
+    "Nivel": "normal",
+    "Ataque Base": 105,
+    "Defensa Base": 73,
+    "Stamina Base": 120
+  },
+  "168": {
+    "Nombre": "Ariados",
+    "Tipo": "bicho/veneno",
+    "Nivel": "normal",
+    "Ataque Base": 161,
+    "Defensa Base": 124,
+    "Stamina Base": 172
+  },
+  "169": {
+    "Nombre": "Crobat",
+    "Tipo": "veneno/volador",
+    "Nivel": "normal",
+    "Ataque Base": 194,
+    "Defensa Base": 178,
+    "Stamina Base": 198
+  },
+  "170": {
+    "Nombre": "Chinchou",
+    "Tipo": "agua/electrico",
+    "Nivel": "normal",
+    "Ataque Base": 106,
+    "Defensa Base": 97,
+    "Stamina Base": 181
+  },
+  "171": {
+    "Nombre": "Lanturn",
+    "Tipo": "agua/electrico",
+    "Nivel": "normal",
+    "Ataque Base": 146,
+    "Defensa Base": 137,
+    "Stamina Base": 268
+  },
+  "172": {
+    "Nombre": "Pichu",
+    "Tipo": "electrico",
+    "Nivel": "normal",
+    "Ataque Base": 77,
+    "Defensa Base": 53,
+    "Stamina Base": 85
+  },
+  "173": {
+    "Nombre": "Cleffa",
+    "Tipo": "hada",
+    "Nivel": "normal",
+    "Ataque Base": 75,
+    "Defensa Base": 79,
+    "Stamina Base": 137
+  },
+  "174": {
+    "Nombre": "Igglybuff",
+    "Tipo": "normal/hada",
+    "Nivel": "normal",
+    "Ataque Base": 69,
+    "Defensa Base": 32,
+    "Stamina Base": 207
+  },
+  "175": {
+    "Nombre": "Togepi",
+    "Tipo": "hada",
+    "Nivel": "normal",
+    "Ataque Base": 67,
+    "Defensa Base": 116,
+    "Stamina Base": 111
+  },
+  "176": {
+    "Nombre": "Togetic",
+    "Tipo": "hada/volador",
+    "Nivel": "normal",
+    "Ataque Base": 139,
+    "Defensa Base": 181,
+    "Stamina Base": 146
+  },
+  "177": {
+    "Nombre": "Natu",
+    "Tipo": "psiquico/volador",
+    "Nivel": "normal",
+    "Ataque Base": 134,
+    "Defensa Base": 89,
+    "Stamina Base": 120
+  },
+  "178": {
+    "Nombre": "Xatu",
+    "Tipo": "psiquico/volador",
+    "Nivel": "normal",
+    "Ataque Base": 192,
+    "Defensa Base": 146,
+    "Stamina Base": 163
+  },
+  "179": {
+    "Nombre": "Mareep",
+    "Tipo": "electrico",
+    "Nivel": "normal",
+    "Ataque Base": 114,
+    "Defensa Base": 79,
+    "Stamina Base": 146
+  },
+  "180": {
+    "Nombre": "Flaaffy",
+    "Tipo": "electrico",
+    "Nivel": "normal",
+    "Ataque Base": 145,
+    "Defensa Base": 109,
+    "Stamina Base": 172
+  },
+  "181": {
+    "Nombre": "Ampharos",
+    "Tipo": "electrico",
+    "Nivel": "normal",
+    "Ataque Base": 211,
+    "Defensa Base": 169,
+    "Stamina Base": 207
+  },
+  "182": {
+    "Nombre": "Bellossom",
+    "Tipo": "planta",
+    "Nivel": "normal",
+    "Ataque Base": 169,
+    "Defensa Base": 186,
+    "Stamina Base": 181
+  },
+  "183": {
+    "Nombre": "Marill",
+    "Tipo": "agua/hada",
+    "Nivel": "normal",
+    "Ataque Base": 37,
+    "Defensa Base": 93,
+    "Stamina Base": 172
+  },
+  "184": {
+    "Nombre": "Azumarill",
+    "Tipo": "agua/hada",
+    "Nivel": "normal",
+    "Ataque Base": 112,
+    "Defensa Base": 152,
+    "Stamina Base": 225
+  },
+  "185": {
+    "Nombre": "Sudowoodo",
+    "Tipo": "roca",
+    "Nivel": "normal",
+    "Ataque Base": 167,
+    "Defensa Base": 176,
+    "Stamina Base": 172
+  },
+  "186": {
+    "Nombre": "Politoed",
+    "Tipo": "agua",
+    "Nivel": "normal",
+    "Ataque Base": 174,
+    "Defensa Base": 179,
+    "Stamina Base": 207
+  },
+  "187": {
+    "Nombre": "Hoppip",
+    "Tipo": "planta/volador",
+    "Nivel": "normal",
+    "Ataque Base": 67,
+    "Defensa Base": 94,
+    "Stamina Base": 111
+  },
+  "188": {
+    "Nombre": "Skiploom",
+    "Tipo": "planta/volador",
+    "Nivel": "normal",
+    "Ataque Base": 91,
+    "Defensa Base": 120,
+    "Stamina Base": 146
+  },
+  "189": {
+    "Nombre": "Jumpluff",
+    "Tipo": "planta/volador",
+    "Nivel": "normal",
+    "Ataque Base": 118,
+    "Defensa Base": 183,
+    "Stamina Base": 181
+  },
+  "190": {
+    "Nombre": "Aipom",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 136,
+    "Defensa Base": 112,
+    "Stamina Base": 146
+  },
+  "191": {
+    "Nombre": "Sunkern",
+    "Tipo": "planta",
+    "Nivel": "normal",
+    "Ataque Base": 55,
+    "Defensa Base": 55,
+    "Stamina Base": 102
+  },
+  "192": {
+    "Nombre": "Sunflora",
+    "Tipo": "planta",
+    "Nivel": "normal",
+    "Ataque Base": 185,
+    "Defensa Base": 135,
+    "Stamina Base": 181
+  },
+  "193": {
+    "Nombre": "Yanma",
+    "Tipo": "bicho/volador",
+    "Nivel": "normal",
+    "Ataque Base": 154,
+    "Defensa Base": 94,
+    "Stamina Base": 163
+  },
+  "194": {
+    "Nombre": "Wooper",
+    "Tipo": "agua/tierra",
+    "Nivel": "normal",
+    "Ataque Base": 75,
+    "Defensa Base": 66,
+    "Stamina Base": 146
+  },
+  "195": {
+    "Nombre": "Quagsire",
+    "Tipo": "agua/tierra",
+    "Nivel": "normal",
+    "Ataque Base": 152,
+    "Defensa Base": 143,
+    "Stamina Base": 216
+  },
+  "196": {
+    "Nombre": "Espeon",
+    "Tipo": "psiquico",
+    "Nivel": "normal",
+    "Ataque Base": 261,
+    "Defensa Base": 175,
+    "Stamina Base": 163
+  },
+  "197": {
+    "Nombre": "Umbreon",
+    "Tipo": "siniestro",
+    "Nivel": "normal",
+    "Ataque Base": 126,
+    "Defensa Base": 240,
+    "Stamina Base": 216
+  },
+  "198": {
+    "Nombre": "Murkrow",
+    "Tipo": "siniestro/volador",
+    "Nivel": "normal",
+    "Ataque Base": 175,
+    "Defensa Base": 87,
+    "Stamina Base": 155
+  },
+  "199": {
+    "Nombre": "Slowking",
+    "Tipo": "agua/psiquico",
+    "Nivel": "normal",
+    "Ataque Base": 177,
+    "Defensa Base": 180,
+    "Stamina Base": 216
+  },
+  "200": {
+    "Nombre": "Misdreavus",
+    "Tipo": "fantasma",
+    "Nivel": "normal",
+    "Ataque Base": 167,
+    "Defensa Base": 154,
+    "Stamina Base": 155
+  },
+  "201": {
+    "Nombre": "Unown",
+    "Tipo": "psiquico",
+    "Nivel": "normal",
+    "Ataque Base": 136,
+    "Defensa Base": 91,
+    "Stamina Base": 134
+  },
+  "202": {
+    "Nombre": "Wobbuffet",
+    "Tipo": "psiquico",
+    "Nivel": "normal",
+    "Ataque Base": 60,
+    "Defensa Base": 106,
+    "Stamina Base": 382
+  },
+  "203": {
+    "Nombre": "Girafarig",
+    "Tipo": "normal/psiquico",
+    "Nivel": "normal",
+    "Ataque Base": 182,
+    "Defensa Base": 133,
+    "Stamina Base": 172
+  },
+  "204": {
+    "Nombre": "Pineco",
+    "Tipo": "bicho",
+    "Nivel": "normal",
+    "Ataque Base": 108,
+    "Defensa Base": 122,
+    "Stamina Base": 137
+  },
+  "205": {
+    "Nombre": "Forretress",
+    "Tipo": "bicho/acero",
+    "Nivel": "normal",
+    "Ataque Base": 161,
+    "Defensa Base": 205,
+    "Stamina Base": 181
+  },
+  "206": {
+    "Nombre": "Dunsparce",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 131,
+    "Defensa Base": 128,
+    "Stamina Base": 225
+  },
+  "207": {
+    "Nombre": "Gligar",
+    "Tipo": "tierra/volador",
+    "Nivel": "normal",
+    "Ataque Base": 143,
+    "Defensa Base": 184,
+    "Stamina Base": 163
+  },
+  "208": {
+    "Nombre": "Steelix",
+    "Tipo": "acero/tierra",
+    "Nivel": "normal",
+    "Ataque Base": 148,
+    "Defensa Base": 272,
+    "Stamina Base": 181
+  },
+  "209": {
+    "Nombre": "Snubbull",
+    "Tipo": "hada",
+    "Nivel": "normal",
+    "Ataque Base": 137,
+    "Defensa Base": 85,
+    "Stamina Base": 155
+  },
+  "210": {
+    "Nombre": "Granbull",
+    "Tipo": "hada",
+    "Nivel": "normal",
+    "Ataque Base": 212,
+    "Defensa Base": 131,
+    "Stamina Base": 207
+  },
+  "211": {
+    "Nombre": "Qwilfish",
+    "Tipo": "agua/veneno",
+    "Nivel": "normal",
+    "Ataque Base": 184,
+    "Defensa Base": 138,
+    "Stamina Base": 163
+  },
+  "212": {
+    "Nombre": "Scizor",
+    "Tipo": "bicho/acero",
+    "Nivel": "normal",
+    "Ataque Base": 236,
+    "Defensa Base": 181,
+    "Stamina Base": 172
+  },
+  "213": {
+    "Nombre": "Shuckle",
+    "Tipo": "bicho/roca",
+    "Nivel": "normal",
+    "Ataque Base": 17,
+    "Defensa Base": 396,
+    "Stamina Base": 85
+  },
+  "214": {
+    "Nombre": "Heracross",
+    "Tipo": "bicho/lucha",
+    "Nivel": "normal",
+    "Ataque Base": 234,
+    "Defensa Base": 179,
+    "Stamina Base": 190
+  },
+  "215": {
+    "Nombre": "Sneasel",
+    "Tipo": "siniestro/hielo",
+    "Nivel": "normal",
+    "Ataque Base": 189,
+    "Defensa Base": 146,
+    "Stamina Base": 146
+  },
+  "216": {
+    "Nombre": "Teddiursa",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 142,
+    "Defensa Base": 93,
+    "Stamina Base": 155
+  },
+  "217": {
+    "Nombre": "Ursaring",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 236,
+    "Defensa Base": 144,
+    "Stamina Base": 207
+  },
+  "218": {
+    "Nombre": "Slugma",
+    "Tipo": "fuego",
+    "Nivel": "normal",
+    "Ataque Base": 118,
+    "Defensa Base": 71,
+    "Stamina Base": 120
+  },
+  "219": {
+    "Nombre": "Magcargo",
+    "Tipo": "fuego/roca",
+    "Nivel": "normal",
+    "Ataque Base": 139,
+    "Defensa Base": 191,
+    "Stamina Base": 137
+  },
+  "220": {
+    "Nombre": "Swinub",
+    "Tipo": "hielo/tierra",
+    "Nivel": "normal",
+    "Ataque Base": 90,
+    "Defensa Base": 69,
+    "Stamina Base": 137
+  },
+  "221": {
+    "Nombre": "Piloswine",
+    "Tipo": "hielo/tierra",
+    "Nivel": "normal",
+    "Ataque Base": 181,
+    "Defensa Base": 138,
+    "Stamina Base": 225
+  },
+  "222": {
+    "Nombre": "Corsola",
+    "Tipo": "agua/roca",
+    "Nivel": "normal",
+    "Ataque Base": 118,
+    "Defensa Base": 156,
+    "Stamina Base": 146
+  },
+  "223": {
+    "Nombre": "Remoraid",
+    "Tipo": "agua",
+    "Nivel": "normal",
+    "Ataque Base": 127,
+    "Defensa Base": 69,
+    "Stamina Base": 111
+  },
+  "224": {
+    "Nombre": "Octillery",
+    "Tipo": "agua",
+    "Nivel": "normal",
+    "Ataque Base": 197,
+    "Defensa Base": 141,
+    "Stamina Base": 181
+  },
+  "225": {
+    "Nombre": "Delibird",
+    "Tipo": "hielo/volador",
+    "Nivel": "normal",
+    "Ataque Base": 128,
+    "Defensa Base": 90,
+    "Stamina Base": 128
+  },
+  "226": {
+    "Nombre": "Mantine",
+    "Tipo": "agua/volador",
+    "Nivel": "normal",
+    "Ataque Base": 148,
+    "Defensa Base": 226,
+    "Stamina Base": 163
+  },
+  "227": {
+    "Nombre": "Skarmory",
+    "Tipo": "acero/volador",
+    "Nivel": "normal",
+    "Ataque Base": 148,
+    "Defensa Base": 226,
+    "Stamina Base": 163
+  },
+  "228": {
+    "Nombre": "Houndour",
+    "Tipo": "siniestro/fuego",
+    "Nivel": "normal",
+    "Ataque Base": 152,
+    "Defensa Base": 83,
+    "Stamina Base": 128
+  },
+  "229": {
+    "Nombre": "Houndoom",
+    "Tipo": "siniestro/fuego",
+    "Nivel": "normal",
+    "Ataque Base": 224,
+    "Defensa Base": 144,
+    "Stamina Base": 181
+  },
+  "230": {
+    "Nombre": "Kingdra",
+    "Tipo": "agua/dragon",
+    "Nivel": "normal",
+    "Ataque Base": 194,
+    "Defensa Base": 194,
+    "Stamina Base": 181
+  },
+  "231": {
+    "Nombre": "Phanpy",
+    "Tipo": "tierra",
+    "Nivel": "normal",
+    "Ataque Base": 107,
+    "Defensa Base": 98,
+    "Stamina Base": 207
+  },
+  "232": {
+    "Nombre": "Donphan",
+    "Tipo": "tierra",
+    "Nivel": "normal",
+    "Ataque Base": 214,
+    "Defensa Base": 185,
+    "Stamina Base": 207
+  },
+  "233": {
+    "Nombre": "Porygon2",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 198,
+    "Defensa Base": 180,
+    "Stamina Base": 198
+  },
+  "234": {
+    "Nombre": "Stantler",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 192,
+    "Defensa Base": 131,
+    "Stamina Base": 177
+  },
+  "235": {
+    "Nombre": "Smeargle",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 40,
+    "Defensa Base": 83,
+    "Stamina Base": 146
+  },
+  "236": {
+    "Nombre": "Tyrogue",
+    "Tipo": "lucha",
+    "Nivel": "normal",
+    "Ataque Base": 64,
+    "Defensa Base": 64,
+    "Stamina Base": 111
+  },
+  "237": {
+    "Nombre": "Hitmontop",
+    "Tipo": "lucha",
+    "Nivel": "normal",
+    "Ataque Base": 173,
+    "Defensa Base": 207,
+    "Stamina Base": 137
+  },
+  "238": {
+    "Nombre": "Smoochum",
+    "Tipo": "hielo/psiquico",
+    "Nivel": "normal",
+    "Ataque Base": 153,
+    "Defensa Base": 91,
+    "Stamina Base": 128
+  },
+  "239": {
+    "Nombre": "Elekid",
+    "Tipo": "electrico",
+    "Nivel": "normal",
+    "Ataque Base": 135,
+    "Defensa Base": 101,
+    "Stamina Base": 128
+  },
+  "240": {
+    "Nombre": "Magby",
+    "Tipo": "fuego",
+    "Nivel": "normal",
+    "Ataque Base": 151,
+    "Defensa Base": 99,
+    "Stamina Base": 128
+  },
+  "241": {
+    "Nombre": "Miltank",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 157,
+    "Defensa Base": 193,
+    "Stamina Base": 216
+  },
+  "242": {
+    "Nombre": "Blissey",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 129,
+    "Defensa Base": 169,
+    "Stamina Base": 496
+  },
+  "243": {
+    "Nombre": "Raikou",
+    "Tipo": "electrico",
+    "Nivel": "legendario",
+    "Ataque Base": 241,
+    "Defensa Base": 195,
+    "Stamina Base": 207
+  },
+  "244": {
+    "Nombre": "Entei",
+    "Tipo": "fuego",
+    "Nivel": "legendario",
+    "Ataque Base": 235,
+    "Defensa Base": 171,
+    "Stamina Base": 251
+  },
+  "245": {
+    "Nombre": "Suicune",
+    "Tipo": "agua",
+    "Nivel": "legendario",
+    "Ataque Base": 180,
+    "Defensa Base": 235,
+    "Stamina Base": 225
+  },
+  "246": {
+    "Nombre": "Larvitar",
+    "Tipo": "roca/tierra",
+    "Nivel": "normal",
+    "Ataque Base": 115,
+    "Defensa Base": 93,
+    "Stamina Base": 137
+  },
+  "247": {
+    "Nombre": "Pupitar",
+    "Tipo": "roca/tierra",
+    "Nivel": "normal",
+    "Ataque Base": 155,
+    "Defensa Base": 133,
+    "Stamina Base": 172
+  },
+  "248": {
+    "Nombre": "Tyranitar",
+    "Tipo": "roca/siniestro",
+    "Nivel": "normal",
+    "Ataque Base": 251,
+    "Defensa Base": 207,
+    "Stamina Base": 225
+  },
+  "249": {
+    "Nombre": "Lugia",
+    "Tipo": "psiquico/volador",
+    "Nivel": "legendario",
+    "Ataque Base": 193,
+    "Defensa Base": 310,
+    "Stamina Base": 235
+  },
+  "250": {
+    "Nombre": "Ho-Oh",
+    "Tipo": "fuego/volador",
+    "Nivel": "legendario",
+    "Ataque Base": 239,
+    "Defensa Base": 244,
+    "Stamina Base": 214
+  },
+  "251": {
+    "Nombre": "Celebi",
+    "Tipo": "psiquico/planta",
+    "Nivel": "singular",
+    "Ataque Base": 210,
+    "Defensa Base": 210,
+    "Stamina Base": 225
+  },
+  "252": {
+    "Nombre": "Treecko",
+    "Tipo": "planta",
+    "Nivel": "normal",
+    "Ataque Base": 124,
+    "Defensa Base": 94,
+    "Stamina Base": 120
+  },
+  "253": {
+    "Nombre": "Grovyle",
+    "Tipo": "planta",
+    "Nivel": "normal",
+    "Ataque Base": 172,
+    "Defensa Base": 120,
+    "Stamina Base": 137
+  },
+  "254": {
+    "Nombre": "Sceptile",
+    "Tipo": "planta",
+    "Nivel": "normal",
+    "Ataque Base": 223,
+    "Defensa Base": 169,
+    "Stamina Base": 172
+  },
+  "255": {
+    "Nombre": "Torchic",
+    "Tipo": "fuego",
+    "Nivel": "normal",
+    "Ataque Base": 130,
+    "Defensa Base": 87,
+    "Stamina Base": 128
+  },
+  "256": {
+    "Nombre": "Combusken",
+    "Tipo": "fuego/lucha",
+    "Nivel": "normal",
+    "Ataque Base": 163,
+    "Defensa Base": 115,
+    "Stamina Base": 155
+  },
+  "257": {
+    "Nombre": "Blaziken",
+    "Tipo": "fuego/lucha",
+    "Nivel": "normal",
+    "Ataque Base": 240,
+    "Defensa Base": 141,
+    "Stamina Base": 190
+  },
+  "258": {
+    "Nombre": "Mudkip",
+    "Tipo": "agua",
+    "Nivel": "normal",
+    "Ataque Base": 126,
+    "Defensa Base": 93,
+    "Stamina Base": 137
+  },
+  "259": {
+    "Nombre": "Marshtomp",
+    "Tipo": "agua/tierra",
+    "Nivel": "normal",
+    "Ataque Base": 156,
+    "Defensa Base": 133,
+    "Stamina Base": 172
+  },
+  "260": {
+    "Nombre": "Swampert",
+    "Tipo": "agua/tierra",
+    "Nivel": "normal",
+    "Ataque Base": 208,
+    "Defensa Base": 175,
+    "Stamina Base": 225
+  },
+  "261": {
+    "Nombre": "Poochyena",
+    "Tipo": "siniestro",
+    "Nivel": "normal",
+    "Ataque Base": 96,
+    "Defensa Base": 61,
+    "Stamina Base": 111
+  },
+  "262": {
+    "Nombre": "Mightyena",
+    "Tipo": "siniestro",
+    "Nivel": "normal",
+    "Ataque Base": 171,
+    "Defensa Base": 132,
+    "Stamina Base": 172
+  },
+  "263": {
+    "Nombre": "Zigzagoon",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 58,
+    "Defensa Base": 80,
+    "Stamina Base": 116
+  },
+  "264": {
+    "Nombre": "Linoone",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 142,
+    "Defensa Base": 128,
+    "Stamina Base": 186
+  },
+  "265": {
+    "Nombre": "Wurmple",
+    "Tipo": "bicho",
+    "Nivel": "normal",
+    "Ataque Base": 75,
+    "Defensa Base": 59,
+    "Stamina Base": 128
+  },
+  "266": {
+    "Nombre": "Silcoon",
+    "Tipo": "bicho",
+    "Nivel": "normal",
+    "Ataque Base": 60,
+    "Defensa Base": 77,
+    "Stamina Base": 137
+  },
+  "267": {
+    "Nombre": "Beautifly",
+    "Tipo": "bicho/volador",
+    "Nivel": "normal",
+    "Ataque Base": 189,
+    "Defensa Base": 98,
+    "Stamina Base": 155
+  },
+  "268": {
+    "Nombre": "Cascoon",
+    "Tipo": "bicho",
+    "Nivel": "normal",
+    "Ataque Base": 60,
+    "Defensa Base": 77,
+    "Stamina Base": 137
+  },
+  "269": {
+    "Nombre": "Dustox",
+    "Tipo": "bicho/veneno",
+    "Nivel": "normal",
+    "Ataque Base": 98,
+    "Defensa Base": 162,
+    "Stamina Base": 155
+  },
+  "270": {
+    "Nombre": "Lotad",
+    "Tipo": "agua/planta",
+    "Nivel": "normal",
+    "Ataque Base": 71,
+    "Defensa Base": 77,
+    "Stamina Base": 120
+  },
+  "271": {
+    "Nombre": "Lombre",
+    "Tipo": "agua/planta",
+    "Nivel": "normal",
+    "Ataque Base": 112,
+    "Defensa Base": 119,
+    "Stamina Base": 155
+  },
+  "272": {
+    "Nombre": "Ludicolo",
+    "Tipo": "agua/planta",
+    "Nivel": "normal",
+    "Ataque Base": 173,
+    "Defensa Base": 176,
+    "Stamina Base": 190
+  },
+  "273": {
+    "Nombre": "Seedot",
+    "Tipo": "planta",
+    "Nivel": "normal",
+    "Ataque Base": 71,
+    "Defensa Base": 77,
+    "Stamina Base": 120
+  },
+  "274": {
+    "Nombre": "Nuzleaf",
+    "Tipo": "planta/siniestro",
+    "Nivel": "normal",
+    "Ataque Base": 134,
+    "Defensa Base": 78,
+    "Stamina Base": 172
+  },
+  "275": {
+    "Nombre": "Shiftry",
+    "Tipo": "planta/siniestro",
+    "Nivel": "normal",
+    "Ataque Base": 200,
+    "Defensa Base": 121,
+    "Stamina Base": 207
+  },
+  "276": {
+    "Nombre": "Taillow",
+    "Tipo": "normal/volador",
+    "Nivel": "normal",
+    "Ataque Base": 106,
+    "Defensa Base": 61,
+    "Stamina Base": 120
+  },
+  "277": {
+    "Nombre": "Swellow",
+    "Tipo": "normal/volador",
+    "Nivel": "normal",
+    "Ataque Base": 185,
+    "Defensa Base": 124,
+    "Stamina Base": 155
+  },
+  "278": {
+    "Nombre": "Wingull",
+    "Tipo": "agua/volador",
+    "Nivel": "normal",
+    "Ataque Base": 106,
+    "Defensa Base": 61,
+    "Stamina Base": 120
+  },
+  "279": {
+    "Nombre": "Pelipper",
+    "Tipo": "agua/volador",
+    "Nivel": "normal",
+    "Ataque Base": 175,
+    "Defensa Base": 174,
+    "Stamina Base": 155
+  },
+  "280": {
+    "Nombre": "Ralts",
+    "Tipo": "psiquico/hada",
+    "Nivel": "normal",
+    "Ataque Base": 79,
+    "Defensa Base": 59,
+    "Stamina Base": 99
+  },
+  "281": {
+    "Nombre": "Kirlia",
+    "Tipo": "psiquico/hada",
+    "Nivel": "normal",
+    "Ataque Base": 117,
+    "Defensa Base": 90,
+    "Stamina Base": 116
+  },
+  "282": {
+    "Nombre": "Gardevoir",
+    "Tipo": "psiquico/hada",
+    "Nivel": "normal",
+    "Ataque Base": 237,
+    "Defensa Base": 195,
+    "Stamina Base": 169
+  },
+  "283": {
+    "Nombre": "Surskit",
+    "Tipo": "bicho/agua",
+    "Nivel": "normal",
+    "Ataque Base": 93,
+    "Defensa Base": 87,
+    "Stamina Base": 120
+  },
+  "284": {
+    "Nombre": "Masquerain",
+    "Tipo": "bicho/volador",
+    "Nivel": "normal",
+    "Ataque Base": 192,
+    "Defensa Base": 150,
+    "Stamina Base": 172
+  },
+  "285": {
+    "Nombre": "Shroomish",
+    "Tipo": "planta",
+    "Nivel": "normal",
+    "Ataque Base": 74,
+    "Defensa Base": 110,
+    "Stamina Base": 155
+  },
+  "286": {
+    "Nombre": "Breloom",
+    "Tipo": "planta/lucha",
+    "Nivel": "normal",
+    "Ataque Base": 241,
+    "Defensa Base": 144,
+    "Stamina Base": 155
+  },
+  "287": {
+    "Nombre": "Slakoth",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 104,
+    "Defensa Base": 92,
+    "Stamina Base": 155
+  },
+  "288": {
+    "Nombre": "Vigoroth",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 159,
+    "Defensa Base": 145,
+    "Stamina Base": 190
+  },
+  "289": {
+    "Nombre": "Slaking",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 290,
+    "Defensa Base": 166,
+    "Stamina Base": 284
+  },
+  "290": {
+    "Nombre": "Nincada",
+    "Tipo": "bicho/tierra",
+    "Nivel": "normal",
+    "Ataque Base": 80,
+    "Defensa Base": 126,
+    "Stamina Base": 104
+  },
+  "291": {
+    "Nombre": "Ninjask",
+    "Tipo": "bicho/volador",
+    "Nivel": "normal",
+    "Ataque Base": 199,
+    "Defensa Base": 112,
+    "Stamina Base": 156
+  },
+  "292": {
+    "Nombre": "Shedinja",
+    "Tipo": "bicho/fantasma",
+    "Nivel": "normal",
+    "Ataque Base": 153,
+    "Defensa Base": 73,
+    "Stamina Base": 1
+  },
+  "293": {
+    "Nombre": "Whismur",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 92,
+    "Defensa Base": 42,
+    "Stamina Base": 162
+  },
+  "294": {
+    "Nombre": "Loudred",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 134,
+    "Defensa Base": 81,
+    "Stamina Base": 197
+  },
+  "295": {
+    "Nombre": "Exploud",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 179,
+    "Defensa Base": 137,
+    "Stamina Base": 232
+  },
+  "296": {
+    "Nombre": "Makuhita",
+    "Tipo": "lucha",
+    "Nivel": "normal",
+    "Ataque Base": 99,
+    "Defensa Base": 54,
+    "Stamina Base": 176
+  },
+  "297": {
+    "Nombre": "Hariyama",
+    "Tipo": "lucha",
+    "Nivel": "normal",
+    "Ataque Base": 209,
+    "Defensa Base": 114,
+    "Stamina Base": 302
+  },
+  "298": {
+    "Nombre": "Azurill",
+    "Tipo": "normal/hada",
+    "Nivel": "normal",
+    "Ataque Base": 36,
+    "Defensa Base": 71,
+    "Stamina Base": 137
+  },
+  "299": {
+    "Nombre": "Nosepass",
+    "Tipo": "roca",
+    "Nivel": "normal",
+    "Ataque Base": 82,
+    "Defensa Base": 215,
+    "Stamina Base": 102
+  },
+  "300": {
+    "Nombre": "Skitty",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 84,
+    "Defensa Base": 79,
+    "Stamina Base": 137
+  },
+  "301": {
+    "Nombre": "Delcatty",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 132,
+    "Defensa Base": 127,
+    "Stamina Base": 172
+  },
+  "302": {
+    "Nombre": "Sableye",
+    "Tipo": "siniestro/fantasma",
+    "Nivel": "normal",
+    "Ataque Base": 141,
+    "Defensa Base": 136,
+    "Stamina Base": 137
+  },
+  "303": {
+    "Nombre": "Mawile",
+    "Tipo": "acero/hada",
+    "Nivel": "normal",
+    "Ataque Base": 155,
+    "Defensa Base": 141,
+    "Stamina Base": 137
+  },
+  "304": {
+    "Nombre": "Aron",
+    "Tipo": "acero/roca",
+    "Nivel": "normal",
+    "Ataque Base": 121,
+    "Defensa Base": 141,
+    "Stamina Base": 137
+  },
+  "305": {
+    "Nombre": "Lairon",
+    "Tipo": "acero/roca",
+    "Nivel": "normal",
+    "Ataque Base": 158,
+    "Defensa Base": 198,
+    "Stamina Base": 155
+  },
+  "306": {
+    "Nombre": "Aggron",
+    "Tipo": "acero/roca",
+    "Nivel": "normal",
+    "Ataque Base": 198,
+    "Defensa Base": 257,
+    "Stamina Base": 172
+  },
+  "307": {
+    "Nombre": "Meditite",
+    "Tipo": "lucha/psiquico",
+    "Nivel": "normal",
+    "Ataque Base": 78,
+    "Defensa Base": 107,
+    "Stamina Base": 102
+  },
+  "308": {
+    "Nombre": "Medicham",
+    "Tipo": "lucha/psiquico",
+    "Nivel": "normal",
+    "Ataque Base": 121,
+    "Defensa Base": 152,
+    "Stamina Base": 155
+  },
+  "309": {
+    "Nombre": "Electrike",
+    "Tipo": "electrico",
+    "Nivel": "normal",
+    "Ataque Base": 123,
+    "Defensa Base": 78,
+    "Stamina Base": 120
+  },
+  "310": {
+    "Nombre": "Manectric",
+    "Tipo": "electrico",
+    "Nivel": "normal",
+    "Ataque Base": 215,
+    "Defensa Base": 127,
+    "Stamina Base": 172
+  },
+  "311": {
+    "Nombre": "Plusle",
+    "Tipo": "electrico",
+    "Nivel": "normal",
+    "Ataque Base": 167,
+    "Defensa Base": 129,
+    "Stamina Base": 155
+  },
+  "312": {
+    "Nombre": "Minun",
+    "Tipo": "electrico",
+    "Nivel": "normal",
+    "Ataque Base": 147,
+    "Defensa Base": 150,
+    "Stamina Base": 155
+  },
+  "313": {
+    "Nombre": "Volbeat",
+    "Tipo": "bicho",
+    "Nivel": "normal",
+    "Ataque Base": 143,
+    "Defensa Base": 166,
+    "Stamina Base": 163
+  },
+  "314": {
+    "Nombre": "Illumise",
+    "Tipo": "bicho",
+    "Nivel": "normal",
+    "Ataque Base": 143,
+    "Defensa Base": 166,
+    "Stamina Base": 163
+  },
+  "315": {
+    "Nombre": "Roselia",
+    "Tipo": "planta/veneno",
+    "Nivel": "normal",
+    "Ataque Base": 186,
+    "Defensa Base": 131,
+    "Stamina Base": 137
+  },
+  "316": {
+    "Nombre": "Gulpin",
+    "Tipo": "veneno",
+    "Nivel": "normal",
+    "Ataque Base": 80,
+    "Defensa Base": 99,
+    "Stamina Base": 172
+  },
+  "317": {
+    "Nombre": "Swalot",
+    "Tipo": "veneno",
+    "Nivel": "normal",
+    "Ataque Base": 140,
+    "Defensa Base": 159,
+    "Stamina Base": 225
+  },
+  "318": {
+    "Nombre": "Carvanha",
+    "Tipo": "agua/siniestro",
+    "Nivel": "normal",
+    "Ataque Base": 171,
+    "Defensa Base": 39,
+    "Stamina Base": 128
+  },
+  "319": {
+    "Nombre": "Sharpedo",
+    "Tipo": "agua/siniestro",
+    "Nivel": "normal",
+    "Ataque Base": 243,
+    "Defensa Base": 83,
+    "Stamina Base": 172
+  },
+  "320": {
+    "Nombre": "Wailmer",
+    "Tipo": "agua",
+    "Nivel": "normal",
+    "Ataque Base": 136,
+    "Defensa Base": 68,
+    "Stamina Base": 277
+  },
+  "321": {
+    "Nombre": "Wailord",
+    "Tipo": "agua",
+    "Nivel": "normal",
+    "Ataque Base": 175,
+    "Defensa Base": 87,
+    "Stamina Base": 347
+  },
+  "322": {
+    "Nombre": "Numel",
+    "Tipo": "fuego/tierra",
+    "Nivel": "normal",
+    "Ataque Base": 119,
+    "Defensa Base": 79,
+    "Stamina Base": 155
+  },
+  "323": {
+    "Nombre": "Camerupt",
+    "Tipo": "fuego/tierra",
+    "Nivel": "normal",
+    "Ataque Base": 194,
+    "Defensa Base": 136,
+    "Stamina Base": 172
+  },
+  "324": {
+    "Nombre": "Torkoal",
+    "Tipo": "fuego",
+    "Nivel": "normal",
+    "Ataque Base": 151,
+    "Defensa Base": 203,
+    "Stamina Base": 172
+  },
+  "325": {
+    "Nombre": "Spoink",
+    "Tipo": "psiquico",
+    "Nivel": "normal",
+    "Ataque Base": 125,
+    "Defensa Base": 122,
+    "Stamina Base": 155
+  },
+  "326": {
+    "Nombre": "Grumpig",
+    "Tipo": "psiquico",
+    "Nivel": "normal",
+    "Ataque Base": 171,
+    "Defensa Base": 188,
+    "Stamina Base": 190
+  },
+  "327": {
+    "Nombre": "Spinda",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 116,
+    "Defensa Base": 116,
+    "Stamina Base": 155
+  },
+  "328": {
+    "Nombre": "Trapinch",
+    "Tipo": "tierra",
+    "Nivel": "normal",
+    "Ataque Base": 162,
+    "Defensa Base": 78,
+    "Stamina Base": 128
+  },
+  "329": {
+    "Nombre": "Vibrava",
+    "Tipo": "tierra/dragon",
+    "Nivel": "normal",
+    "Ataque Base": 134,
+    "Defensa Base": 99,
+    "Stamina Base": 137
+  },
+  "330": {
+    "Nombre": "Flygon",
+    "Tipo": "tierra/dragon",
+    "Nivel": "normal",
+    "Ataque Base": 205,
+    "Defensa Base": 168,
+    "Stamina Base": 190
+  },
+  "331": {
+    "Nombre": "Cacnea",
+    "Tipo": "planta",
+    "Nivel": "normal",
+    "Ataque Base": 156,
+    "Defensa Base": 74,
+    "Stamina Base": 137
+  },
+  "332": {
+    "Nombre": "Cacturne",
+    "Tipo": "planta/siniestro",
+    "Nivel": "normal",
+    "Ataque Base": 221,
+    "Defensa Base": 115,
+    "Stamina Base": 172
+  },
+  "333": {
+    "Nombre": "Swablu",
+    "Tipo": "normal/volador",
+    "Nivel": "normal",
+    "Ataque Base": 76,
+    "Defensa Base": 132,
+    "Stamina Base": 128
+  },
+  "334": {
+    "Nombre": "Altaria",
+    "Tipo": "dragon/volador",
+    "Nivel": "normal",
+    "Ataque Base": 141,
+    "Defensa Base": 201,
+    "Stamina Base": 181
+  },
+  "335": {
+    "Nombre": "Zangoose",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 222,
+    "Defensa Base": 124,
+    "Stamina Base": 177
+  },
+  "336": {
+    "Nombre": "Seviper",
+    "Tipo": "veneno",
+    "Nivel": "normal",
+    "Ataque Base": 196,
+    "Defensa Base": 118,
+    "Stamina Base": 177
+  },
+  "337": {
+    "Nombre": "Lunatone",
+    "Tipo": "roca/psiquico",
+    "Nivel": "normal",
+    "Ataque Base": 178,
+    "Defensa Base": 153,
+    "Stamina Base": 207
+  },
+  "338": {
+    "Nombre": "Solrock",
+    "Tipo": "roca/psiquico",
+    "Nivel": "normal",
+    "Ataque Base": 178,
+    "Defensa Base": 153,
+    "Stamina Base": 207
+  },
+  "339": {
+    "Nombre": "Barboach",
+    "Tipo": "agua/tierra",
+    "Nivel": "normal",
+    "Ataque Base": 93,
+    "Defensa Base": 82,
+    "Stamina Base": 137
+  },
+  "340": {
+    "Nombre": "Whiscash",
+    "Tipo": "agua/tierra",
+    "Nivel": "normal",
+    "Ataque Base": 151,
+    "Defensa Base": 141,
+    "Stamina Base": 242
+  },
+  "341": {
+    "Nombre": "Corphish",
+    "Tipo": "agua",
+    "Nivel": "normal",
+    "Ataque Base": 141,
+    "Defensa Base": 99,
+    "Stamina Base": 125
+  },
+  "342": {
+    "Nombre": "Crawdaunt",
+    "Tipo": "agua/siniestro",
+    "Nivel": "normal",
+    "Ataque Base": 224,
+    "Defensa Base": 142,
+    "Stamina Base": 160
+  },
+  "343": {
+    "Nombre": "Baltoy",
+    "Tipo": "tierra/psiquico",
+    "Nivel": "normal",
+    "Ataque Base": 77,
+    "Defensa Base": 124,
+    "Stamina Base": 120
+  },
+  "344": {
+    "Nombre": "Claydol",
+    "Tipo": "tierra/psiquico",
+    "Nivel": "normal",
+    "Ataque Base": 140,
+    "Defensa Base": 229,
+    "Stamina Base": 155
+  },
+  "345": {
+    "Nombre": "Lileep",
+    "Tipo": "roca/planta",
+    "Nivel": "normal",
+    "Ataque Base": 105,
+    "Defensa Base": 150,
+    "Stamina Base": 165
+  },
+  "346": {
+    "Nombre": "Cradily",
+    "Tipo": "roca/planta",
+    "Nivel": "normal",
+    "Ataque Base": 152,
+    "Defensa Base": 194,
+    "Stamina Base": 200
+  },
+  "347": {
+    "Nombre": "Anorith",
+    "Tipo": "roca/bicho",
+    "Nivel": "normal",
+    "Ataque Base": 176,
+    "Defensa Base": 100,
+    "Stamina Base": 128
+  },
+  "348": {
+    "Nombre": "Armaldo",
+    "Tipo": "roca/bicho",
+    "Nivel": "normal",
+    "Ataque Base": 222,
+    "Defensa Base": 174,
+    "Stamina Base": 181
+  },
+  "349": {
+    "Nombre": "Feebas",
+    "Tipo": "agua",
+    "Nivel": "normal",
+    "Ataque Base": 29,
+    "Defensa Base": 85,
+    "Stamina Base": 85
+  },
+  "350": {
+    "Nombre": "Milotic",
+    "Tipo": "agua",
+    "Nivel": "normal",
+    "Ataque Base": 192,
+    "Defensa Base": 219,
+    "Stamina Base": 216
+  },
+  "351": {
+    "Nombre": "Castform",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 139,
+    "Defensa Base": 139,
+    "Stamina Base": 172
+  },
+  "352": {
+    "Nombre": "Kecleon",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 161,
+    "Defensa Base": 189,
+    "Stamina Base": 155
+  },
+  "353": {
+    "Nombre": "Shuppet",
+    "Tipo": "fantasma",
+    "Nivel": "normal",
+    "Ataque Base": 138,
+    "Defensa Base": 65,
+    "Stamina Base": 127
+  },
+  "354": {
+    "Nombre": "Banette",
+    "Tipo": "fantasma",
+    "Nivel": "normal",
+    "Ataque Base": 218,
+    "Defensa Base": 126,
+    "Stamina Base": 162
+  },
+  "355": {
+    "Nombre": "Duskull",
+    "Tipo": "fantasma",
+    "Nivel": "normal",
+    "Ataque Base": 70,
+    "Defensa Base": 162,
+    "Stamina Base": 85
+  },
+  "356": {
+    "Nombre": "Dusclops",
+    "Tipo": "fantasma",
+    "Nivel": "normal",
+    "Ataque Base": 124,
+    "Defensa Base": 234,
+    "Stamina Base": 120
+  },
+  "357": {
+    "Nombre": "Tropius",
+    "Tipo": "planta/volador",
+    "Nivel": "normal",
+    "Ataque Base": 136,
+    "Defensa Base": 163,
+    "Stamina Base": 223
+  },
+  "358": {
+    "Nombre": "Chimecho",
+    "Tipo": "psiquico",
+    "Nivel": "normal",
+    "Ataque Base": 175,
+    "Defensa Base": 170,
+    "Stamina Base": 181
+  },
+  "359": {
+    "Nombre": "Absol",
+    "Tipo": "siniestro",
+    "Nivel": "normal",
+    "Ataque Base": 246,
+    "Defensa Base": 120,
+    "Stamina Base": 163
+  },
+  "360": {
+    "Nombre": "Wynaut",
+    "Tipo": "psiquico",
+    "Nivel": "normal",
+    "Ataque Base": 41,
+    "Defensa Base": 86,
+    "Stamina Base": 216
+  },
+  "361": {
+    "Nombre": "Snorunt",
+    "Tipo": "hielo",
+    "Nivel": "normal",
+    "Ataque Base": 95,
+    "Defensa Base": 95,
+    "Stamina Base": 137
+  },
+  "362": {
+    "Nombre": "Glalie",
+    "Tipo": "hielo",
+    "Nivel": "normal",
+    "Ataque Base": 162,
+    "Defensa Base": 162,
+    "Stamina Base": 190
+  },
+  "363": {
+    "Nombre": "Spheal",
+    "Tipo": "hielo/agua",
+    "Nivel": "normal",
+    "Ataque Base": 95,
+    "Defensa Base": 90,
+    "Stamina Base": 172
+  },
+  "364": {
+    "Nombre": "Sealeo",
+    "Tipo": "hielo/agua",
+    "Nivel": "normal",
+    "Ataque Base": 137,
+    "Defensa Base": 132,
+    "Stamina Base": 207
+  },
+  "365": {
+    "Nombre": "Walrein",
+    "Tipo": "hielo/agua",
+    "Nivel": "normal",
+    "Ataque Base": 182,
+    "Defensa Base": 176,
+    "Stamina Base": 242
+  },
+  "366": {
+    "Nombre": "Clamperl",
+    "Tipo": "agua",
+    "Nivel": "normal",
+    "Ataque Base": 133,
+    "Defensa Base": 135,
+    "Stamina Base": 111
+  },
+  "367": {
+    "Nombre": "Huntail",
+    "Tipo": "agua",
+    "Nivel": "normal",
+    "Ataque Base": 197,
+    "Defensa Base": 179,
+    "Stamina Base": 146
+  },
+  "368": {
+    "Nombre": "Gorebyss",
+    "Tipo": "agua",
+    "Nivel": "normal",
+    "Ataque Base": 211,
+    "Defensa Base": 179,
+    "Stamina Base": 146
+  },
+  "369": {
+    "Nombre": "Relicanth",
+    "Tipo": "agua/roca",
+    "Nivel": "normal",
+    "Ataque Base": 162,
+    "Defensa Base": 203,
+    "Stamina Base": 225
+  },
+  "370": {
+    "Nombre": "Luvdisc",
+    "Tipo": "agua",
+    "Nivel": "normal",
+    "Ataque Base": 81,
+    "Defensa Base": 128,
+    "Stamina Base": 125
+  },
+  "371": {
+    "Nombre": "Bagon",
+    "Tipo": "dragon",
+    "Nivel": "normal",
+    "Ataque Base": 134,
+    "Defensa Base": 93,
+    "Stamina Base": 128
+  },
+  "372": {
+    "Nombre": "Shelgon",
+    "Tipo": "dragon",
+    "Nivel": "normal",
+    "Ataque Base": 172,
+    "Defensa Base": 155,
+    "Stamina Base": 163
+  },
+  "373": {
+    "Nombre": "Salamence",
+    "Tipo": "dragon/volador",
+    "Nivel": "normal",
+    "Ataque Base": 277,
+    "Defensa Base": 168,
+    "Stamina Base": 216
+  },
+  "374": {
+    "Nombre": "Beldum",
+    "Tipo": "acero/psiquico",
+    "Nivel": "normal",
+    "Ataque Base": 96,
+    "Defensa Base": 132,
+    "Stamina Base": 120
+  },
+  "375": {
+    "Nombre": "Metang",
+    "Tipo": "acero/psiquico",
+    "Nivel": "normal",
+    "Ataque Base": 138,
+    "Defensa Base": 176,
+    "Stamina Base": 155
+  },
+  "376": {
+    "Nombre": "Metagross",
+    "Tipo": "acero/psiquico",
+    "Nivel": "normal",
+    "Ataque Base": 257,
+    "Defensa Base": 228,
+    "Stamina Base": 190
+  },
+  "377": {
+    "Nombre": "Regirock",
+    "Tipo": "roca",
+    "Nivel": "legendario",
+    "Ataque Base": 179,
+    "Defensa Base": 309,
+    "Stamina Base": 190
+  },
+  "378": {
+    "Nombre": "Regice",
+    "Tipo": "hielo",
+    "Nivel": "legendario",
+    "Ataque Base": 179,
+    "Defensa Base": 309,
+    "Stamina Base": 190
+  },
+  "379": {
+    "Nombre": "Registeel",
+    "Tipo": "acero",
+    "Nivel": "legendario",
+    "Ataque Base": 143,
+    "Defensa Base": 285,
+    "Stamina Base": 190
+  },
+  "380": {
+    "Nombre": "Latias",
+    "Tipo": "dragon/psiquico",
+    "Nivel": "legendario",
+    "Ataque Base": 228,
+    "Defensa Base": 246,
+    "Stamina Base": 190
+  },
+  "381": {
+    "Nombre": "Latios",
+    "Tipo": "dragon/psiquico",
+    "Nivel": "legendario",
+    "Ataque Base": 268,
+    "Defensa Base": 212,
+    "Stamina Base": 190
+  },
+  "382": {
+    "Nombre": "Kyogre",
+    "Tipo": "agua",
+    "Nivel": "legendario",
+    "Ataque Base": 270,
+    "Defensa Base": 228,
+    "Stamina Base": 205
+  },
+  "383": {
+    "Nombre": "Groudon",
+    "Tipo": "tierra",
+    "Nivel": "legendario",
+    "Ataque Base": 270,
+    "Defensa Base": 228,
+    "Stamina Base": 205
+  },
+  "384": {
+    "Nombre": "Rayquaza",
+    "Tipo": "dragon/volador",
+    "Nivel": "legendario",
+    "Ataque Base": 284,
+    "Defensa Base": 170,
+    "Stamina Base": 213
+  },
+  "385": {
+    "Nombre": "Jirachi",
+    "Tipo": "acero/psiquico",
+    "Nivel": "singular",
+    "Ataque Base": 210,
+    "Defensa Base": 210,
+    "Stamina Base": 225
+  },
+  "386": {
+    "Nombre": "Deoxys",
+    "Tipo": "psiquico",
+    "Nivel": "singular",
+    "Ataque Base": 345,
+    "Defensa Base": 115,
+    "Stamina Base": 137
+  },
+  "387": {
+    "Nombre": "Turtwig",
+    "Tipo": "planta",
+    "Nivel": "normal",
+    "Ataque Base": 119,
+    "Defensa Base": 110,
+    "Stamina Base": 146
+  },
+  "388": {
+    "Nombre": "Grotle",
+    "Tipo": "planta",
+    "Nivel": "normal",
+    "Ataque Base": 157,
+    "Defensa Base": 143,
+    "Stamina Base": 181
+  },
+  "389": {
+    "Nombre": "Torterra",
+    "Tipo": "planta/tierra",
+    "Nivel": "normal",
+    "Ataque Base": 202,
+    "Defensa Base": 188,
+    "Stamina Base": 216
+  },
+  "390": {
+    "Nombre": "Chimchar",
+    "Tipo": "fuego",
+    "Nivel": "normal",
+    "Ataque Base": 113,
+    "Defensa Base": 86,
+    "Stamina Base": 127
+  },
+  "391": {
+    "Nombre": "Monferno",
+    "Tipo": "fuego/lucha",
+    "Nivel": "normal",
+    "Ataque Base": 158,
+    "Defensa Base": 105,
+    "Stamina Base": 162
+  },
+  "392": {
+    "Nombre": "Infernape",
+    "Tipo": "fuego/lucha",
+    "Nivel": "normal",
+    "Ataque Base": 222,
+    "Defensa Base": 151,
+    "Stamina Base": 183
+  },
+  "393": {
+    "Nombre": "Piplup",
+    "Tipo": "agua",
+    "Nivel": "normal",
+    "Ataque Base": 112,
+    "Defensa Base": 102,
+    "Stamina Base": 142
+  },
+  "394": {
+    "Nombre": "Prinplup",
+    "Tipo": "agua",
+    "Nivel": "normal",
+    "Ataque Base": 150,
+    "Defensa Base": 139,
+    "Stamina Base": 162
+  },
+  "395": {
+    "Nombre": "Empoleon",
+    "Tipo": "agua/acero",
+    "Nivel": "normal",
+    "Ataque Base": 210,
+    "Defensa Base": 186,
+    "Stamina Base": 197
+  },
+  "396": {
+    "Nombre": "Starly",
+    "Tipo": "normal/volador",
+    "Nivel": "normal",
+    "Ataque Base": 101,
+    "Defensa Base": 58,
+    "Stamina Base": 120
+  },
+  "397": {
+    "Nombre": "Staravia",
+    "Tipo": "normal/volador",
+    "Nivel": "normal",
+    "Ataque Base": 142,
+    "Defensa Base": 94,
+    "Stamina Base": 146
+  },
+  "398": {
+    "Nombre": "Staraptor",
+    "Tipo": "normal/volador",
+    "Nivel": "normal",
+    "Ataque Base": 234,
+    "Defensa Base": 140,
+    "Stamina Base": 198
+  },
+  "399": {
+    "Nombre": "Bidoof",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 80,
+    "Defensa Base": 73,
+    "Stamina Base": 153
+  },
+  "400": {
+    "Nombre": "Bibarel",
+    "Tipo": "normal/agua",
+    "Nivel": "normal",
+    "Ataque Base": 162,
+    "Defensa Base": 119,
+    "Stamina Base": 188
+  },
+  "401": {
+    "Nombre": "Kricketot",
+    "Tipo": "bicho",
+    "Nivel": "normal",
+    "Ataque Base": 45,
+    "Defensa Base": 74,
+    "Stamina Base": 114
+  },
+  "402": {
+    "Nombre": "Kricketune",
+    "Tipo": "bicho",
+    "Nivel": "normal",
+    "Ataque Base": 160,
+    "Defensa Base": 100,
+    "Stamina Base": 184
+  },
+  "403": {
+    "Nombre": "Shinx",
+    "Tipo": "electrico",
+    "Nivel": "normal",
+    "Ataque Base": 117,
+    "Defensa Base": 64,
+    "Stamina Base": 128
+  },
+  "404": {
+    "Nombre": "Luxio",
+    "Tipo": "electrico",
+    "Nivel": "normal",
+    "Ataque Base": 159,
+    "Defensa Base": 95,
+    "Stamina Base": 155
+  },
+  "405": {
+    "Nombre": "Luxray",
+    "Tipo": "electrico",
+    "Nivel": "normal",
+    "Ataque Base": 232,
+    "Defensa Base": 156,
+    "Stamina Base": 190
+  },
+  "406": {
+    "Nombre": "Budew",
+    "Tipo": "planta/veneno",
+    "Nivel": "normal",
+    "Ataque Base": 91,
+    "Defensa Base": 109,
+    "Stamina Base": 120
+  },
+  "407": {
+    "Nombre": "Roserade",
+    "Tipo": "planta/veneno",
+    "Nivel": "normal",
+    "Ataque Base": 243,
+    "Defensa Base": 185,
+    "Stamina Base": 155
+  },
+  "408": {
+    "Nombre": "Cranidos",
+    "Tipo": "roca",
+    "Nivel": "normal",
+    "Ataque Base": 218,
+    "Defensa Base": 71,
+    "Stamina Base": 167
+  },
+  "409": {
+    "Nombre": "Rampardos",
+    "Tipo": "roca",
+    "Nivel": "normal",
+    "Ataque Base": 295,
+    "Defensa Base": 109,
+    "Stamina Base": 219
+  },
+  "410": {
+    "Nombre": "Shieldon",
+    "Tipo": "roca/acero",
+    "Nivel": "normal",
+    "Ataque Base": 76,
+    "Defensa Base": 195,
+    "Stamina Base": 102
+  },
+  "411": {
+    "Nombre": "Bastiodon",
+    "Tipo": "roca/acero",
+    "Nivel": "normal",
+    "Ataque Base": 94,
+    "Defensa Base": 286,
+    "Stamina Base": 155
+  },
+  "412": {
+    "Nombre": "Burmy",
+    "Tipo": "bicho",
+    "Nivel": "normal",
+    "Ataque Base": 53,
+    "Defensa Base": 83,
+    "Stamina Base": 120
+  },
+  "413": {
+    "Nombre": "Wormadam",
+    "Tipo": "bicho/planta",
+    "Nivel": "normal",
+    "Ataque Base": 141,
+    "Defensa Base": 180,
+    "Stamina Base": 155
+  },
+  "414": {
+    "Nombre": "Mothim",
+    "Tipo": "bicho/volador",
+    "Nivel": "normal",
+    "Ataque Base": 185,
+    "Defensa Base": 98,
+    "Stamina Base": 172
+  },
+  "415": {
+    "Nombre": "Combee",
+    "Tipo": "bicho/volador",
+    "Nivel": "normal",
+    "Ataque Base": 59,
+    "Defensa Base": 83,
+    "Stamina Base": 102
+  },
+  "416": {
+    "Nombre": "Vespiquen",
+    "Tipo": "bicho/volador",
+    "Nivel": "normal",
+    "Ataque Base": 149,
+    "Defensa Base": 190,
+    "Stamina Base": 172
+  },
+  "417": {
+    "Nombre": "Pachirisu",
+    "Tipo": "electrico",
+    "Nivel": "normal",
+    "Ataque Base": 94,
+    "Defensa Base": 172,
+    "Stamina Base": 155
+  },
+  "418": {
+    "Nombre": "Buizel",
+    "Tipo": "agua",
+    "Nivel": "normal",
+    "Ataque Base": 132,
+    "Defensa Base": 67,
+    "Stamina Base": 146
+  },
+  "419": {
+    "Nombre": "Floatzel",
+    "Tipo": "agua",
+    "Nivel": "normal",
+    "Ataque Base": 221,
+    "Defensa Base": 114,
+    "Stamina Base": 198
+  },
+  "420": {
+    "Nombre": "Cherubi",
+    "Tipo": "planta",
+    "Nivel": "normal",
+    "Ataque Base": 108,
+    "Defensa Base": 92,
+    "Stamina Base": 128
+  },
+  "421": {
+    "Nombre": "Cherrim",
+    "Tipo": "planta",
+    "Nivel": "normal",
+    "Ataque Base": 170,
+    "Defensa Base": 153,
+    "Stamina Base": 172
+  },
+  "422": {
+    "Nombre": "Shellos",
+    "Tipo": "agua",
+    "Nivel": "normal",
+    "Ataque Base": 103,
+    "Defensa Base": 105,
+    "Stamina Base": 183
+  },
+  "423": {
+    "Nombre": "Gastrodon",
+    "Tipo": "agua/tierra",
+    "Nivel": "normal",
+    "Ataque Base": 169,
+    "Defensa Base": 143,
+    "Stamina Base": 244
+  },
+  "424": {
+    "Nombre": "Ambipom",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 205,
+    "Defensa Base": 143,
+    "Stamina Base": 181
+  },
+  "425": {
+    "Nombre": "Drifloon",
+    "Tipo": "fantasma/volador",
+    "Nivel": "normal",
+    "Ataque Base": 117,
+    "Defensa Base": 80,
+    "Stamina Base": 207
+  },
+  "426": {
+    "Nombre": "Drifblim",
+    "Tipo": "fantasma/volador",
+    "Nivel": "normal",
+    "Ataque Base": 180,
+    "Defensa Base": 102,
+    "Stamina Base": 312
+  },
+  "427": {
+    "Nombre": "Buneary",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 130,
+    "Defensa Base": 105,
+    "Stamina Base": 146
+  },
+  "428": {
+    "Nombre": "Lopunny",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 156,
+    "Defensa Base": 194,
+    "Stamina Base": 163
+  },
+  "429": {
+    "Nombre": "Mismagius",
+    "Tipo": "fantasma",
+    "Nivel": "normal",
+    "Ataque Base": 211,
+    "Defensa Base": 187,
+    "Stamina Base": 155
+  },
+  "430": {
+    "Nombre": "Honchkrow",
+    "Tipo": "siniestro/volador",
+    "Nivel": "normal",
+    "Ataque Base": 243,
+    "Defensa Base": 103,
+    "Stamina Base": 225
+  },
+  "431": {
+    "Nombre": "Glameow",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 109,
+    "Defensa Base": 82,
+    "Stamina Base": 135
+  },
+  "432": {
+    "Nombre": "Purugly",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 172,
+    "Defensa Base": 133,
+    "Stamina Base": 174
+  },
+  "433": {
+    "Nombre": "Chingling",
+    "Tipo": "psiquico",
+    "Nivel": "normal",
+    "Ataque Base": 114,
+    "Defensa Base": 94,
+    "Stamina Base": 128
+  },
+  "434": {
+    "Nombre": "Stunky",
+    "Tipo": "veneno/siniestro",
+    "Nivel": "normal",
+    "Ataque Base": 121,
+    "Defensa Base": 90,
+    "Stamina Base": 160
+  },
+  "435": {
+    "Nombre": "Skuntank",
+    "Tipo": "veneno/siniestro",
+    "Nivel": "normal",
+    "Ataque Base": 184,
+    "Defensa Base": 132,
+    "Stamina Base": 230
+  },
+  "436": {
+    "Nombre": "Bronzor",
+    "Tipo": "acero/psiquico",
+    "Nivel": "normal",
+    "Ataque Base": 43,
+    "Defensa Base": 154,
+    "Stamina Base": 149
+  },
+  "437": {
+    "Nombre": "Bronzong",
+    "Tipo": "acero/psiquico",
+    "Nivel": "normal",
+    "Ataque Base": 161,
+    "Defensa Base": 213,
+    "Stamina Base": 167
+  },
+  "438": {
+    "Nombre": "Bonsly",
+    "Tipo": "roca",
+    "Nivel": "normal",
+    "Ataque Base": 124,
+    "Defensa Base": 133,
+    "Stamina Base": 137
+  },
+  "439": {
+    "Nombre": "Mime Jr.",
+    "Tipo": "psiquico/hada",
+    "Nivel": "normal",
+    "Ataque Base": 125,
+    "Defensa Base": 142,
+    "Stamina Base": 85
+  },
+  "440": {
+    "Nombre": "Happiny",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 25,
+    "Defensa Base": 77,
+    "Stamina Base": 225
+  },
+  "441": {
+    "Nombre": "Chatot",
+    "Tipo": "normal/volador",
+    "Nivel": "normal",
+    "Ataque Base": 183,
+    "Defensa Base": 91,
+    "Stamina Base": 183
+  },
+  "442": {
+    "Nombre": "Spiritomb",
+    "Tipo": "fantasma/siniestro",
+    "Nivel": "normal",
+    "Ataque Base": 169,
+    "Defensa Base": 199,
+    "Stamina Base": 137
+  },
+  "443": {
+    "Nombre": "Gible",
+    "Tipo": "dragon/tierra",
+    "Nivel": "normal",
+    "Ataque Base": 124,
+    "Defensa Base": 84,
+    "Stamina Base": 151
+  },
+  "444": {
+    "Nombre": "Gabite",
+    "Tipo": "dragon/tierra",
+    "Nivel": "normal",
+    "Ataque Base": 172,
+    "Defensa Base": 125,
+    "Stamina Base": 169
+  },
+  "445": {
+    "Nombre": "Garchomp",
+    "Tipo": "dragon/tierra",
+    "Nivel": "normal",
+    "Ataque Base": 261,
+    "Defensa Base": 193,
+    "Stamina Base": 239
+  },
+  "446": {
+    "Nombre": "Munchlax",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 137,
+    "Defensa Base": 117,
+    "Stamina Base": 286
+  },
+  "447": {
+    "Nombre": "Riolu",
+    "Tipo": "lucha",
+    "Nivel": "normal",
+    "Ataque Base": 127,
+    "Defensa Base": 78,
+    "Stamina Base": 120
+  },
+  "448": {
+    "Nombre": "Lucario",
+    "Tipo": "lucha/acero",
+    "Nivel": "normal",
+    "Ataque Base": 236,
+    "Defensa Base": 144,
+    "Stamina Base": 172
+  },
+  "449": {
+    "Nombre": "Hippopotas",
+    "Tipo": "tierra",
+    "Nivel": "normal",
+    "Ataque Base": 124,
+    "Defensa Base": 118,
+    "Stamina Base": 169
+  },
+  "450": {
+    "Nombre": "Hippowdon",
+    "Tipo": "tierra",
+    "Nivel": "normal",
+    "Ataque Base": 201,
+    "Defensa Base": 191,
+    "Stamina Base": 239
+  },
+  "451": {
+    "Nombre": "Skorupi",
+    "Tipo": "veneno/bicho",
+    "Nivel": "normal",
+    "Ataque Base": 93,
+    "Defensa Base": 151,
+    "Stamina Base": 120
+  },
+  "452": {
+    "Nombre": "Drapion",
+    "Tipo": "veneno/siniestro",
+    "Nivel": "normal",
+    "Ataque Base": 180,
+    "Defensa Base": 202,
+    "Stamina Base": 172
+  },
+  "453": {
+    "Nombre": "Croagunk",
+    "Tipo": "veneno/lucha",
+    "Nivel": "normal",
+    "Ataque Base": 116,
+    "Defensa Base": 76,
+    "Stamina Base": 134
+  },
+  "454": {
+    "Nombre": "Toxicroak",
+    "Tipo": "veneno/lucha",
+    "Nivel": "normal",
+    "Ataque Base": 211,
+    "Defensa Base": 133,
+    "Stamina Base": 195
+  },
+  "455": {
+    "Nombre": "Carnivine",
+    "Tipo": "planta",
+    "Nivel": "normal",
+    "Ataque Base": 187,
+    "Defensa Base": 136,
+    "Stamina Base": 179
+  },
+  "456": {
+    "Nombre": "Finneon",
+    "Tipo": "agua",
+    "Nivel": "normal",
+    "Ataque Base": 96,
+    "Defensa Base": 116,
+    "Stamina Base": 135
+  },
+  "457": {
+    "Nombre": "Lumineon",
+    "Tipo": "agua",
+    "Nivel": "normal",
+    "Ataque Base": 142,
+    "Defensa Base": 170,
+    "Stamina Base": 170
+  },
+  "458": {
+    "Nombre": "Mantyke",
+    "Tipo": "agua/volador",
+    "Nivel": "normal",
+    "Ataque Base": 105,
+    "Defensa Base": 179,
+    "Stamina Base": 128
+  },
+  "459": {
+    "Nombre": "Snover",
+    "Tipo": "planta/hielo",
+    "Nivel": "normal",
+    "Ataque Base": 115,
+    "Defensa Base": 105,
+    "Stamina Base": 155
+  },
+  "460": {
+    "Nombre": "Abomasnow",
+    "Tipo": "planta/hielo",
+    "Nivel": "normal",
+    "Ataque Base": 178,
+    "Defensa Base": 158,
+    "Stamina Base": 207
+  },
+  "461": {
+    "Nombre": "Weavile",
+    "Tipo": "siniestro/hielo",
+    "Nivel": "normal",
+    "Ataque Base": 243,
+    "Defensa Base": 171,
+    "Stamina Base": 172
+  },
+  "462": {
+    "Nombre": "Magnezone",
+    "Tipo": "electrico/acero",
+    "Nivel": "normal",
+    "Ataque Base": 238,
+    "Defensa Base": 205,
+    "Stamina Base": 172
+  },
+  "463": {
+    "Nombre": "Lickilicky",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 161,
+    "Defensa Base": 181,
+    "Stamina Base": 242
+  },
+  "464": {
+    "Nombre": "Rhyperior",
+    "Tipo": "tierra/roca",
+    "Nivel": "normal",
+    "Ataque Base": 241,
+    "Defensa Base": 190,
+    "Stamina Base": 251
+  },
+  "465": {
+    "Nombre": "Tangrowth",
+    "Tipo": "planta",
+    "Nivel": "normal",
+    "Ataque Base": 207,
+    "Defensa Base": 184,
+    "Stamina Base": 225
+  },
+  "466": {
+    "Nombre": "Electivire",
+    "Tipo": "electrico",
+    "Nivel": "normal",
+    "Ataque Base": 249,
+    "Defensa Base": 163,
+    "Stamina Base": 181
+  },
+  "467": {
+    "Nombre": "Magmortar",
+    "Tipo": "fuego",
+    "Nivel": "normal",
+    "Ataque Base": 247,
+    "Defensa Base": 172,
+    "Stamina Base": 181
+  },
+  "468": {
+    "Nombre": "Togekiss",
+    "Tipo": "hada/volador",
+    "Nivel": "normal",
+    "Ataque Base": 225,
+    "Defensa Base": 217,
+    "Stamina Base": 198
+  },
+  "469": {
+    "Nombre": "Yanmega",
+    "Tipo": "bicho/volador",
+    "Nivel": "normal",
+    "Ataque Base": 231,
+    "Defensa Base": 156,
+    "Stamina Base": 200
+  },
+  "470": {
+    "Nombre": "Leafeon",
+    "Tipo": "planta",
+    "Nivel": "normal",
+    "Ataque Base": 216,
+    "Defensa Base": 219,
+    "Stamina Base": 163
+  },
+  "471": {
+    "Nombre": "Glaceon",
+    "Tipo": "hielo",
+    "Nivel": "normal",
+    "Ataque Base": 238,
+    "Defensa Base": 205,
+    "Stamina Base": 163
+  },
+  "472": {
+    "Nombre": "Gliscor",
+    "Tipo": "tierra/volador",
+    "Nivel": "normal",
+    "Ataque Base": 185,
+    "Defensa Base": 222,
+    "Stamina Base": 181
+  },
+  "473": {
+    "Nombre": "Mamoswine",
+    "Tipo": "hielo/tierra",
+    "Nivel": "normal",
+    "Ataque Base": 247,
+    "Defensa Base": 146,
+    "Stamina Base": 242
+  },
+  "474": {
+    "Nombre": "Porygon-Z",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 264,
+    "Defensa Base": 150,
+    "Stamina Base": 198
+  },
+  "475": {
+    "Nombre": "Gallade",
+    "Tipo": "psiquico/lucha",
+    "Nivel": "normal",
+    "Ataque Base": 237,
+    "Defensa Base": 195,
+    "Stamina Base": 169
+  },
+  "476": {
+    "Nombre": "Probopass",
+    "Tipo": "roca/acero",
+    "Nivel": "normal",
+    "Ataque Base": 135,
+    "Defensa Base": 275,
+    "Stamina Base": 155
+  },
+  "477": {
+    "Nombre": "Dusknoir",
+    "Tipo": "fantasma",
+    "Nivel": "normal",
+    "Ataque Base": 180,
+    "Defensa Base": 254,
+    "Stamina Base": 128
+  },
+  "478": {
+    "Nombre": "Froslass",
+    "Tipo": "hielo/fantasma",
+    "Nivel": "normal",
+    "Ataque Base": 171,
+    "Defensa Base": 150,
+    "Stamina Base": 172
+  },
+  "479": {
+    "Nombre": "Rotom",
+    "Tipo": "electrico/fantasma",
+    "Nivel": "normal",
+    "Ataque Base": 185,
+    "Defensa Base": 159,
+    "Stamina Base": 137
+  },
+  "480": {
+    "Nombre": "Uxie",
+    "Tipo": "psiquico",
+    "Nivel": "legendario",
+    "Ataque Base": 156,
+    "Defensa Base": 270,
+    "Stamina Base": 181
+  },
+  "481": {
+    "Nombre": "Mesprit",
+    "Tipo": "psiquico",
+    "Nivel": "legendario",
+    "Ataque Base": 212,
+    "Defensa Base": 212,
+    "Stamina Base": 190
+  },
+  "482": {
+    "Nombre": "Azelf",
+    "Tipo": "psiquico",
+    "Nivel": "legendario",
+    "Ataque Base": 270,
+    "Defensa Base": 151,
+    "Stamina Base": 181
+  },
+  "483": {
+    "Nombre": "Dialga",
+    "Tipo": "acero/dragon",
+    "Nivel": "legendario",
+    "Ataque Base": 275,
+    "Defensa Base": 211,
+    "Stamina Base": 205
+  },
+  "484": {
+    "Nombre": "Palkia",
+    "Tipo": "agua/dragon",
+    "Nivel": "legendario",
+    "Ataque Base": 280,
+    "Defensa Base": 215,
+    "Stamina Base": 189
+  },
+  "485": {
+    "Nombre": "Heatran",
+    "Tipo": "fuego/acero",
+    "Nivel": "legendario",
+    "Ataque Base": 251,
+    "Defensa Base": 213,
+    "Stamina Base": 209
+  },
+  "486": {
+    "Nombre": "Regigigas",
+    "Tipo": "normal",
+    "Nivel": "legendario",
+    "Ataque Base": 287,
+    "Defensa Base": 210,
+    "Stamina Base": 221
+  },
+  "487": {
+    "Nombre": "Giratina",
+    "Tipo": "fantasma/dragon",
+    "Nivel": "legendario",
+    "Ataque Base": 187,
+    "Defensa Base": 225,
+    "Stamina Base": 284
+  },
+  "488": {
+    "Nombre": "Cresselia",
+    "Tipo": "psiquico",
+    "Nivel": "legendario",
+    "Ataque Base": 152,
+    "Defensa Base": 258,
+    "Stamina Base": 260
+  },
+  "491": {
+    "Nombre": "Darkrai",
+    "Tipo": "siniestro",
+    "Nivel": "singular",
+    "Ataque Base": 285,
+    "Defensa Base": 198,
+    "Stamina Base": 172
+  },
+  "492": {
+    "Nombre": "Shaymin",
+    "Tipo": "planta",
+    "Nivel": "singular",
+    "Ataque Base": 210,
+    "Defensa Base": 210,
+    "Stamina Base": 225
+  },
+  "494": {
+    "Nombre": "Victini",
+    "Tipo": "psiquico/fuego",
+    "Nivel": "singular",
+    "Ataque Base": 210,
+    "Defensa Base": 210,
+    "Stamina Base": 225
+  },
+  "495": {
+    "Nombre": "Snivy",
+    "Tipo": "planta",
+    "Nivel": "normal",
+    "Ataque Base": 88,
+    "Defensa Base": 107,
+    "Stamina Base": 128
+  },
+  "496": {
+    "Nombre": "Servine",
+    "Tipo": "planta",
+    "Nivel": "normal",
+    "Ataque Base": 122,
+    "Defensa Base": 152,
+    "Stamina Base": 155
+  },
+  "497": {
+    "Nombre": "Serperior",
+    "Tipo": "planta",
+    "Nivel": "normal",
+    "Ataque Base": 161,
+    "Defensa Base": 204,
+    "Stamina Base": 181
+  },
+  "498": {
+    "Nombre": "Tepig",
+    "Tipo": "fuego",
+    "Nivel": "normal",
+    "Ataque Base": 115,
+    "Defensa Base": 85,
+    "Stamina Base": 163
+  },
+  "499": {
+    "Nombre": "Pignite",
+    "Tipo": "fuego/lucha",
+    "Nivel": "normal",
+    "Ataque Base": 173,
+    "Defensa Base": 106,
+    "Stamina Base": 207
+  },
+  "500": {
+    "Nombre": "Emboar",
+    "Tipo": "fuego/lucha",
+    "Nivel": "normal",
+    "Ataque Base": 235,
+    "Defensa Base": 127,
+    "Stamina Base": 242
+  },
+  "501": {
+    "Nombre": "Oshawott",
+    "Tipo": "agua",
+    "Nivel": "normal",
+    "Ataque Base": 117,
+    "Defensa Base": 85,
+    "Stamina Base": 146
+  },
+  "502": {
+    "Nombre": "Dewott",
+    "Tipo": "agua",
+    "Nivel": "normal",
+    "Ataque Base": 159,
+    "Defensa Base": 116,
+    "Stamina Base": 181
+  },
+  "503": {
+    "Nombre": "Samurott",
+    "Tipo": "agua",
+    "Nivel": "normal",
+    "Ataque Base": 212,
+    "Defensa Base": 157,
+    "Stamina Base": 216
+  },
+  "504": {
+    "Nombre": "Patrat",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 98,
+    "Defensa Base": 73,
+    "Stamina Base": 128
+  },
+  "505": {
+    "Nombre": "Watchog",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 165,
+    "Defensa Base": 139,
+    "Stamina Base": 155
+  },
+  "506": {
+    "Nombre": "Lillipup",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 107,
+    "Defensa Base": 86,
+    "Stamina Base": 128
+  },
+  "507": {
+    "Nombre": "Herdier",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 145,
+    "Defensa Base": 126,
+    "Stamina Base": 163
+  },
+  "508": {
+    "Nombre": "Stoutland",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 206,
+    "Defensa Base": 182,
+    "Stamina Base": 198
+  },
+  "509": {
+    "Nombre": "Purrloin",
+    "Tipo": "siniestro",
+    "Nivel": "normal",
+    "Ataque Base": 98,
+    "Defensa Base": 73,
+    "Stamina Base": 121
+  },
+  "510": {
+    "Nombre": "Liepard",
+    "Tipo": "siniestro",
+    "Nivel": "normal",
+    "Ataque Base": 187,
+    "Defensa Base": 106,
+    "Stamina Base": 162
+  },
+  "511": {
+    "Nombre": "Pansage",
+    "Tipo": "planta",
+    "Nivel": "normal",
+    "Ataque Base": 104,
+    "Defensa Base": 94,
+    "Stamina Base": 137
+  },
+  "512": {
+    "Nombre": "Simisage",
+    "Tipo": "planta",
+    "Nivel": "normal",
+    "Ataque Base": 206,
+    "Defensa Base": 133,
+    "Stamina Base": 181
+  },
+  "513": {
+    "Nombre": "Pansear",
+    "Tipo": "fuego",
+    "Nivel": "normal",
+    "Ataque Base": 104,
+    "Defensa Base": 94,
+    "Stamina Base": 137
+  },
+  "514": {
+    "Nombre": "Simisear",
+    "Tipo": "fuego",
+    "Nivel": "normal",
+    "Ataque Base": 206,
+    "Defensa Base": 133,
+    "Stamina Base": 181
+  },
+  "515": {
+    "Nombre": "Panpour",
+    "Tipo": "agua",
+    "Nivel": "normal",
+    "Ataque Base": 104,
+    "Defensa Base": 94,
+    "Stamina Base": 137
+  },
+  "516": {
+    "Nombre": "Simipour",
+    "Tipo": "agua",
+    "Nivel": "normal",
+    "Ataque Base": 206,
+    "Defensa Base": 133,
+    "Stamina Base": 181
+  },
+  "517": {
+    "Nombre": "Munna",
+    "Tipo": "psiquico",
+    "Nivel": "normal",
+    "Ataque Base": 111,
+    "Defensa Base": 92,
+    "Stamina Base": 183
+  },
+  "518": {
+    "Nombre": "Musharna",
+    "Tipo": "psiquico",
+    "Nivel": "normal",
+    "Ataque Base": 183,
+    "Defensa Base": 166,
+    "Stamina Base": 253
+  },
+  "519": {
+    "Nombre": "Pidove",
+    "Tipo": "normal/volador",
+    "Nivel": "normal",
+    "Ataque Base": 98,
+    "Defensa Base": 80,
+    "Stamina Base": 137
+  },
+  "520": {
+    "Nombre": "Tranquill",
+    "Tipo": "normal/volador",
+    "Nivel": "normal",
+    "Ataque Base": 144,
+    "Defensa Base": 107,
+    "Stamina Base": 158
+  },
+  "521": {
+    "Nombre": "Unfezant",
+    "Tipo": "normal/volador",
+    "Nivel": "normal",
+    "Ataque Base": 226,
+    "Defensa Base": 146,
+    "Stamina Base": 190
+  },
+  "522": {
+    "Nombre": "Blitzle",
+    "Tipo": "electrico",
+    "Nivel": "normal",
+    "Ataque Base": 118,
+    "Defensa Base": 64,
+    "Stamina Base": 128
+  },
+  "523": {
+    "Nombre": "Zebstrika",
+    "Tipo": "electrico",
+    "Nivel": "normal",
+    "Ataque Base": 211,
+    "Defensa Base": 136,
+    "Stamina Base": 181
+  },
+  "524": {
+    "Nombre": "Roggenrola",
+    "Tipo": "roca",
+    "Nivel": "normal",
+    "Ataque Base": 121,
+    "Defensa Base": 110,
+    "Stamina Base": 146
+  },
+  "525": {
+    "Nombre": "Boldore",
+    "Tipo": "roca",
+    "Nivel": "normal",
+    "Ataque Base": 174,
+    "Defensa Base": 143,
+    "Stamina Base": 172
+  },
+  "526": {
+    "Nombre": "Gigalith",
+    "Tipo": "roca",
+    "Nivel": "normal",
+    "Ataque Base": 226,
+    "Defensa Base": 201,
+    "Stamina Base": 198
+  },
+  "527": {
+    "Nombre": "Woobat",
+    "Tipo": "psiquico/volador",
+    "Nivel": "normal",
+    "Ataque Base": 107,
+    "Defensa Base": 85,
+    "Stamina Base": 163
+  },
+  "528": {
+    "Nombre": "Swoobat",
+    "Tipo": "psiquico/volador",
+    "Nivel": "normal",
+    "Ataque Base": 161,
+    "Defensa Base": 119,
+    "Stamina Base": 167
+  },
+  "529": {
+    "Nombre": "Drilbur",
+    "Tipo": "tierra",
+    "Nivel": "normal",
+    "Ataque Base": 154,
+    "Defensa Base": 85,
+    "Stamina Base": 155
+  },
+  "530": {
+    "Nombre": "Excadrill",
+    "Tipo": "tierra/acero",
+    "Nivel": "normal",
+    "Ataque Base": 255,
+    "Defensa Base": 129,
+    "Stamina Base": 242
+  },
+  "531": {
+    "Nombre": "Audino",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 114,
+    "Defensa Base": 163,
+    "Stamina Base": 230
+  },
+  "532": {
+    "Nombre": "Timburr",
+    "Tipo": "lucha",
+    "Nivel": "normal",
+    "Ataque Base": 134,
+    "Defensa Base": 87,
+    "Stamina Base": 181
+  },
+  "533": {
+    "Nombre": "Gurdurr",
+    "Tipo": "lucha",
+    "Nivel": "normal",
+    "Ataque Base": 180,
+    "Defensa Base": 134,
+    "Stamina Base": 198
+  },
+  "534": {
+    "Nombre": "Conkeldurr",
+    "Tipo": "lucha",
+    "Nivel": "normal",
+    "Ataque Base": 243,
+    "Defensa Base": 158,
+    "Stamina Base": 233
+  },
+  "535": {
+    "Nombre": "Tympole",
+    "Tipo": "agua",
+    "Nivel": "normal",
+    "Ataque Base": 98,
+    "Defensa Base": 78,
+    "Stamina Base": 137
+  },
+  "536": {
+    "Nombre": "Palpitoad",
+    "Tipo": "agua/tierra",
+    "Nivel": "normal",
+    "Ataque Base": 128,
+    "Defensa Base": 109,
+    "Stamina Base": 181
+  },
+  "537": {
+    "Nombre": "Seismitoad",
+    "Tipo": "agua/tierra",
+    "Nivel": "normal",
+    "Ataque Base": 188,
+    "Defensa Base": 150,
+    "Stamina Base": 233
+  },
+  "538": {
+    "Nombre": "Throh",
+    "Tipo": "lucha",
+    "Nivel": "normal",
+    "Ataque Base": 172,
+    "Defensa Base": 160,
+    "Stamina Base": 260
+  },
+  "539": {
+    "Nombre": "Sawk",
+    "Tipo": "lucha",
+    "Nivel": "normal",
+    "Ataque Base": 231,
+    "Defensa Base": 153,
+    "Stamina Base": 181
+  },
+  "540": {
+    "Nombre": "Sewaddle",
+    "Tipo": "bicho/planta",
+    "Nivel": "normal",
+    "Ataque Base": 96,
+    "Defensa Base": 124,
+    "Stamina Base": 128
+  },
+  "541": {
+    "Nombre": "Swadloon",
+    "Tipo": "bicho/planta",
+    "Nivel": "normal",
+    "Ataque Base": 115,
+    "Defensa Base": 162,
+    "Stamina Base": 146
+  },
+  "542": {
+    "Nombre": "Leavanny",
+    "Tipo": "bicho/planta",
+    "Nivel": "normal",
+    "Ataque Base": 205,
+    "Defensa Base": 165,
+    "Stamina Base": 181
+  },
+  "543": {
+    "Nombre": "Venipede",
+    "Tipo": "bicho/veneno",
+    "Nivel": "normal",
+    "Ataque Base": 83,
+    "Defensa Base": 99,
+    "Stamina Base": 102
+  },
+  "544": {
+    "Nombre": "Whirlipede",
+    "Tipo": "bicho/veneno",
+    "Nivel": "normal",
+    "Ataque Base": 100,
+    "Defensa Base": 173,
+    "Stamina Base": 120
+  },
+  "545": {
+    "Nombre": "Scolipede",
+    "Tipo": "bicho/veneno",
+    "Nivel": "normal",
+    "Ataque Base": 203,
+    "Defensa Base": 175,
+    "Stamina Base": 155
+  },
+  "546": {
+    "Nombre": "Cottonee",
+    "Tipo": "planta/hada",
+    "Nivel": "normal",
+    "Ataque Base": 71,
+    "Defensa Base": 111,
+    "Stamina Base": 120
+  },
+  "547": {
+    "Nombre": "Whimsicott",
+    "Tipo": "planta/hada",
+    "Nivel": "normal",
+    "Ataque Base": 164,
+    "Defensa Base": 176,
+    "Stamina Base": 155
+  },
+  "548": {
+    "Nombre": "Petilil",
+    "Tipo": "planta",
+    "Nivel": "normal",
+    "Ataque Base": 119,
+    "Defensa Base": 91,
+    "Stamina Base": 128
+  },
+  "549": {
+    "Nombre": "Lilligant",
+    "Tipo": "planta",
+    "Nivel": "normal",
+    "Ataque Base": 214,
+    "Defensa Base": 155,
+    "Stamina Base": 172
+  },
+  "550": {
+    "Nombre": "Basculin",
+    "Tipo": "agua",
+    "Nivel": "normal",
+    "Ataque Base": 189,
+    "Defensa Base": 129,
+    "Stamina Base": 172
+  },
+  "551": {
+    "Nombre": "Sandile",
+    "Tipo": "tierra/siniestro",
+    "Nivel": "normal",
+    "Ataque Base": 132,
+    "Defensa Base": 69,
+    "Stamina Base": 137
+  },
+  "552": {
+    "Nombre": "Krokorok",
+    "Tipo": "tierra/siniestro",
+    "Nivel": "normal",
+    "Ataque Base": 155,
+    "Defensa Base": 90,
+    "Stamina Base": 155
+  },
+  "553": {
+    "Nombre": "Krookodile",
+    "Tipo": "tierra/siniestro",
+    "Nivel": "normal",
+    "Ataque Base": 229,
+    "Defensa Base": 158,
+    "Stamina Base": 216
+  },
+  "554": {
+    "Nombre": "Darumaka",
+    "Tipo": "fuego",
+    "Nivel": "normal",
+    "Ataque Base": 153,
+    "Defensa Base": 86,
+    "Stamina Base": 172
+  },
+  "555": {
+    "Nombre": "Darmanitan",
+    "Tipo": "hielo",
+    "Nivel": "normal",
+    "Ataque Base": 263,
+    "Defensa Base": 114,
+    "Stamina Base": 233
+  },
+  "556": {
+    "Nombre": "Maractus",
+    "Tipo": "planta",
+    "Nivel": "normal",
+    "Ataque Base": 201,
+    "Defensa Base": 130,
+    "Stamina Base": 181
+  },
+  "557": {
+    "Nombre": "Dwebble",
+    "Tipo": "bicho/roca",
+    "Nivel": "normal",
+    "Ataque Base": 118,
+    "Defensa Base": 128,
+    "Stamina Base": 137
+  },
+  "558": {
+    "Nombre": "Crustle",
+    "Tipo": "bicho/roca",
+    "Nivel": "normal",
+    "Ataque Base": 188,
+    "Defensa Base": 200,
+    "Stamina Base": 172
+  },
+  "559": {
+    "Nombre": "Scraggy",
+    "Tipo": "siniestro/lucha",
+    "Nivel": "normal",
+    "Ataque Base": 132,
+    "Defensa Base": 132,
+    "Stamina Base": 137
+  },
+  "560": {
+    "Nombre": "Scrafty",
+    "Tipo": "siniestro/lucha",
+    "Nivel": "normal",
+    "Ataque Base": 163,
+    "Defensa Base": 222,
+    "Stamina Base": 163
+  },
+  "561": {
+    "Nombre": "Sigilyph",
+    "Tipo": "psiquico/volador",
+    "Nivel": "normal",
+    "Ataque Base": 204,
+    "Defensa Base": 167,
+    "Stamina Base": 176
+  },
+  "562": {
+    "Nombre": "Yamask",
+    "Tipo": "fantasma",
+    "Nivel": "normal",
+    "Ataque Base": 95,
+    "Defensa Base": 141,
+    "Stamina Base": 116
+  },
+  "563": {
+    "Nombre": "Cofagrigus",
+    "Tipo": "fantasma",
+    "Nivel": "normal",
+    "Ataque Base": 163,
+    "Defensa Base": 237,
+    "Stamina Base": 151
+  },
+  "564": {
+    "Nombre": "Tirtouga",
+    "Tipo": "agua/roca",
+    "Nivel": "normal",
+    "Ataque Base": 134,
+    "Defensa Base": 146,
+    "Stamina Base": 144
+  },
+  "565": {
+    "Nombre": "Carracosta",
+    "Tipo": "agua/roca",
+    "Nivel": "normal",
+    "Ataque Base": 192,
+    "Defensa Base": 197,
+    "Stamina Base": 179
+  },
+  "566": {
+    "Nombre": "Archen",
+    "Tipo": "roca/volador",
+    "Nivel": "normal",
+    "Ataque Base": 213,
+    "Defensa Base": 89,
+    "Stamina Base": 146
+  },
+  "567": {
+    "Nombre": "Archeops",
+    "Tipo": "roca/volador",
+    "Nivel": "normal",
+    "Ataque Base": 292,
+    "Defensa Base": 139,
+    "Stamina Base": 181
+  },
+  "568": {
+    "Nombre": "Trubbish",
+    "Tipo": "veneno",
+    "Nivel": "normal",
+    "Ataque Base": 96,
+    "Defensa Base": 122,
+    "Stamina Base": 137
+  },
+  "569": {
+    "Nombre": "Garbodor",
+    "Tipo": "veneno",
+    "Nivel": "normal",
+    "Ataque Base": 181,
+    "Defensa Base": 164,
+    "Stamina Base": 190
+  },
+  "570": {
+    "Nombre": "Zorua",
+    "Tipo": "siniestro",
+    "Nivel": "normal",
+    "Ataque Base": 153,
+    "Defensa Base": 78,
+    "Stamina Base": 120
+  },
+  "571": {
+    "Nombre": "Zoroark",
+    "Tipo": "siniestro",
+    "Nivel": "normal",
+    "Ataque Base": 250,
+    "Defensa Base": 127,
+    "Stamina Base": 155
+  },
+  "572": {
+    "Nombre": "Minccino",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 98,
+    "Defensa Base": 80,
+    "Stamina Base": 146
+  },
+  "573": {
+    "Nombre": "Cinccino",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 198,
+    "Defensa Base": 130,
+    "Stamina Base": 181
+  },
+  "574": {
+    "Nombre": "Gothita",
+    "Tipo": "psiquico",
+    "Nivel": "normal",
+    "Ataque Base": 98,
+    "Defensa Base": 112,
+    "Stamina Base": 128
+  },
+  "575": {
+    "Nombre": "Gothorita",
+    "Tipo": "psiquico",
+    "Nivel": "normal",
+    "Ataque Base": 137,
+    "Defensa Base": 153,
+    "Stamina Base": 155
+  },
+  "576": {
+    "Nombre": "Gothitelle",
+    "Tipo": "psiquico",
+    "Nivel": "normal",
+    "Ataque Base": 176,
+    "Defensa Base": 205,
+    "Stamina Base": 172
+  },
+  "577": {
+    "Nombre": "Solosis",
+    "Tipo": "psiquico",
+    "Nivel": "normal",
+    "Ataque Base": 170,
+    "Defensa Base": 83,
+    "Stamina Base": 128
+  },
+  "578": {
+    "Nombre": "Duosion",
+    "Tipo": "psiquico",
+    "Nivel": "normal",
+    "Ataque Base": 208,
+    "Defensa Base": 103,
+    "Stamina Base": 163
+  },
+  "579": {
+    "Nombre": "Reuniclus",
+    "Tipo": "psiquico",
+    "Nivel": "normal",
+    "Ataque Base": 214,
+    "Defensa Base": 148,
+    "Stamina Base": 242
+  },
+  "580": {
+    "Nombre": "Ducklett",
+    "Tipo": "agua/volador",
+    "Nivel": "normal",
+    "Ataque Base": 84,
+    "Defensa Base": 96,
+    "Stamina Base": 158
+  },
+  "581": {
+    "Nombre": "Swanna",
+    "Tipo": "agua/volador",
+    "Nivel": "normal",
+    "Ataque Base": 182,
+    "Defensa Base": 132,
+    "Stamina Base": 181
+  },
+  "582": {
+    "Nombre": "Vanillite",
+    "Tipo": "hielo",
+    "Nivel": "normal",
+    "Ataque Base": 118,
+    "Defensa Base": 106,
+    "Stamina Base": 113
+  },
+  "583": {
+    "Nombre": "Vanillish",
+    "Tipo": "hielo",
+    "Nivel": "normal",
+    "Ataque Base": 151,
+    "Defensa Base": 138,
+    "Stamina Base": 139
+  },
+  "584": {
+    "Nombre": "Vanilluxe",
+    "Tipo": "hielo",
+    "Nivel": "normal",
+    "Ataque Base": 218,
+    "Defensa Base": 184,
+    "Stamina Base": 174
+  },
+  "585": {
+    "Nombre": "Deerling",
+    "Tipo": "normal/planta",
+    "Nivel": "normal",
+    "Ataque Base": 115,
+    "Defensa Base": 100,
+    "Stamina Base": 155
+  },
+  "586": {
+    "Nombre": "Sawsbuck",
+    "Tipo": "normal/planta",
+    "Nivel": "normal",
+    "Ataque Base": 198,
+    "Defensa Base": 146,
+    "Stamina Base": 190
+  },
+  "587": {
+    "Nombre": "Emolga",
+    "Tipo": "electrico/volador",
+    "Nivel": "normal",
+    "Ataque Base": 158,
+    "Defensa Base": 127,
+    "Stamina Base": 146
+  },
+  "588": {
+    "Nombre": "Karrablast",
+    "Tipo": "bicho",
+    "Nivel": "normal",
+    "Ataque Base": 137,
+    "Defensa Base": 87,
+    "Stamina Base": 137
+  },
+  "589": {
+    "Nombre": "Escavalier",
+    "Tipo": "bicho/acero",
+    "Nivel": "normal",
+    "Ataque Base": 223,
+    "Defensa Base": 187,
+    "Stamina Base": 172
+  },
+  "590": {
+    "Nombre": "Foongus",
+    "Tipo": "planta/veneno",
+    "Nivel": "normal",
+    "Ataque Base": 97,
+    "Defensa Base": 91,
+    "Stamina Base": 170
+  },
+  "591": {
+    "Nombre": "Amoonguss",
+    "Tipo": "planta/veneno",
+    "Nivel": "normal",
+    "Ataque Base": 155,
+    "Defensa Base": 139,
+    "Stamina Base": 249
+  },
+  "592": {
+    "Nombre": "Frillish",
+    "Tipo": "agua/fantasma",
+    "Nivel": "normal",
+    "Ataque Base": 115,
+    "Defensa Base": 134,
+    "Stamina Base": 146
+  },
+  "593": {
+    "Nombre": "Jellicent",
+    "Tipo": "agua/fantasma",
+    "Nivel": "normal",
+    "Ataque Base": 159,
+    "Defensa Base": 178,
+    "Stamina Base": 225
+  },
+  "594": {
+    "Nombre": "Alomomola",
+    "Tipo": "agua",
+    "Nivel": "normal",
+    "Ataque Base": 138,
+    "Defensa Base": 131,
+    "Stamina Base": 338
+  },
+  "595": {
+    "Nombre": "Joltik",
+    "Tipo": "bicho/electrico",
+    "Nivel": "normal",
+    "Ataque Base": 110,
+    "Defensa Base": 98,
+    "Stamina Base": 137
+  },
+  "596": {
+    "Nombre": "Galvantula",
+    "Tipo": "bicho/electrico",
+    "Nivel": "normal",
+    "Ataque Base": 201,
+    "Defensa Base": 128,
+    "Stamina Base": 172
+  },
+  "597": {
+    "Nombre": "Ferroseed",
+    "Tipo": "planta/acero",
+    "Nivel": "normal",
+    "Ataque Base": 82,
+    "Defensa Base": 155,
+    "Stamina Base": 127
+  },
+  "598": {
+    "Nombre": "Ferrothorn",
+    "Tipo": "planta/acero",
+    "Nivel": "normal",
+    "Ataque Base": 158,
+    "Defensa Base": 223,
+    "Stamina Base": 179
+  },
+  "599": {
+    "Nombre": "Klink",
+    "Tipo": "acero",
+    "Nivel": "normal",
+    "Ataque Base": 98,
+    "Defensa Base": 121,
+    "Stamina Base": 120
+  },
+  "600": {
+    "Nombre": "Klang",
+    "Tipo": "acero",
+    "Nivel": "normal",
+    "Ataque Base": 150,
+    "Defensa Base": 174,
+    "Stamina Base": 155
+  },
+  "601": {
+    "Nombre": "Klinklang",
+    "Tipo": "acero",
+    "Nivel": "normal",
+    "Ataque Base": 199,
+    "Defensa Base": 214,
+    "Stamina Base": 155
+  },
+  "602": {
+    "Nombre": "Tynamo",
+    "Tipo": "electrico",
+    "Nivel": "normal",
+    "Ataque Base": 105,
+    "Defensa Base": 78,
+    "Stamina Base": 111
+  },
+  "603": {
+    "Nombre": "Eelektrik",
+    "Tipo": "electrico",
+    "Nivel": "normal",
+    "Ataque Base": 156,
+    "Defensa Base": 130,
+    "Stamina Base": 163
+  },
+  "604": {
+    "Nombre": "Eelektross",
+    "Tipo": "electrico",
+    "Nivel": "normal",
+    "Ataque Base": 217,
+    "Defensa Base": 152,
+    "Stamina Base": 198
+  },
+  "605": {
+    "Nombre": "Elgyem",
+    "Tipo": "psiquico",
+    "Nivel": "normal",
+    "Ataque Base": 148,
+    "Defensa Base": 100,
+    "Stamina Base": 146
+  },
+  "606": {
+    "Nombre": "Beheeyem",
+    "Tipo": "psiquico",
+    "Nivel": "normal",
+    "Ataque Base": 221,
+    "Defensa Base": 163,
+    "Stamina Base": 181
+  },
+  "607": {
+    "Nombre": "Litwick",
+    "Tipo": "fantasma/fuego",
+    "Nivel": "normal",
+    "Ataque Base": 108,
+    "Defensa Base": 98,
+    "Stamina Base": 137
+  },
+  "608": {
+    "Nombre": "Lampent",
+    "Tipo": "fantasma/fuego",
+    "Nivel": "normal",
+    "Ataque Base": 169,
+    "Defensa Base": 115,
+    "Stamina Base": 155
+  },
+  "609": {
+    "Nombre": "Chandelure",
+    "Tipo": "fantasma/fuego",
+    "Nivel": "normal",
+    "Ataque Base": 271,
+    "Defensa Base": 182,
+    "Stamina Base": 155
+  },
+  "610": {
+    "Nombre": "Axew",
+    "Tipo": "dragon",
+    "Nivel": "normal",
+    "Ataque Base": 154,
+    "Defensa Base": 101,
+    "Stamina Base": 130
+  },
+  "611": {
+    "Nombre": "Fraxure",
+    "Tipo": "dragon",
+    "Nivel": "normal",
+    "Ataque Base": 212,
+    "Defensa Base": 123,
+    "Stamina Base": 165
+  },
+  "612": {
+    "Nombre": "Haxorus",
+    "Tipo": "dragon",
+    "Nivel": "normal",
+    "Ataque Base": 284,
+    "Defensa Base": 172,
+    "Stamina Base": 183
+  },
+  "613": {
+    "Nombre": "Cubchoo",
+    "Tipo": "hielo",
+    "Nivel": "normal",
+    "Ataque Base": 128,
+    "Defensa Base": 74,
+    "Stamina Base": 146
+  },
+  "614": {
+    "Nombre": "Beartic",
+    "Tipo": "hielo",
+    "Nivel": "normal",
+    "Ataque Base": 233,
+    "Defensa Base": 152,
+    "Stamina Base": 216
+  },
+  "615": {
+    "Nombre": "Cryogonal",
+    "Tipo": "hielo",
+    "Nivel": "normal",
+    "Ataque Base": 190,
+    "Defensa Base": 218,
+    "Stamina Base": 190
+  },
+  "616": {
+    "Nombre": "Shelmet",
+    "Tipo": "bicho",
+    "Nivel": "normal",
+    "Ataque Base": 72,
+    "Defensa Base": 140,
+    "Stamina Base": 137
+  },
+  "617": {
+    "Nombre": "Accelgor",
+    "Tipo": "bicho",
+    "Nivel": "normal",
+    "Ataque Base": 220,
+    "Defensa Base": 120,
+    "Stamina Base": 190
+  },
+  "618": {
+    "Nombre": "Stunfisk",
+    "Tipo": "tierra/electrico",
+    "Nivel": "normal",
+    "Ataque Base": 144,
+    "Defensa Base": 171,
+    "Stamina Base": 240
+  },
+  "619": {
+    "Nombre": "Mienfoo",
+    "Tipo": "lucha",
+    "Nivel": "normal",
+    "Ataque Base": 160,
+    "Defensa Base": 98,
+    "Stamina Base": 128
+  },
+  "620": {
+    "Nombre": "Mienshao",
+    "Tipo": "lucha",
+    "Nivel": "normal",
+    "Ataque Base": 258,
+    "Defensa Base": 127,
+    "Stamina Base": 163
+  },
+  "621": {
+    "Nombre": "Druddigon",
+    "Tipo": "dragon",
+    "Nivel": "normal",
+    "Ataque Base": 213,
+    "Defensa Base": 170,
+    "Stamina Base": 184
+  },
+  "622": {
+    "Nombre": "Golett",
+    "Tipo": "tierra/fantasma",
+    "Nivel": "normal",
+    "Ataque Base": 127,
+    "Defensa Base": 92,
+    "Stamina Base": 153
+  },
+  "623": {
+    "Nombre": "Golurk",
+    "Tipo": "tierra/fantasma",
+    "Nivel": "normal",
+    "Ataque Base": 222,
+    "Defensa Base": 154,
+    "Stamina Base": 205
+  },
+  "624": {
+    "Nombre": "Pawniard",
+    "Tipo": "siniestro/acero",
+    "Nivel": "normal",
+    "Ataque Base": 154,
+    "Defensa Base": 114,
+    "Stamina Base": 128
+  },
+  "625": {
+    "Nombre": "Bisharp",
+    "Tipo": "siniestro/acero",
+    "Nivel": "normal",
+    "Ataque Base": 232,
+    "Defensa Base": 176,
+    "Stamina Base": 163
+  },
+  "626": {
+    "Nombre": "Bouffalant",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 195,
+    "Defensa Base": 182,
+    "Stamina Base": 216
+  },
+  "627": {
+    "Nombre": "Rufflet",
+    "Tipo": "normal/volador",
+    "Nivel": "normal",
+    "Ataque Base": 150,
+    "Defensa Base": 97,
+    "Stamina Base": 172
+  },
+  "628": {
+    "Nombre": "Braviary",
+    "Tipo": "normal/volador",
+    "Nivel": "normal",
+    "Ataque Base": 232,
+    "Defensa Base": 152,
+    "Stamina Base": 225
+  },
+  "629": {
+    "Nombre": "Vullaby",
+    "Tipo": "siniestro/volador",
+    "Nivel": "normal",
+    "Ataque Base": 105,
+    "Defensa Base": 139,
+    "Stamina Base": 172
+  },
+  "630": {
+    "Nombre": "Mandibuzz",
+    "Tipo": "siniestro/volador",
+    "Nivel": "normal",
+    "Ataque Base": 129,
+    "Defensa Base": 205,
+    "Stamina Base": 242
+  },
+  "631": {
+    "Nombre": "Heatmor",
+    "Tipo": "fuego",
+    "Nivel": "normal",
+    "Ataque Base": 204,
+    "Defensa Base": 129,
+    "Stamina Base": 198
+  },
+  "632": {
+    "Nombre": "Durant",
+    "Tipo": "bicho/acero",
+    "Nivel": "normal",
+    "Ataque Base": 217,
+    "Defensa Base": 188,
+    "Stamina Base": 151
+  },
+  "633": {
+    "Nombre": "Deino",
+    "Tipo": "siniestro/dragon",
+    "Nivel": "normal",
+    "Ataque Base": 116,
+    "Defensa Base": 93,
+    "Stamina Base": 141
+  },
+  "634": {
+    "Nombre": "Zweilous",
+    "Tipo": "siniestro/dragon",
+    "Nivel": "normal",
+    "Ataque Base": 159,
+    "Defensa Base": 135,
+    "Stamina Base": 176
+  },
+  "635": {
+    "Nombre": "Hydreigon",
+    "Tipo": "siniestro/dragon",
+    "Nivel": "normal",
+    "Ataque Base": 256,
+    "Defensa Base": 188,
+    "Stamina Base": 211
+  },
+  "636": {
+    "Nombre": "Larvesta",
+    "Tipo": "bicho/fuego",
+    "Nivel": "normal",
+    "Ataque Base": 156,
+    "Defensa Base": 107,
+    "Stamina Base": 146
+  },
+  "637": {
+    "Nombre": "Volcarona",
+    "Tipo": "bicho/fuego",
+    "Nivel": "normal",
+    "Ataque Base": 264,
+    "Defensa Base": 189,
+    "Stamina Base": 198
+  },
+  "638": {
+    "Nombre": "Cobalion",
+    "Tipo": "acero/lucha",
+    "Nivel": "legendario",
+    "Ataque Base": 192,
+    "Defensa Base": 229,
+    "Stamina Base": 209
+  },
+  "639": {
+    "Nombre": "Terrakion",
+    "Tipo": "roca/lucha",
+    "Nivel": "legendario",
+    "Ataque Base": 260,
+    "Defensa Base": 192,
+    "Stamina Base": 209
+  },
+  "640": {
+    "Nombre": "Virizion",
+    "Tipo": "planta/lucha",
+    "Nivel": "legendario",
+    "Ataque Base": 192,
+    "Defensa Base": 229,
+    "Stamina Base": 209
+  },
+  "641": {
+    "Nombre": "Tornadus",
+    "Tipo": "volador",
+    "Nivel": "legendario",
+    "Ataque Base": 266,
+    "Defensa Base": 164,
+    "Stamina Base": 188
+  },
+  "642": {
+    "Nombre": "Thundurus",
+    "Tipo": "electrico/volador",
+    "Nivel": "legendario",
+    "Ataque Base": 266,
+    "Defensa Base": 164,
+    "Stamina Base": 188
+  },
+  "643": {
+    "Nombre": "Reshiram",
+    "Tipo": "dragon/fuego",
+    "Nivel": "legendario",
+    "Ataque Base": 275,
+    "Defensa Base": 211,
+    "Stamina Base": 205
+  },
+  "644": {
+    "Nombre": "Zekrom",
+    "Tipo": "dragon/electrico",
+    "Nivel": "legendario",
+    "Ataque Base": 275,
+    "Defensa Base": 211,
+    "Stamina Base": 205
+  },
+  "645": {
+    "Nombre": "Landorus",
+    "Tipo": "tierra/volador",
+    "Nivel": "legendario",
+    "Ataque Base": 261,
+    "Defensa Base": 182,
+    "Stamina Base": 205
+  },
+  "646": {
+    "Nombre": "Kyurem",
+    "Tipo": "dragon/hielo",
+    "Nivel": "legendario",
+    "Ataque Base": 246,
+    "Defensa Base": 170,
+    "Stamina Base": 245
+  },
+  "647": {
+    "Nombre": "Keldeo",
+    "Tipo": "agua/lucha",
+    "Nivel": "singular",
+    "Ataque Base": 260,
+    "Defensa Base": 192,
+    "Stamina Base": 209
+  },
+  "648": {
+    "Nombre": "Meloetta",
+    "Tipo": "normal/psiquico",
+    "Nivel": "singular",
+    "Ataque Base": 250,
+    "Defensa Base": 225,
+    "Stamina Base": 225
+  },
+  "649": {
+    "Nombre": "Genesect",
+    "Tipo": "bicho/acero",
+    "Nivel": "singular",
+    "Ataque Base": 252,
+    "Defensa Base": 199,
+    "Stamina Base": 174
+  },
+  "650": {
+    "Nombre": "Chespin",
+    "Tipo": "planta",
+    "Nivel": "normal",
+    "Ataque Base": 110,
+    "Defensa Base": 106,
+    "Stamina Base": 148
+  },
+  "651": {
+    "Nombre": "Quilladin",
+    "Tipo": "planta",
+    "Nivel": "normal",
+    "Ataque Base": 146,
+    "Defensa Base": 156,
+    "Stamina Base": 156
+  },
+  "652": {
+    "Nombre": "Chesnaught",
+    "Tipo": "planta/lucha",
+    "Nivel": "normal",
+    "Ataque Base": 201,
+    "Defensa Base": 204,
+    "Stamina Base": 204
+  },
+  "653": {
+    "Nombre": "Fennekin",
+    "Tipo": "fuego",
+    "Nivel": "normal",
+    "Ataque Base": 116,
+    "Defensa Base": 102,
+    "Stamina Base": 120
+  },
+  "654": {
+    "Nombre": "Braixen",
+    "Tipo": "fuego",
+    "Nivel": "normal",
+    "Ataque Base": 171,
+    "Defensa Base": 130,
+    "Stamina Base": 153
+  },
+  "655": {
+    "Nombre": "Delphox",
+    "Tipo": "fuego/psiquico",
+    "Nivel": "normal",
+    "Ataque Base": 230,
+    "Defensa Base": 189,
+    "Stamina Base": 181
+  },
+  "656": {
+    "Nombre": "Froakie",
+    "Tipo": "agua",
+    "Nivel": "normal",
+    "Ataque Base": 122,
+    "Defensa Base": 84,
+    "Stamina Base": 121
+  },
+  "657": {
+    "Nombre": "Frogadier",
+    "Tipo": "agua",
+    "Nivel": "normal",
+    "Ataque Base": 168,
+    "Defensa Base": 114,
+    "Stamina Base": 144
+  },
+  "658": {
+    "Nombre": "Greninja",
+    "Tipo": "agua/siniestro",
+    "Nivel": "normal",
+    "Ataque Base": 223,
+    "Defensa Base": 152,
+    "Stamina Base": 176
+  },
+  "659": {
+    "Nombre": "Bunnelby",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 68,
+    "Defensa Base": 72,
+    "Stamina Base": 116
+  },
+  "660": {
+    "Nombre": "Diggersby",
+    "Tipo": "normal/tierra",
+    "Nivel": "normal",
+    "Ataque Base": 112,
+    "Defensa Base": 155,
+    "Stamina Base": 198
+  },
+  "661": {
+    "Nombre": "Fletchling",
+    "Tipo": "normal/volador",
+    "Nivel": "normal",
+    "Ataque Base": 95,
+    "Defensa Base": 80,
+    "Stamina Base": 128
+  },
+  "662": {
+    "Nombre": "Fletchinder",
+    "Tipo": "fuego/volador",
+    "Nivel": "normal",
+    "Ataque Base": 145,
+    "Defensa Base": 110,
+    "Stamina Base": 158
+  },
+  "663": {
+    "Nombre": "Talonflame",
+    "Tipo": "fuego/volador",
+    "Nivel": "normal",
+    "Ataque Base": 176,
+    "Defensa Base": 155,
+    "Stamina Base": 186
+  },
+  "664": {
+    "Nombre": "Scatterbug",
+    "Tipo": "bicho",
+    "Nivel": "normal",
+    "Ataque Base": 63,
+    "Defensa Base": 63,
+    "Stamina Base": 116
+  },
+  "665": {
+    "Nombre": "Spewpa",
+    "Tipo": "bicho",
+    "Nivel": "normal",
+    "Ataque Base": 48,
+    "Defensa Base": 89,
+    "Stamina Base": 128
+  },
+  "666": {
+    "Nombre": "Vivillon",
+    "Tipo": "bicho/volador",
+    "Nivel": "normal",
+    "Ataque Base": 176,
+    "Defensa Base": 103,
+    "Stamina Base": 190
+  },
+  "667": {
+    "Nombre": "Litleo",
+    "Tipo": "fuego/normal",
+    "Nivel": "normal",
+    "Ataque Base": 139,
+    "Defensa Base": 112,
+    "Stamina Base": 158
+  },
+  "668": {
+    "Nombre": "Pyroar",
+    "Tipo": "fuego/normal",
+    "Nivel": "normal",
+    "Ataque Base": 221,
+    "Defensa Base": 149,
+    "Stamina Base": 200
+  },
+  "669": {
+    "Nombre": "Flabebe",
+    "Tipo": "hada",
+    "Nivel": "normal",
+    "Ataque Base": 108,
+    "Defensa Base": 120,
+    "Stamina Base": 127
+  },
+  "670": {
+    "Nombre": "Floette",
+    "Tipo": "hada",
+    "Nivel": "normal",
+    "Ataque Base": 136,
+    "Defensa Base": 151,
+    "Stamina Base": 144
+  },
+  "671": {
+    "Nombre": "Florges",
+    "Tipo": "hada",
+    "Nivel": "normal",
+    "Ataque Base": 212,
+    "Defensa Base": 244,
+    "Stamina Base": 186
+  },
+  "672": {
+    "Nombre": "Skiddo",
+    "Tipo": "planta",
+    "Nivel": "normal",
+    "Ataque Base": 123,
+    "Defensa Base": 102,
+    "Stamina Base": 165
+  },
+  "673": {
+    "Nombre": "Gogoat",
+    "Tipo": "planta",
+    "Nivel": "normal",
+    "Ataque Base": 196,
+    "Defensa Base": 146,
+    "Stamina Base": 265
+  },
+  "674": {
+    "Nombre": "Pancham",
+    "Tipo": "lucha",
+    "Nivel": "normal",
+    "Ataque Base": 145,
+    "Defensa Base": 107,
+    "Stamina Base": 167
+  },
+  "675": {
+    "Nombre": "Pangoro",
+    "Tipo": "lucha/siniestro",
+    "Nivel": "normal",
+    "Ataque Base": 226,
+    "Defensa Base": 146,
+    "Stamina Base": 216
+  },
+  "676": {
+    "Nombre": "Furfrou",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 164,
+    "Defensa Base": 167,
+    "Stamina Base": 181
+  },
+  "677": {
+    "Nombre": "Espurr",
+    "Tipo": "psiquico",
+    "Nivel": "normal",
+    "Ataque Base": 120,
+    "Defensa Base": 114,
+    "Stamina Base": 158
+  },
+  "678": {
+    "Nombre": "Meowstic",
+    "Tipo": "psiquico",
+    "Nivel": "normal",
+    "Ataque Base": 166,
+    "Defensa Base": 167,
+    "Stamina Base": 179
+  },
+  "679": {
+    "Nombre": "Honedge",
+    "Tipo": "acero/fantasma",
+    "Nivel": "normal",
+    "Ataque Base": 135,
+    "Defensa Base": 139,
+    "Stamina Base": 128
+  },
+  "680": {
+    "Nombre": "Doublade",
+    "Tipo": "acero/fantasma",
+    "Nivel": "normal",
+    "Ataque Base": 188,
+    "Defensa Base": 206,
+    "Stamina Base": 153
+  },
+  "681": {
+    "Nombre": "Aegislash",
+    "Tipo": "acero/fantasma",
+    "Nivel": "normal",
+    "Ataque Base": 272,
+    "Defensa Base": 97,
+    "Stamina Base": 155
+  },
+  "682": {
+    "Nombre": "Spritzee",
+    "Tipo": "hada",
+    "Nivel": "normal",
+    "Ataque Base": 110,
+    "Defensa Base": 113,
+    "Stamina Base": 186
+  },
+  "683": {
+    "Nombre": "Aromatisse",
+    "Tipo": "hada",
+    "Nivel": "normal",
+    "Ataque Base": 173,
+    "Defensa Base": 150,
+    "Stamina Base": 226
+  },
+  "684": {
+    "Nombre": "Swirlix",
+    "Tipo": "hada",
+    "Nivel": "normal",
+    "Ataque Base": 109,
+    "Defensa Base": 119,
+    "Stamina Base": 158
+  },
+  "685": {
+    "Nombre": "Slurpuff",
+    "Tipo": "hada",
+    "Nivel": "normal",
+    "Ataque Base": 168,
+    "Defensa Base": 163,
+    "Stamina Base": 193
+  },
+  "686": {
+    "Nombre": "Inkay",
+    "Tipo": "siniestro/psiquico",
+    "Nivel": "normal",
+    "Ataque Base": 98,
+    "Defensa Base": 95,
+    "Stamina Base": 142
+  },
+  "687": {
+    "Nombre": "Malamar",
+    "Tipo": "siniestro/psiquico",
+    "Nivel": "normal",
+    "Ataque Base": 177,
+    "Defensa Base": 165,
+    "Stamina Base": 200
+  },
+  "688": {
+    "Nombre": "Binacle",
+    "Tipo": "roca/agua",
+    "Nivel": "normal",
+    "Ataque Base": 96,
+    "Defensa Base": 120,
+    "Stamina Base": 123
+  },
+  "689": {
+    "Nombre": "Barbaracle",
+    "Tipo": "roca/agua",
+    "Nivel": "normal",
+    "Ataque Base": 194,
+    "Defensa Base": 205,
+    "Stamina Base": 176
+  },
+  "690": {
+    "Nombre": "Skrelp",
+    "Tipo": "veneno/agua",
+    "Nivel": "normal",
+    "Ataque Base": 109,
+    "Defensa Base": 109,
+    "Stamina Base": 137
+  },
+  "691": {
+    "Nombre": "Dragalge",
+    "Tipo": "veneno/dragon",
+    "Nivel": "normal",
+    "Ataque Base": 177,
+    "Defensa Base": 207,
+    "Stamina Base": 163
+  },
+  "692": {
+    "Nombre": "Clauncher",
+    "Tipo": "agua",
+    "Nivel": "normal",
+    "Ataque Base": 108,
+    "Defensa Base": 117,
+    "Stamina Base": 137
+  },
+  "693": {
+    "Nombre": "Clawitzer",
+    "Tipo": "agua",
+    "Nivel": "normal",
+    "Ataque Base": 221,
+    "Defensa Base": 171,
+    "Stamina Base": 174
+  },
+  "694": {
+    "Nombre": "Helioptile",
+    "Tipo": "electrico/normal",
+    "Nivel": "normal",
+    "Ataque Base": 115,
+    "Defensa Base": 78,
+    "Stamina Base": 127
+  },
+  "695": {
+    "Nombre": "Heliolisk",
+    "Tipo": "electrico/normal",
+    "Nivel": "normal",
+    "Ataque Base": 219,
+    "Defensa Base": 168,
+    "Stamina Base": 158
+  },
+  "696": {
+    "Nombre": "Tyrunt",
+    "Tipo": "roca/dragon",
+    "Nivel": "normal",
+    "Ataque Base": 158,
+    "Defensa Base": 123,
+    "Stamina Base": 151
+  },
+  "697": {
+    "Nombre": "Tyrantrum",
+    "Tipo": "roca/dragon",
+    "Nivel": "normal",
+    "Ataque Base": 227,
+    "Defensa Base": 191,
+    "Stamina Base": 193
+  },
+  "698": {
+    "Nombre": "Amaura",
+    "Tipo": "roca/hielo",
+    "Nivel": "normal",
+    "Ataque Base": 124,
+    "Defensa Base": 109,
+    "Stamina Base": 184
+  },
+  "699": {
+    "Nombre": "Aurorus",
+    "Tipo": "roca/hielo",
+    "Nivel": "normal",
+    "Ataque Base": 186,
+    "Defensa Base": 163,
+    "Stamina Base": 265
+  },
+  "700": {
+    "Nombre": "Sylveon",
+    "Tipo": "hada",
+    "Nivel": "normal",
+    "Ataque Base": 203,
+    "Defensa Base": 205,
+    "Stamina Base": 216
+  },
+  "701": {
+    "Nombre": "Hawlucha",
+    "Tipo": "lucha/volador",
+    "Nivel": "normal",
+    "Ataque Base": 195,
+    "Defensa Base": 153,
+    "Stamina Base": 186
+  },
+  "702": {
+    "Nombre": "Dedenne",
+    "Tipo": "electrico/hada",
+    "Nivel": "normal",
+    "Ataque Base": 164,
+    "Defensa Base": 134,
+    "Stamina Base": 167
+  },
+  "703": {
+    "Nombre": "Carbink",
+    "Tipo": "roca/hada",
+    "Nivel": "normal",
+    "Ataque Base": 95,
+    "Defensa Base": 285,
+    "Stamina Base": 137
+  },
+  "704": {
+    "Nombre": "Goomy",
+    "Tipo": "dragon",
+    "Nivel": "normal",
+    "Ataque Base": 101,
+    "Defensa Base": 112,
+    "Stamina Base": 128
+  },
+  "705": {
+    "Nombre": "Sliggoo",
+    "Tipo": "dragon",
+    "Nivel": "normal",
+    "Ataque Base": 159,
+    "Defensa Base": 176,
+    "Stamina Base": 169
+  },
+  "706": {
+    "Nombre": "Goodra",
+    "Tipo": "dragon",
+    "Nivel": "normal",
+    "Ataque Base": 220,
+    "Defensa Base": 242,
+    "Stamina Base": 207
+  },
+  "707": {
+    "Nombre": "Klefki",
+    "Tipo": "acero/hada",
+    "Nivel": "normal",
+    "Ataque Base": 160,
+    "Defensa Base": 179,
+    "Stamina Base": 149
+  },
+  "708": {
+    "Nombre": "Phantump",
+    "Tipo": "fantasma/planta",
+    "Nivel": "normal",
+    "Ataque Base": 125,
+    "Defensa Base": 103,
+    "Stamina Base": 125
+  },
+  "709": {
+    "Nombre": "Trevenant",
+    "Tipo": "fantasma/planta",
+    "Nivel": "normal",
+    "Ataque Base": 201,
+    "Defensa Base": 154,
+    "Stamina Base": 198
+  },
+  "710": {
+    "Nombre": "Pumpkaboo",
+    "Tipo": "fantasma/planta",
+    "Nivel": "normal",
+    "Ataque Base": 121,
+    "Defensa Base": 123,
+    "Stamina Base": 135
+  },
+  "711": {
+    "Nombre": "Gourgeist",
+    "Tipo": "fantasma/planta",
+    "Nivel": "normal",
+    "Ataque Base": 175,
+    "Defensa Base": 213,
+    "Stamina Base": 163
+  },
+  "712": {
+    "Nombre": "Bergmite",
+    "Tipo": "hielo",
+    "Nivel": "normal",
+    "Ataque Base": 117,
+    "Defensa Base": 120,
+    "Stamina Base": 146
+  },
+  "713": {
+    "Nombre": "Avalugg",
+    "Tipo": "hielo",
+    "Nivel": "normal",
+    "Ataque Base": 196,
+    "Defensa Base": 240,
+    "Stamina Base": 216
+  },
+  "714": {
+    "Nombre": "Noibat",
+    "Tipo": "volador/dragon",
+    "Nivel": "normal",
+    "Ataque Base": 83,
+    "Defensa Base": 73,
+    "Stamina Base": 120
+  },
+  "715": {
+    "Nombre": "Noivern",
+    "Tipo": "volador/dragon",
+    "Nivel": "normal",
+    "Ataque Base": 205,
+    "Defensa Base": 175,
+    "Stamina Base": 198
+  },
+  "716": {
+    "Nombre": "Xerneas",
+    "Tipo": "hada",
+    "Nivel": "legendario",
+    "Ataque Base": 250,
+    "Defensa Base": 185,
+    "Stamina Base": 246
+  },
+  "717": {
+    "Nombre": "Yveltal",
+    "Tipo": "siniestro/volador",
+    "Nivel": "legendario",
+    "Ataque Base": 250,
+    "Defensa Base": 185,
+    "Stamina Base": 246
+  },
+  "718": {
+    "Nombre": "Zygarde",
+    "Tipo": "dragon/tierra",
+    "Nivel": "legendario",
+    "Ataque Base": 184,
+    "Defensa Base": 207,
+    "Stamina Base": 389
+  },
+  "719": {
+    "Nombre": "Diancie",
+    "Tipo": "roca/hada",
+    "Nivel": "singular",
+    "Ataque Base": 190,
+    "Defensa Base": 285,
+    "Stamina Base": 137
+  },
+  "720": {
+    "Nombre": "Hoopa",
+    "Tipo": "psiquico/fantasma",
+    "Nivel": "singular",
+    "Ataque Base": 261,
+    "Defensa Base": 187,
+    "Stamina Base": 173
+  },
+  "721": {
+    "Nombre": "Volcanion",
+    "Tipo": "fuego/agua",
+    "Nivel": "singular",
+    "Ataque Base": 252,
+    "Defensa Base": 216,
+    "Stamina Base": 190
+  },
+  "722": {
+    "Nombre": "Rowlet",
+    "Tipo": "planta/volador",
+    "Nivel": "normal",
+    "Ataque Base": 102,
+    "Defensa Base": 99,
+    "Stamina Base": 169
+  },
+  "723": {
+    "Nombre": "Dartrix",
+    "Tipo": "planta/volador",
+    "Nivel": "normal",
+    "Ataque Base": 142,
+    "Defensa Base": 139,
+    "Stamina Base": 186
+  },
+  "724": {
+    "Nombre": "Decidueye",
+    "Tipo": "planta/fantasma",
+    "Nivel": "normal",
+    "Ataque Base": 210,
+    "Defensa Base": 179,
+    "Stamina Base": 186
+  },
+  "725": {
+    "Nombre": "Litten",
+    "Tipo": "fuego",
+    "Nivel": "normal",
+    "Ataque Base": 128,
+    "Defensa Base": 79,
+    "Stamina Base": 128
+  },
+  "726": {
+    "Nombre": "Torracat",
+    "Tipo": "fuego",
+    "Nivel": "normal",
+    "Ataque Base": 174,
+    "Defensa Base": 103,
+    "Stamina Base": 163
+  },
+  "727": {
+    "Nombre": "Incineroar",
+    "Tipo": "fuego/siniestro",
+    "Nivel": "normal",
+    "Ataque Base": 214,
+    "Defensa Base": 175,
+    "Stamina Base": 216
+  },
+  "728": {
+    "Nombre": "Popplio",
+    "Tipo": "agua",
+    "Nivel": "normal",
+    "Ataque Base": 120,
+    "Defensa Base": 103,
+    "Stamina Base": 137
+  },
+  "729": {
+    "Nombre": "Brionne",
+    "Tipo": "agua",
+    "Nivel": "normal",
+    "Ataque Base": 168,
+    "Defensa Base": 145,
+    "Stamina Base": 155
+  },
+  "730": {
+    "Nombre": "Primarina",
+    "Tipo": "agua/hada",
+    "Nivel": "normal",
+    "Ataque Base": 232,
+    "Defensa Base": 195,
+    "Stamina Base": 190
+  },
+  "731": {
+    "Nombre": "Pikipek",
+    "Tipo": "normal/volador",
+    "Nivel": "normal",
+    "Ataque Base": 136,
+    "Defensa Base": 59,
+    "Stamina Base": 111
+  },
+  "732": {
+    "Nombre": "Trumbeak",
+    "Tipo": "normal/volador",
+    "Nivel": "normal",
+    "Ataque Base": 159,
+    "Defensa Base": 100,
+    "Stamina Base": 146
+  },
+  "733": {
+    "Nombre": "Toucannon",
+    "Tipo": "normal/volador",
+    "Nivel": "normal",
+    "Ataque Base": 222,
+    "Defensa Base": 146,
+    "Stamina Base": 190
+  },
+  "734": {
+    "Nombre": "Yungoos",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 122,
+    "Defensa Base": 56,
+    "Stamina Base": 134
+  },
+  "735": {
+    "Nombre": "Gumshoos",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 194,
+    "Defensa Base": 113,
+    "Stamina Base": 204
+  },
+  "736": {
+    "Nombre": "Grubbin",
+    "Tipo": "bicho",
+    "Nivel": "normal",
+    "Ataque Base": 115,
+    "Defensa Base": 85,
+    "Stamina Base": 132
+  },
+  "737": {
+    "Nombre": "Charjabug",
+    "Tipo": "bicho/electrico",
+    "Nivel": "normal",
+    "Ataque Base": 145,
+    "Defensa Base": 161,
+    "Stamina Base": 149
+  },
+  "738": {
+    "Nombre": "Vikavolt",
+    "Tipo": "bicho/electrico",
+    "Nivel": "normal",
+    "Ataque Base": 254,
+    "Defensa Base": 158,
+    "Stamina Base": 184
+  },
+  "739": {
+    "Nombre": "Crabrawler",
+    "Tipo": "lucha",
+    "Nivel": "normal",
+    "Ataque Base": 150,
+    "Defensa Base": 104,
+    "Stamina Base": 132
+  },
+  "740": {
+    "Nombre": "Crabominable",
+    "Tipo": "lucha/hielo",
+    "Nivel": "normal",
+    "Ataque Base": 231,
+    "Defensa Base": 138,
+    "Stamina Base": 219
+  },
+  "741": {
+    "Nombre": "Oricorio",
+    "Tipo": "fuego/volador",
+    "Nivel": "normal",
+    "Ataque Base": 196,
+    "Defensa Base": 145,
+    "Stamina Base": 181
+  },
+  "742": {
+    "Nombre": "Cutiefly",
+    "Tipo": "bicho/hada",
+    "Nivel": "normal",
+    "Ataque Base": 110,
+    "Defensa Base": 81,
+    "Stamina Base": 120
+  },
+  "743": {
+    "Nombre": "Ribombee",
+    "Tipo": "bicho/hada",
+    "Nivel": "normal",
+    "Ataque Base": 198,
+    "Defensa Base": 146,
+    "Stamina Base": 155
+  },
+  "744": {
+    "Nombre": "Rockruff",
+    "Tipo": "roca",
+    "Nivel": "normal",
+    "Ataque Base": 117,
+    "Defensa Base": 78,
+    "Stamina Base": 128
+  },
+  "745": {
+    "Nombre": "Lycanroc",
+    "Tipo": "roca",
+    "Nivel": "normal",
+    "Ataque Base": 234,
+    "Defensa Base": 139,
+    "Stamina Base": 181
+  },
+  "747": {
+    "Nombre": "Mareanie",
+    "Tipo": "veneno/agua",
+    "Nivel": "normal",
+    "Ataque Base": 98,
+    "Defensa Base": 110,
+    "Stamina Base": 137
+  },
+  "748": {
+    "Nombre": "Toxapex",
+    "Tipo": "veneno/agua",
+    "Nivel": "normal",
+    "Ataque Base": 114,
+    "Defensa Base": 273,
+    "Stamina Base": 137
+  },
+  "749": {
+    "Nombre": "Mudbray",
+    "Tipo": "tierra",
+    "Nivel": "normal",
+    "Ataque Base": 175,
+    "Defensa Base": 121,
+    "Stamina Base": 172
+  },
+  "750": {
+    "Nombre": "Mudsdale",
+    "Tipo": "tierra",
+    "Nivel": "normal",
+    "Ataque Base": 214,
+    "Defensa Base": 174,
+    "Stamina Base": 225
+  },
+  "751": {
+    "Nombre": "Dewpider",
+    "Tipo": "agua/bicho",
+    "Nivel": "normal",
+    "Ataque Base": 72,
+    "Defensa Base": 117,
+    "Stamina Base": 116
+  },
+  "752": {
+    "Nombre": "Araquanid",
+    "Tipo": "agua/bicho",
+    "Nivel": "normal",
+    "Ataque Base": 126,
+    "Defensa Base": 219,
+    "Stamina Base": 169
+  },
+  "753": {
+    "Nombre": "Fomantis",
+    "Tipo": "planta",
+    "Nivel": "normal",
+    "Ataque Base": 100,
+    "Defensa Base": 64,
+    "Stamina Base": 120
+  },
+  "754": {
+    "Nombre": "Lurantis",
+    "Tipo": "planta",
+    "Nivel": "normal",
+    "Ataque Base": 192,
+    "Defensa Base": 169,
+    "Stamina Base": 172
+  },
+  "755": {
+    "Nombre": "Morelull",
+    "Tipo": "planta/hada",
+    "Nivel": "normal",
+    "Ataque Base": 108,
+    "Defensa Base": 119,
+    "Stamina Base": 120
+  },
+  "756": {
+    "Nombre": "Shiinotic",
+    "Tipo": "planta/hada",
+    "Nivel": "normal",
+    "Ataque Base": 154,
+    "Defensa Base": 168,
+    "Stamina Base": 155
+  },
+  "757": {
+    "Nombre": "Salandit",
+    "Tipo": "veneno/fuego",
+    "Nivel": "normal",
+    "Ataque Base": 136,
+    "Defensa Base": 80,
+    "Stamina Base": 134
+  },
+  "758": {
+    "Nombre": "Salazzle",
+    "Tipo": "veneno/fuego",
+    "Nivel": "normal",
+    "Ataque Base": 228,
+    "Defensa Base": 130,
+    "Stamina Base": 169
+  },
+  "759": {
+    "Nombre": "Stufful",
+    "Tipo": "normal/lucha",
+    "Nivel": "normal",
+    "Ataque Base": 136,
+    "Defensa Base": 95,
+    "Stamina Base": 172
+  },
+  "760": {
+    "Nombre": "Bewear",
+    "Tipo": "normal/lucha",
+    "Nivel": "normal",
+    "Ataque Base": 226,
+    "Defensa Base": 141,
+    "Stamina Base": 260
+  },
+  "761": {
+    "Nombre": "Bounsweet",
+    "Tipo": "planta",
+    "Nivel": "normal",
+    "Ataque Base": 55,
+    "Defensa Base": 69,
+    "Stamina Base": 123
+  },
+  "762": {
+    "Nombre": "Steenee",
+    "Tipo": "planta",
+    "Nivel": "normal",
+    "Ataque Base": 78,
+    "Defensa Base": 94,
+    "Stamina Base": 141
+  },
+  "763": {
+    "Nombre": "Tsareena",
+    "Tipo": "planta",
+    "Nivel": "normal",
+    "Ataque Base": 222,
+    "Defensa Base": 195,
+    "Stamina Base": 176
+  },
+  "764": {
+    "Nombre": "Comfey",
+    "Tipo": "hada",
+    "Nivel": "normal",
+    "Ataque Base": 165,
+    "Defensa Base": 215,
+    "Stamina Base": 139
+  },
+  "765": {
+    "Nombre": "Oranguru",
+    "Tipo": "normal/psiquico",
+    "Nivel": "normal",
+    "Ataque Base": 168,
+    "Defensa Base": 192,
+    "Stamina Base": 207
+  },
+  "766": {
+    "Nombre": "Passimian",
+    "Tipo": "lucha",
+    "Nivel": "normal",
+    "Ataque Base": 222,
+    "Defensa Base": 160,
+    "Stamina Base": 225
+  },
+  "767": {
+    "Nombre": "Wimpod",
+    "Tipo": "bicho/agua",
+    "Nivel": "normal",
+    "Ataque Base": 67,
+    "Defensa Base": 74,
+    "Stamina Base": 93
+  },
+  "768": {
+    "Nombre": "Golisopod",
+    "Tipo": "bicho/agua",
+    "Nivel": "normal",
+    "Ataque Base": 218,
+    "Defensa Base": 226,
+    "Stamina Base": 181
+  },
+  "769": {
+    "Nombre": "Sandygast",
+    "Tipo": "fantasma/tierra",
+    "Nivel": "normal",
+    "Ataque Base": 120,
+    "Defensa Base": 118,
+    "Stamina Base": 146
+  },
+  "770": {
+    "Nombre": "Palossand",
+    "Tipo": "fantasma/tierra",
+    "Nivel": "normal",
+    "Ataque Base": 178,
+    "Defensa Base": 178,
+    "Stamina Base": 198
+  },
+  "775": {
+    "Nombre": "Komala",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 216,
+    "Defensa Base": 165,
+    "Stamina Base": 163
+  },
+  "776": {
+    "Nombre": "Turtonator",
+    "Tipo": "fuego/dragon",
+    "Nivel": "normal",
+    "Ataque Base": 165,
+    "Defensa Base": 215,
+    "Stamina Base": 155
+  },
+  "777": {
+    "Nombre": "Togedemaru",
+    "Tipo": "electrico/acero",
+    "Nivel": "normal",
+    "Ataque Base": 190,
+    "Defensa Base": 145,
+    "Stamina Base": 163
+  },
+  "779": {
+    "Nombre": "Bruxish",
+    "Tipo": "agua/psiquico",
+    "Nivel": "normal",
+    "Ataque Base": 208,
+    "Defensa Base": 145,
+    "Stamina Base": 169
+  },
+  "780": {
+    "Nombre": "Drampa",
+    "Tipo": "normal/dragon",
+    "Nivel": "normal",
+    "Ataque Base": 231,
+    "Defensa Base": 164,
+    "Stamina Base": 186
+  },
+  "781": {
+    "Nombre": "Dhelmise",
+    "Tipo": "fantasma/planta",
+    "Nivel": "normal",
+    "Ataque Base": 233,
+    "Defensa Base": 179,
+    "Stamina Base": 172
+  },
+  "782": {
+    "Nombre": "Jangmo-o",
+    "Tipo": "dragon",
+    "Nivel": "normal",
+    "Ataque Base": 102,
+    "Defensa Base": 108,
+    "Stamina Base": 128
+  },
+  "783": {
+    "Nombre": "Hakamo-o",
+    "Tipo": "dragon/lucha",
+    "Nivel": "normal",
+    "Ataque Base": 145,
+    "Defensa Base": 162,
+    "Stamina Base": 146
+  },
+  "784": {
+    "Nombre": "Kommo-o",
+    "Tipo": "dragon/lucha",
+    "Nivel": "normal",
+    "Ataque Base": 222,
+    "Defensa Base": 240,
+    "Stamina Base": 181
+  },
+  "785": {
+    "Nombre": "Tapu Koko",
+    "Tipo": "electrico/hada",
+    "Nivel": "legendario",
+    "Ataque Base": 250,
+    "Defensa Base": 181,
+    "Stamina Base": 172
+  },
+  "786": {
+    "Nombre": "Tapu Lele",
+    "Tipo": "psiquico/hada",
+    "Nivel": "legendario",
+    "Ataque Base": 259,
+    "Defensa Base": 208,
+    "Stamina Base": 172
+  },
+  "787": {
+    "Nombre": "Tapu Bulu",
+    "Tipo": "planta/hada",
+    "Nivel": "legendario",
+    "Ataque Base": 249,
+    "Defensa Base": 215,
+    "Stamina Base": 172
+  },
+  "788": {
+    "Nombre": "Tapu Fini",
+    "Tipo": "agua/hada",
+    "Nivel": "legendario",
+    "Ataque Base": 189,
+    "Defensa Base": 254,
+    "Stamina Base": 172
+  },
+  "789": {
+    "Nombre": "Cosmog",
+    "Tipo": "psiquico",
+    "Nivel": "legendario",
+    "Ataque Base": 54,
+    "Defensa Base": 57,
+    "Stamina Base": 125
+  },
+  "790": {
+    "Nombre": "Cosmoem",
+    "Tipo": "psiquico",
+    "Nivel": "legendario",
+    "Ataque Base": 54,
+    "Defensa Base": 242,
+    "Stamina Base": 125
+  },
+  "791": {
+    "Nombre": "Solgaleo",
+    "Tipo": "psiquico/acero",
+    "Nivel": "legendario",
+    "Ataque Base": 255,
+    "Defensa Base": 191,
+    "Stamina Base": 264
+  },
+  "792": {
+    "Nombre": "Lunala",
+    "Tipo": "psiquico/fantasma",
+    "Nivel": "legendario",
+    "Ataque Base": 255,
+    "Defensa Base": 191,
+    "Stamina Base": 264
+  },
+  "793": {
+    "Nombre": "Nihilego",
+    "Tipo": "roca/veneno",
+    "Nivel": "normal",
+    "Ataque Base": 249,
+    "Defensa Base": 210,
+    "Stamina Base": 240
+  },
+  "794": {
+    "Nombre": "Buzzwole",
+    "Tipo": "bicho/lucha",
+    "Nivel": "normal",
+    "Ataque Base": 236,
+    "Defensa Base": 196,
+    "Stamina Base": 216
+  },
+  "795": {
+    "Nombre": "Pheromosa",
+    "Tipo": "bicho/lucha",
+    "Nivel": "normal",
+    "Ataque Base": 316,
+    "Defensa Base": 85,
+    "Stamina Base": 174
+  },
+  "796": {
+    "Nombre": "Xurkitree",
+    "Tipo": "electrico",
+    "Nivel": "normal",
+    "Ataque Base": 330,
+    "Defensa Base": 144,
+    "Stamina Base": 195
+  },
+  "797": {
+    "Nombre": "Celesteela",
+    "Tipo": "acero/volador",
+    "Nivel": "normal",
+    "Ataque Base": 207,
+    "Defensa Base": 199,
+    "Stamina Base": 219
+  },
+  "798": {
+    "Nombre": "Kartana",
+    "Tipo": "planta/acero",
+    "Nivel": "normal",
+    "Ataque Base": 323,
+    "Defensa Base": 182,
+    "Stamina Base": 139
+  },
+  "799": {
+    "Nombre": "Guzzlord",
+    "Tipo": "siniestro/dragon",
+    "Nivel": "normal",
+    "Ataque Base": 188,
+    "Defensa Base": 99,
+    "Stamina Base": 440
+  },
+  "800": {
+    "Nombre": "Necrozma",
+    "Tipo": "psiquico",
+    "Nivel": "legendario",
+    "Ataque Base": 251,
+    "Defensa Base": 195,
+    "Stamina Base": 219
+  },
+  "802": {
+    "Nombre": "Marshadow",
+    "Tipo": "lucha/fantasma",
+    "Nivel": "singular",
+    "Ataque Base": 265,
+    "Defensa Base": 190,
+    "Stamina Base": 207
+  },
+  "803": {
+    "Nombre": "Poipole",
+    "Tipo": "veneno",
+    "Nivel": "normal",
+    "Ataque Base": 145,
+    "Defensa Base": 133,
+    "Stamina Base": 167
+  },
+  "804": {
+    "Nombre": "Naganadel",
+    "Tipo": "veneno/dragon",
+    "Nivel": "normal",
+    "Ataque Base": 263,
+    "Defensa Base": 159,
+    "Stamina Base": 177
+  },
+  "805": {
+    "Nombre": "Stakataka",
+    "Tipo": "roca/acero",
+    "Nivel": "normal",
+    "Ataque Base": 213,
+    "Defensa Base": 298,
+    "Stamina Base": 156
+  },
+  "806": {
+    "Nombre": "Blacephalon",
+    "Tipo": "fuego/fantasma",
+    "Nivel": "normal",
+    "Ataque Base": 315,
+    "Defensa Base": 148,
+    "Stamina Base": 142
+  },
+  "808": {
+    "Nombre": "Meltan",
+    "Tipo": "acero",
+    "Nivel": "singular",
+    "Ataque Base": 118,
+    "Defensa Base": 99,
+    "Stamina Base": 130
+  },
+  "809": {
+    "Nombre": "Melmetal",
+    "Tipo": "acero",
+    "Nivel": "singular",
+    "Ataque Base": 226,
+    "Defensa Base": 190,
+    "Stamina Base": 264
+  },
+  "810": {
+    "Nombre": "Grookey",
+    "Tipo": "planta",
+    "Nivel": "normal",
+    "Ataque Base": 122,
+    "Defensa Base": 91,
+    "Stamina Base": 137
+  },
+  "811": {
+    "Nombre": "Thwackey",
+    "Tipo": "planta",
+    "Nivel": "normal",
+    "Ataque Base": 165,
+    "Defensa Base": 134,
+    "Stamina Base": 172
+  },
+  "812": {
+    "Nombre": "Rillaboom",
+    "Tipo": "planta",
+    "Nivel": "normal",
+    "Ataque Base": 239,
+    "Defensa Base": 168,
+    "Stamina Base": 225
+  },
+  "813": {
+    "Nombre": "Scorbunny",
+    "Tipo": "fuego",
+    "Nivel": "normal",
+    "Ataque Base": 132,
+    "Defensa Base": 79,
+    "Stamina Base": 137
+  },
+  "814": {
+    "Nombre": "Raboot",
+    "Tipo": "fuego",
+    "Nivel": "normal",
+    "Ataque Base": 170,
+    "Defensa Base": 125,
+    "Stamina Base": 163
+  },
+  "815": {
+    "Nombre": "Cinderace",
+    "Tipo": "fuego",
+    "Nivel": "normal",
+    "Ataque Base": 238,
+    "Defensa Base": 163,
+    "Stamina Base": 190
+  },
+  "816": {
+    "Nombre": "Sobble",
+    "Tipo": "agua",
+    "Nivel": "normal",
+    "Ataque Base": 132,
+    "Defensa Base": 79,
+    "Stamina Base": 137
+  },
+  "817": {
+    "Nombre": "Drizzile",
+    "Tipo": "agua",
+    "Nivel": "normal",
+    "Ataque Base": 186,
+    "Defensa Base": 113,
+    "Stamina Base": 163
+  },
+  "818": {
+    "Nombre": "Inteleon",
+    "Tipo": "agua",
+    "Nivel": "normal",
+    "Ataque Base": 262,
+    "Defensa Base": 142,
+    "Stamina Base": 172
+  },
+  "819": {
+    "Nombre": "Skwovet",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 95,
+    "Defensa Base": 86,
+    "Stamina Base": 172
+  },
+  "820": {
+    "Nombre": "Greedent",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 160,
+    "Defensa Base": 156,
+    "Stamina Base": 260
+  },
+  "821": {
+    "Nombre": "Rookidee",
+    "Tipo": "volador",
+    "Nivel": "normal",
+    "Ataque Base": 88,
+    "Defensa Base": 67,
+    "Stamina Base": 116
+  },
+  "822": {
+    "Nombre": "Corvisquire",
+    "Tipo": "volador",
+    "Nivel": "normal",
+    "Ataque Base": 129,
+    "Defensa Base": 110,
+    "Stamina Base": 169
+  },
+  "823": {
+    "Nombre": "Corviknight",
+    "Tipo": "volador/acero",
+    "Nivel": "normal",
+    "Ataque Base": 163,
+    "Defensa Base": 192,
+    "Stamina Base": 221
+  },
+  "827": {
+    "Nombre": "Nickit",
+    "Tipo": "siniestro",
+    "Nivel": "normal",
+    "Ataque Base": 85,
+    "Defensa Base": 82,
+    "Stamina Base": 120
+  },
+  "828": {
+    "Nombre": "Thievul",
+    "Tipo": "siniestro",
+    "Nivel": "normal",
+    "Ataque Base": 172,
+    "Defensa Base": 164,
+    "Stamina Base": 172
+  },
+  "829": {
+    "Nombre": "Gossifleur",
+    "Tipo": "planta",
+    "Nivel": "normal",
+    "Ataque Base": 70,
+    "Defensa Base": 104,
+    "Stamina Base": 120
+  },
+  "830": {
+    "Nombre": "Eldegoss",
+    "Tipo": "planta",
+    "Nivel": "normal",
+    "Ataque Base": 148,
+    "Defensa Base": 211,
+    "Stamina Base": 155
+  },
+  "831": {
+    "Nombre": "Wooloo",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 76,
+    "Defensa Base": 97,
+    "Stamina Base": 123
+  },
+  "832": {
+    "Nombre": "Dubwool",
+    "Tipo": "normal",
+    "Nivel": "normal",
+    "Ataque Base": 159,
+    "Defensa Base": 198,
+    "Stamina Base": 176
+  },
+  "835": {
+    "Nombre": "Yamper",
+    "Tipo": "electrico",
+    "Nivel": "normal",
+    "Ataque Base": 80,
+    "Defensa Base": 90,
+    "Stamina Base": 153
+  },
+  "836": {
+    "Nombre": "Boltund",
+    "Tipo": "electrico",
+    "Nivel": "normal",
+    "Ataque Base": 197,
+    "Defensa Base": 131,
+    "Stamina Base": 170
+  },
+  "837": {
+    "Nombre": "Rolycoly",
+    "Tipo": "roca",
+    "Nivel": "normal",
+    "Ataque Base": 73,
+    "Defensa Base": 91,
+    "Stamina Base": 102
+  },
+  "838": {
+    "Nombre": "Carkol",
+    "Tipo": "roca/fuego",
+    "Nivel": "normal",
+    "Ataque Base": 114,
+    "Defensa Base": 157,
+    "Stamina Base": 190
+  },
+  "839": {
+    "Nombre": "Coalossal",
+    "Tipo": "roca/fuego",
+    "Nivel": "normal",
+    "Ataque Base": 146,
+    "Defensa Base": 198,
+    "Stamina Base": 242
+  },
+  "840": {
+    "Nombre": "Applin",
+    "Tipo": "planta/dragon",
+    "Nivel": "normal",
+    "Ataque Base": 71,
+    "Defensa Base": 116,
+    "Stamina Base": 120
+  },
+  "841": {
+    "Nombre": "Flapple",
+    "Tipo": "planta/dragon",
+    "Nivel": "normal",
+    "Ataque Base": 214,
+    "Defensa Base": 144,
+    "Stamina Base": 172
+  },
+  "842": {
+    "Nombre": "Appletun",
+    "Tipo": "planta/dragon",
+    "Nivel": "normal",
+    "Ataque Base": 178,
+    "Defensa Base": 146,
+    "Stamina Base": 242
+  },
+  "845": {
+    "Nombre": "Cramorant",
+    "Tipo": "volador/agua",
+    "Nivel": "normal",
+    "Ataque Base": 173,
+    "Defensa Base": 163,
+    "Stamina Base": 172
+  },
+  "850": {
+    "Nombre": "Sizzlipede",
+    "Tipo": "fuego/bicho",
+    "Nivel": "normal",
+    "Ataque Base": 118,
+    "Defensa Base": 90,
+    "Stamina Base": 137
+  },
+  "851": {
+    "Nombre": "Centiskorch",
+    "Tipo": "fuego/bicho",
+    "Nivel": "normal",
+    "Ataque Base": 220,
+    "Defensa Base": 158,
+    "Stamina Base": 225
+  },
+  "852": {
+    "Nombre": "Clobbopus",
+    "Tipo": "lucha",
+    "Nivel": "normal",
+    "Ataque Base": 121,
+    "Defensa Base": 103,
+    "Stamina Base": 137
+  },
+  "853": {
+    "Nombre": "Grapploct",
+    "Tipo": "lucha",
+    "Nivel": "normal",
+    "Ataque Base": 209,
+    "Defensa Base": 162,
+    "Stamina Base": 190
+  },
+  "855": {
+    "Nombre": "Polteageist",
+    "Tipo": "fantasma",
+    "Nivel": "normal",
+    "Ataque Base": 248,
+    "Defensa Base": 189,
+    "Stamina Base": 155
+  },
+  "856": {
+    "Nombre": "Hatenna",
+    "Tipo": "psiquico",
+    "Nivel": "normal",
+    "Ataque Base": 98,
+    "Defensa Base": 93,
+    "Stamina Base": 123
+  },
+  "857": {
+    "Nombre": "Hattrem",
+    "Tipo": "psiquico",
+    "Nivel": "normal",
+    "Ataque Base": 153,
+    "Defensa Base": 133,
+    "Stamina Base": 149
+  },
+  "858": {
+    "Nombre": "Hatterene",
+    "Tipo": "psiquico/hada",
+    "Nivel": "normal",
+    "Ataque Base": 237,
+    "Defensa Base": 182,
+    "Stamina Base": 149
+  },
+  "859": {
+    "Nombre": "Impidimp",
+    "Tipo": "siniestro/hada",
+    "Nivel": "normal",
+    "Ataque Base": 103,
+    "Defensa Base": 69,
+    "Stamina Base": 128
+  },
+  "860": {
+    "Nombre": "Morgrem",
+    "Tipo": "siniestro/hada",
+    "Nivel": "normal",
+    "Ataque Base": 145,
+    "Defensa Base": 102,
+    "Stamina Base": 163
+  },
+  "861": {
+    "Nombre": "Grimmsnarl",
+    "Tipo": "siniestro/hada",
+    "Nivel": "normal",
+    "Ataque Base": 227,
+    "Defensa Base": 139,
+    "Stamina Base": 216
+  },
+  "862": {
+    "Nombre": "Obstagoon",
+    "Tipo": "siniestro/normal",
+    "Nivel": "normal",
+    "Ataque Base": 180,
+    "Defensa Base": 194,
+    "Stamina Base": 212
+  },
+  "863": {
+    "Nombre": "Perrserker",
+    "Tipo": "acero",
+    "Nivel": "normal",
+    "Ataque Base": 195,
+    "Defensa Base": 162,
+    "Stamina Base": 172
+  },
+  "864": {
+    "Nombre": "Cursola",
+    "Tipo": "fantasma",
+    "Nivel": "normal",
+    "Ataque Base": 253,
+    "Defensa Base": 182,
+    "Stamina Base": 155
+  },
+  "865": {
+    "Nombre": "Sirfetch’d",
+    "Tipo": "lucha",
+    "Nivel": "normal",
+    "Ataque Base": 248,
+    "Defensa Base": 176,
+    "Stamina Base": 158
+  },
+  "866": {
+    "Nombre": "Mr. Rime",
+    "Tipo": "hielo/psiquico",
+    "Nivel": "normal",
+    "Ataque Base": 212,
+    "Defensa Base": 179,
+    "Stamina Base": 190
+  },
+  "867": {
+    "Nombre": "Runerigus",
+    "Tipo": "tierra/fantasma",
+    "Nivel": "normal",
+    "Ataque Base": 163,
+    "Defensa Base": 237,
+    "Stamina Base": 151
+  },
+  "870": {
+    "Nombre": "Falinks",
+    "Tipo": "lucha",
+    "Nivel": "normal",
+    "Ataque Base": 193,
+    "Defensa Base": 170,
+    "Stamina Base": 163
+  },
+  "872": {
+    "Nombre": "Snom",
+    "Tipo": "hielo/bicho",
+    "Nivel": "normal",
+    "Ataque Base": 76,
+    "Defensa Base": 59,
+    "Stamina Base": 102
+  },
+  "873": {
+    "Nombre": "Frosmoth",
+    "Tipo": "hielo/bicho",
+    "Nivel": "normal",
+    "Ataque Base": 230,
+    "Defensa Base": 155,
+    "Stamina Base": 172
+  },
+  "874": {
+    "Nombre": "Stonjourner",
+    "Tipo": "roca",
+    "Nivel": "normal",
+    "Ataque Base": 222,
+    "Defensa Base": 182,
+    "Stamina Base": 225
+  },
+  "876": {
+    "Nombre": "Indeedee",
+    "Tipo": "psiquico/normal",
+    "Nivel": "normal",
+    "Ataque Base": 184,
+    "Defensa Base": 184,
+    "Stamina Base": 172
+  },
+  "877": {
+    "Nombre": "Morpeko",
+    "Tipo": "electrico/siniestro",
+    "Nivel": "normal",
+    "Ataque Base": 192,
+    "Defensa Base": 121,
+    "Stamina Base": 151
+  },
+  "884": {
+    "Nombre": "Duraludon",
+    "Tipo": "acero/dragon",
+    "Nivel": "normal",
+    "Ataque Base": 239,
+    "Defensa Base": 185,
+    "Stamina Base": 172
+  },
+  "885": {
+    "Nombre": "Dreepy",
+    "Tipo": "dragon/fantasma",
+    "Nivel": "normal",
+    "Ataque Base": 117,
+    "Defensa Base": 61,
+    "Stamina Base": 99
+  },
+  "886": {
+    "Nombre": "Drakloak",
+    "Tipo": "dragon/fantasma",
+    "Nivel": "normal",
+    "Ataque Base": 163,
+    "Defensa Base": 105,
+    "Stamina Base": 169
+  },
+  "887": {
+    "Nombre": "Dragapult",
+    "Tipo": "dragon/fantasma",
+    "Nivel": "normal",
+    "Ataque Base": 266,
+    "Defensa Base": 170,
+    "Stamina Base": 204
+  },
+  "888": {
+    "Nombre": "Zacian",
+    "Tipo": "hada/acero",
+    "Nivel": "legendario",
+    "Ataque Base": 332,
+    "Defensa Base": 240,
+    "Stamina Base": 192
+  },
+  "889": {
+    "Nombre": "Zamazenta",
+    "Tipo": "lucha/acero",
+    "Nivel": "legendario",
+    "Ataque Base": 250,
+    "Defensa Base": 292,
+    "Stamina Base": 192
+  },
+  "890": {
+    "Nombre": "Eternatus",
+    "Tipo": "veneno/dragon",
+    "Nivel": "legendario",
+    "Ataque Base": 278,
+    "Defensa Base": 192,
+    "Stamina Base": 268
+  },
+  "891": {
+    "Nombre": "Kubfu",
+    "Tipo": "lucha",
+    "Nivel": "legendario",
+    "Ataque Base": 170,
+    "Defensa Base": 112,
+    "Stamina Base": 155
+  },
+  "892": {
+    "Nombre": "Urshifu",
+    "Tipo": "lucha/agua",
+    "Nivel": "legendario",
+    "Ataque Base": 254,
+    "Defensa Base": 177,
+    "Stamina Base": 225
+  },
+  "893": {
+    "Nombre": "Zarude",
+    "Tipo": "siniestro/planta",
+    "Nivel": "singular",
+    "Ataque Base": 242,
+    "Defensa Base": 215,
+    "Stamina Base": 233
+  },
+  "894": {
+    "Nombre": "Regieleki",
+    "Tipo": "electrico",
+    "Nivel": "legendario",
+    "Ataque Base": 250,
+    "Defensa Base": 125,
+    "Stamina Base": 190
+  },
+  "895": {
+    "Nombre": "Regidrago",
+    "Tipo": "dragon",
+    "Nivel": "legendario",
+    "Ataque Base": 202,
+    "Defensa Base": 101,
+    "Stamina Base": 400
+  },
+  "899": {
+    "Nombre": "Wyrdeer",
+    "Tipo": "normal/psiquico",
+    "Nivel": "desconocido",
+    "Ataque Base": 206,
+    "Defensa Base": 145,
+    "Stamina Base": 230
+  },
+  "900": {
+    "Nombre": "Kleavor",
+    "Tipo": "bicho/roca",
+    "Nivel": "desconocido",
+    "Ataque Base": 253,
+    "Defensa Base": 174,
+    "Stamina Base": 172
+  },
+  "901": {
+    "Nombre": "Ursaluna",
+    "Tipo": "tierra/normal",
+    "Nivel": "desconocido",
+    "Ataque Base": 243,
+    "Defensa Base": 181,
+    "Stamina Base": 277
+  },
+  "903": {
+    "Nombre": "Sneasler",
+    "Tipo": "lucha/veneno",
+    "Nivel": "desconocido",
+    "Ataque Base": 259,
+    "Defensa Base": 158,
+    "Stamina Base": 190
+  },
+  "904": {
+    "Nombre": "Overqwil",
+    "Tipo": "siniestro/veneno",
+    "Nivel": "desconocido",
+    "Ataque Base": 222,
+    "Defensa Base": 171,
+    "Stamina Base": 198
+  },
+  "905": {
+    "Nombre": "Enamorus",
+    "Tipo": "hada/volador",
+    "Nivel": "desconocido",
+    "Ataque Base": 281,
+    "Defensa Base": 162,
+    "Stamina Base": 179
+  },
+  "906": {
+    "Nombre": "Sprigatito",
+    "Tipo": "planta",
+    "Nivel": "desconocido",
+    "Ataque Base": 116,
+    "Defensa Base": 99,
+    "Stamina Base": 120
+  },
+  "907": {
+    "Nombre": "Floragato",
+    "Tipo": "planta",
+    "Nivel": "desconocido",
+    "Ataque Base": 157,
+    "Defensa Base": 128,
+    "Stamina Base": 156
+  },
+  "908": {
+    "Nombre": "Meowscarada",
+    "Tipo": "planta/siniestro",
+    "Nivel": "desconocido",
+    "Ataque Base": 233,
+    "Defensa Base": 153,
+    "Stamina Base": 183
+  },
+  "909": {
+    "Nombre": "Fuecoco",
+    "Tipo": "fuego",
+    "Nivel": "desconocido",
+    "Ataque Base": 112,
+    "Defensa Base": 96,
+    "Stamina Base": 167
+  },
+  "910": {
+    "Nombre": "Crocalor",
+    "Tipo": "fuego",
+    "Nivel": "desconocido",
+    "Ataque Base": 162,
+    "Defensa Base": 134,
+    "Stamina Base": 191
+  },
+  "911": {
+    "Nombre": "Skeledirge",
+    "Tipo": "fuego/fantasma",
+    "Nivel": "desconocido",
+    "Ataque Base": 207,
+    "Defensa Base": 178,
+    "Stamina Base": 232
+  },
+  "912": {
+    "Nombre": "Quaxly",
+    "Tipo": "agua",
+    "Nivel": "desconocido",
+    "Ataque Base": 120,
+    "Defensa Base": 86,
+    "Stamina Base": 146
+  },
+  "913": {
+    "Nombre": "Quaxwell",
+    "Tipo": "agua",
+    "Nivel": "desconocido",
+    "Ataque Base": 162,
+    "Defensa Base": 123,
+    "Stamina Base": 172
+  },
+  "914": {
+    "Nombre": "Quaquaval",
+    "Tipo": "agua/lucha",
+    "Nivel": "desconocido",
+    "Ataque Base": 236,
+    "Defensa Base": 159,
+    "Stamina Base": 198
+  },
+  "915": {
+    "Nombre": "Lechonk",
+    "Tipo": "normal",
+    "Nivel": "desconocido",
+    "Ataque Base": 81,
+    "Defensa Base": 79,
+    "Stamina Base": 144
+  },
+  "916": {
+    "Nombre": "Oinkologne",
+    "Tipo": "normal",
+    "Nivel": "desconocido",
+    "Ataque Base": 186,
+    "Defensa Base": 153,
+    "Stamina Base": 242
+  },
+  "917": {
+    "Nombre": "Tarountula",
+    "Tipo": "bicho",
+    "Nivel": "desconocido",
+    "Ataque Base": 70,
+    "Defensa Base": 77,
+    "Stamina Base": 111
+  },
+  "918": {
+    "Nombre": "Spidops",
+    "Tipo": "bicho",
+    "Nivel": "desconocido",
+    "Ataque Base": 139,
+    "Defensa Base": 166,
+    "Stamina Base": 155
+  },
+  "919": {
+    "Nombre": "Nymble",
+    "Tipo": "bicho",
+    "Nivel": "desconocido",
+    "Ataque Base": 81,
+    "Defensa Base": 65,
+    "Stamina Base": 107
+  },
+  "920": {
+    "Nombre": "Lokix",
+    "Tipo": "bicho/siniestro",
+    "Nivel": "desconocido",
+    "Ataque Base": 199,
+    "Defensa Base": 144,
+    "Stamina Base": 174
+  },
+  "921": {
+    "Nombre": "Pawmi",
+    "Tipo": "electrico",
+    "Nivel": "desconocido",
+    "Ataque Base": 95,
+    "Defensa Base": 45,
+    "Stamina Base": 128
+  },
+  "922": {
+    "Nombre": "Pawmo",
+    "Tipo": "electrico/lucha",
+    "Nivel": "desconocido",
+    "Ataque Base": 147,
+    "Defensa Base": 82,
+    "Stamina Base": 155
+  },
+  "923": {
+    "Nombre": "Pawmot",
+    "Tipo": "electrico/lucha",
+    "Nivel": "desconocido",
+    "Ataque Base": 232,
+    "Defensa Base": 141,
+    "Stamina Base": 172
+  },
+  "924": {
+    "Nombre": "Tandemaus",
+    "Tipo": "normal",
+    "Nivel": "desconocido",
+    "Ataque Base": 98,
+    "Defensa Base": 90,
+    "Stamina Base": 137
+  },
+  "925": {
+    "Nombre": "Maushold",
+    "Tipo": "normal",
+    "Nivel": "desconocido",
+    "Ataque Base": 159,
+    "Defensa Base": 157,
+    "Stamina Base": 179
+  },
+  "926": {
+    "Nombre": "Fidough",
+    "Tipo": "hada",
+    "Nivel": "desconocido",
+    "Ataque Base": 102,
+    "Defensa Base": 126,
+    "Stamina Base": 114
+  },
+  "927": {
+    "Nombre": "Dachsbun",
+    "Tipo": "hada",
+    "Nivel": "desconocido",
+    "Ataque Base": 159,
+    "Defensa Base": 212,
+    "Stamina Base": 149
+  },
+  "928": {
+    "Nombre": "Smoliv",
+    "Tipo": "planta/normal",
+    "Nivel": "desconocido",
+    "Ataque Base": 100,
+    "Defensa Base": 89,
+    "Stamina Base": 121
+  },
+  "929": {
+    "Nombre": "Dolliv",
+    "Tipo": "planta/normal",
+    "Nivel": "desconocido",
+    "Ataque Base": 137,
+    "Defensa Base": 131,
+    "Stamina Base": 141
+  },
+  "930": {
+    "Nombre": "Arboliva",
+    "Tipo": "planta/normal",
+    "Nivel": "desconocido",
+    "Ataque Base": 219,
+    "Defensa Base": 189,
+    "Stamina Base": 186
+  },
+  "932": {
+    "Nombre": "Nacli",
+    "Tipo": "roca",
+    "Nivel": "desconocido",
+    "Ataque Base": 95,
+    "Defensa Base": 108,
+    "Stamina Base": 146
+  },
+  "933": {
+    "Nombre": "Naclstack",
+    "Tipo": "roca",
+    "Nivel": "desconocido",
+    "Ataque Base": 105,
+    "Defensa Base": 160,
+    "Stamina Base": 155
+  },
+  "934": {
+    "Nombre": "Garganacl",
+    "Tipo": "roca",
+    "Nivel": "desconocido",
+    "Ataque Base": 171,
+    "Defensa Base": 212,
+    "Stamina Base": 225
+  },
+  "935": {
+    "Nombre": "Charcadet",
+    "Tipo": "fuego",
+    "Nivel": "desconocido",
+    "Ataque Base": 92,
+    "Defensa Base": 74,
+    "Stamina Base": 120
+  },
+  "936": {
+    "Nombre": "Armarouge",
+    "Tipo": "fuego/psiquico",
+    "Nivel": "desconocido",
+    "Ataque Base": 234,
+    "Defensa Base": 185,
+    "Stamina Base": 198
+  },
+  "937": {
+    "Nombre": "Ceruledge",
+    "Tipo": "fuego/fantasma",
+    "Nivel": "desconocido",
+    "Ataque Base": 239,
+    "Defensa Base": 189,
+    "Stamina Base": 181
+  },
+  "938": {
+    "Nombre": "Tadbulb",
+    "Tipo": "electrico",
+    "Nivel": "desconocido",
+    "Ataque Base": 104,
+    "Defensa Base": 73,
+    "Stamina Base": 156
+  },
+  "939": {
+    "Nombre": "Bellibolt",
+    "Tipo": "electrico",
+    "Nivel": "desconocido",
+    "Ataque Base": 184,
+    "Defensa Base": 165,
+    "Stamina Base": 240
+  },
+  "940": {
+    "Nombre": "Wattrel",
+    "Tipo": "electrico/volador",
+    "Nivel": "desconocido",
+    "Ataque Base": 105,
+    "Defensa Base": 75,
+    "Stamina Base": 120
+  },
+  "941": {
+    "Nombre": "Kilowattrel",
+    "Tipo": "electrico/volador",
+    "Nivel": "desconocido",
+    "Ataque Base": 221,
+    "Defensa Base": 132,
+    "Stamina Base": 172
+  },
+  "944": {
+    "Nombre": "Shroodle",
+    "Tipo": "veneno/normal",
+    "Nivel": "desconocido",
+    "Ataque Base": 124,
+    "Defensa Base": 70,
+    "Stamina Base": 120
+  },
+  "945": {
+    "Nombre": "Grafaiai",
+    "Tipo": "veneno/normal",
+    "Nivel": "desconocido",
+    "Ataque Base": 199,
+    "Defensa Base": 149,
+    "Stamina Base": 160
+  },
+  "948": {
+    "Nombre": "Toedscool",
+    "Tipo": "tierra/planta",
+    "Nivel": "desconocido",
+    "Ataque Base": 97,
+    "Defensa Base": 149,
+    "Stamina Base": 120
+  },
+  "949": {
+    "Nombre": "Toedscruel",
+    "Tipo": "tierra/planta",
+    "Nivel": "desconocido",
+    "Ataque Base": 166,
+    "Defensa Base": 209,
+    "Stamina Base": 190
+  },
+  "950": {
+    "Nombre": "Klawf",
+    "Tipo": "roca",
+    "Nivel": "desconocido",
+    "Ataque Base": 184,
+    "Defensa Base": 185,
+    "Stamina Base": 172
+  },
+  "957": {
+    "Nombre": "Tinkatink",
+    "Tipo": "hada/acero",
+    "Nivel": "desconocido",
+    "Ataque Base": 85,
+    "Defensa Base": 110,
+    "Stamina Base": 137
+  },
+  "958": {
+    "Nombre": "Tinkatuff",
+    "Tipo": "hada/acero",
+    "Nivel": "desconocido",
+    "Ataque Base": 109,
+    "Defensa Base": 145,
+    "Stamina Base": 163
+  },
+  "959": {
+    "Nombre": "Tinkaton",
+    "Tipo": "hada/acero",
+    "Nivel": "desconocido",
+    "Ataque Base": 155,
+    "Defensa Base": 196,
+    "Stamina Base": 198
+  },
+  "960": {
+    "Nombre": "Wiglett",
+    "Tipo": "agua",
+    "Nivel": "desconocido",
+    "Ataque Base": 109,
+    "Defensa Base": 52,
+    "Stamina Base": 67
+  },
+  "961": {
+    "Nombre": "Wugtrio",
+    "Tipo": "agua",
+    "Nivel": "desconocido",
+    "Ataque Base": 205,
+    "Defensa Base": 136,
+    "Stamina Base": 111
+  },
+  "962": {
+    "Nombre": "Bombirdier",
+    "Tipo": "volador/siniestro",
+    "Nivel": "desconocido",
+    "Ataque Base": 198,
+    "Defensa Base": 172,
+    "Stamina Base": 172
+  },
+  "965": {
+    "Nombre": "Varoom",
+    "Tipo": "acero/veneno",
+    "Nivel": "desconocido",
+    "Ataque Base": 123,
+    "Defensa Base": 107,
+    "Stamina Base": 128
+  },
+  "966": {
+    "Nombre": "Revavroom",
+    "Tipo": "acero/veneno",
+    "Nivel": "desconocido",
+    "Ataque Base": 229,
+    "Defensa Base": 168,
+    "Stamina Base": 190
+  },
+  "969": {
+    "Nombre": "Glimmet",
+    "Tipo": "roca/veneno",
+    "Nivel": "desconocido",
+    "Ataque Base": 187,
+    "Defensa Base": 104,
+    "Stamina Base": 134
+  },
+  "970": {
+    "Nombre": "Glimmora",
+    "Tipo": "roca/veneno",
+    "Nivel": "desconocido",
+    "Ataque Base": 246,
+    "Defensa Base": 177,
+    "Stamina Base": 195
+  },
+  "971": {
+    "Nombre": "Greavard",
+    "Tipo": "fantasma",
+    "Nivel": "desconocido",
+    "Ataque Base": 105,
+    "Defensa Base": 106,
+    "Stamina Base": 137
+  },
+  "972": {
+    "Nombre": "Houndstone",
+    "Tipo": "fantasma",
+    "Nivel": "desconocido",
+    "Ataque Base": 186,
+    "Defensa Base": 195,
+    "Stamina Base": 176
+  },
+  "974": {
+    "Nombre": "Cetoddle",
+    "Tipo": "hielo",
+    "Nivel": "desconocido",
+    "Ataque Base": 119,
+    "Defensa Base": 80,
+    "Stamina Base": 239
+  },
+  "975": {
+    "Nombre": "Cetitan",
+    "Tipo": "hielo",
+    "Nivel": "desconocido",
+    "Ataque Base": 208,
+    "Defensa Base": 123,
+    "Stamina Base": 347
+  },
+  "977": {
+    "Nombre": "Dondozo",
+    "Tipo": "agua",
+    "Nivel": "desconocido",
+    "Ataque Base": 176,
+    "Defensa Base": 178,
+    "Stamina Base": 312
+  },
+  "978": {
+    "Nombre": "Tatsugiri",
+    "Tipo": "dragon/agua",
+    "Nivel": "desconocido",
+    "Ataque Base": 226,
+    "Defensa Base": 166,
+    "Stamina Base": 169
+  },
+  "979": {
+    "Nombre": "Annihilape",
+    "Tipo": "lucha/fantasma",
+    "Nivel": "desconocido",
+    "Ataque Base": 220,
+    "Defensa Base": 178,
+    "Stamina Base": 242
+  },
+  "980": {
+    "Nombre": "Clodsire",
+    "Tipo": "veneno/tierra",
+    "Nivel": "desconocido",
+    "Ataque Base": 127,
+    "Defensa Base": 151,
+    "Stamina Base": 277
+  },
+  "982": {
+    "Nombre": "Dudunsparce",
+    "Tipo": "normal",
+    "Nivel": "desconocido",
+    "Ataque Base": 188,
+    "Defensa Base": 150,
+    "Stamina Base": 268
+  },
+  "983": {
+    "Nombre": "Kingambit",
+    "Tipo": "siniestro/acero",
+    "Nivel": "desconocido",
+    "Ataque Base": 238,
+    "Defensa Base": 203,
+    "Stamina Base": 225
+  },
+  "996": {
+    "Nombre": "Frigibax",
+    "Tipo": "dragon/hielo",
+    "Nivel": "desconocido",
+    "Ataque Base": 134,
+    "Defensa Base": 86,
+    "Stamina Base": 163
+  },
+  "997": {
+    "Nombre": "Arctibax",
+    "Tipo": "dragon/hielo",
+    "Nivel": "desconocido",
+    "Ataque Base": 173,
+    "Defensa Base": 128,
+    "Stamina Base": 207
+  },
+  "998": {
+    "Nombre": "Baxcalibur",
+    "Tipo": "dragon/hielo",
+    "Nivel": "desconocido",
+    "Ataque Base": 254,
+    "Defensa Base": 168,
+    "Stamina Base": 229
+  },
+  "999": {
+    "Nombre": "Gimmighoul",
+    "Tipo": "fantasma",
+    "Nivel": "desconocido",
+    "Ataque Base": 140,
+    "Defensa Base": 76,
+    "Stamina Base": 128
+  },
+  "1000": {
+    "Nombre": "Gholdengo",
+    "Tipo": "acero/fantasma",
+    "Nivel": "desconocido",
+    "Ataque Base": 252,
+    "Defensa Base": 190,
+    "Stamina Base": 202
+  },
+  "1011": {
+    "Nombre": "Dipplin",
+    "Tipo": "planta/dragon",
+    "Nivel": "desconocido",
+    "Ataque Base": 173,
+    "Defensa Base": 184,
+    "Stamina Base": 190
+  },
+  "1012": {
+    "Nombre": "Poltchageist",
+    "Tipo": "planta/fantasma",
+    "Nivel": "desconocido",
+    "Ataque Base": 134,
+    "Defensa Base": 96,
+    "Stamina Base": 120
+  },
+  "1013": {
+    "Nombre": "Sinistcha",
+    "Tipo": "planta/fantasma",
+    "Nivel": "desconocido",
+    "Ataque Base": 225,
+    "Defensa Base": 191,
+    "Stamina Base": 174
+  },
+  "1019": {
+    "Nombre": "Hydrapple",
+    "Tipo": "planta/dragon",
+    "Nivel": "desconocido",
+    "Ataque Base": 216,
+    "Defensa Base": 186,
+    "Stamina Base": 235
+  }
+}

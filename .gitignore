@@ -1,0 +1,12 @@
+# Archivos temporales de descarga
+tmp/
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
