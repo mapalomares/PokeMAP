@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# sync_pokemap_reference.py  — v2
+# Columnas nuevas: NivelBase, CategoriaGO, EtiquetasGO, esBebe, Region
 import csv
 import hashlib
 import json
@@ -12,7 +14,62 @@ SOURCES = {
     "pokemon_stats": "https://pogoapi.net/api/v1/pokemon_stats.json",
     "pokemon_types": "https://pogoapi.net/api/v1/pokemon_types.json",
     "released_pokemon": "https://pogoapi.net/api/v1/released_pokemon.json",
+    "mega_pokemon": "https://pogoapi.net/api/v1/mega_pokemon.json",
+    "shadow_pokemon": "https://pogoapi.net/api/v1/shadow_pokemon.json",
     "pokemon_species_csv": "https://raw.githubusercontent.com/veekun/pokedex/master/pokedex/data/csv/pokemon_species.csv",
+}
+
+# IDs de Ultra Bestias (estables entre generaciones)
+ULTRA_BEAST_IDS = {793, 794, 795, 796, 797, 798, 799, 803, 804, 805, 806}
+
+# Regionales en Pokémon GO: {pokemon_id: "Región"}
+# Fuente: conocimiento consolidado de la comunidad GO (aproximado, cambia con eventos)
+REGIONAL_MAP = {
+    # Gen 1
+    83:  "Asia Oriental",
+    115: "Australia / Nueva Zelanda",
+    122: "Europa",
+    128: "Norteamérica",
+    # Gen 2
+    214: "Sudamérica / Sur de EEUU",
+    222: "Regiones tropicales",
+    313: "Europa / Asia / Pacífico",
+    314: "América / África",
+    # Gen 3
+    324: "Sur de Asia",
+    335: "Europa / Asia / Pacífico",
+    336: "América / África",
+    337: "América / África",
+    338: "Europa / Asia / Pacífico",
+    357: "África / Sur de Europa",
+    369: "Nueva Zelanda / Oceanía",
+    # Gen 4
+    417: "Canadá / Norte de EEUU",
+    422: "Global (formas por región)",  # Shellos
+    423: "Global (formas por región)",  # Gastrodon
+    439: "Europa",
+    441: "Hemisferio Sur",
+    455: "Sureste de EEUU",
+    # Legendarios regionales (raids, no captura libre)
+    480: "Asia-Pacífico",   # Uxie
+    481: "Europa/África",   # Mesprit
+    482: "América",         # Azelf
+    # Gen 5
+    538: "Europa / Asia / Pacífico",
+    539: "América / África",
+    556: "América",
+    561: "Egipto / Grecia",
+    626: "Norteamérica",
+    631: "América / África / Oriente Medio",
+    632: "Europa / Asia / Pacífico",
+    # Gen 6
+    707: "Asia",            # Klefki
+    # Gen 7
+    741: "Global (formas por región)",  # Oricorio
+    # Gen 8
+    865: "Gallar/Reino Unido",  # Sirfetch'd (event, no estrictamente regional)
+    875: "Global",              # Eiscue
+    # Gen 9 (expandir según disponibilidad GO)
 }
 
 TYPE_ES = {
@@ -68,8 +125,9 @@ def save_json(path, data):
         json.dump(data, f, ensure_ascii=False, indent=2)
 
 
-def load_species_levels(path):
-    levels = {}
+def load_species_data(path):
+    """Devuelve dict {pid: {nivel_base, es_bebe}} desde el CSV de especies."""
+    data = {}
     with open(path, "r", encoding="utf-8", newline="") as f:
         reader = csv.DictReader(f)
         for row in reader:
@@ -79,13 +137,15 @@ def load_species_levels(path):
                 continue
             is_legendary = row.get("is_legendary", "0") == "1"
             is_mythical = row.get("is_mythical", "0") == "1"
+            is_baby = row.get("is_baby", "0") == "1"
             if is_mythical:
-                levels[pid] = "singular"
+                nivel = "singular"
             elif is_legendary:
-                levels[pid] = "legendario"
+                nivel = "legendario"
             else:
-                levels[pid] = "normal"
-    return levels
+                nivel = "normal"
+            data[pid] = {"nivel_base": nivel, "es_bebe": is_baby}
+    return data
 
 
 def pick_preferred_form(rows):
@@ -98,9 +158,29 @@ def pick_preferred_form(rows):
     return by_id
 
 
-def build_rows(stats, types, released, levels_by_id):
+def build_mega_sets(mega_data):
+    """Devuelve (set_ids_con_mega, set_ids_con_primigenio)."""
+    mega_ids = set()
+    primal_ids = set()
+    for entry in mega_data:
+        pid = int(entry["pokemon_id"])
+        mega_ids.add(pid)
+        if "primal" in entry.get("mega_name", "").lower():
+            primal_ids.add(pid)
+    return mega_ids, primal_ids
+
+
+def build_shadow_set(shadow_data):
+    """Devuelve set de IDs con forma sombra disponible en GO."""
+    return {int(k) for k in shadow_data.keys()}
+
+
+def build_rows(stats, types, released, mega_data, shadow_data, species_data):
     stats_by_id = pick_preferred_form(stats)
     types_by_id = pick_preferred_form(types)
+    mega_ids, primal_ids = build_mega_sets(mega_data)
+    shadow_ids = build_shadow_set(shadow_data)
+
     fecha = datetime.now().strftime("%Y-%m-%d")
     rows = []
 
@@ -111,7 +191,38 @@ def build_rows(stats, types, released, levels_by_id):
         if st is None:
             continue
 
-        nivel = levels_by_id.get(pid, "desconocido")
+        sp = species_data.get(pid, {})
+        nivel_base = sp.get("nivel_base", "desconocido")
+        es_bebe = sp.get("es_bebe", False)
+
+        # CategoriaGO: clasificación jerárquica GO-específica
+        if pid in ULTRA_BEAST_IDS:
+            categoria_go = "ultraente"
+        elif nivel_base == "singular":
+            categoria_go = "singular"
+        elif nivel_base == "legendario":
+            categoria_go = "legendario"
+        elif es_bebe:
+            categoria_go = "bebe"
+        else:
+            categoria_go = "normal"
+
+        # EtiquetasGO: multi-etiqueta separada por comas
+        etiquetas = []
+        if es_bebe:
+            etiquetas.append("bebe")
+        if pid in mega_ids:
+            etiquetas.append("mega")
+        if pid in primal_ids:
+            etiquetas.append("primigenio")
+        if pid in shadow_ids:
+            etiquetas.append("sombra")
+        if pid in REGIONAL_MAP:
+            etiquetas.append("regional")
+
+        # Región (solo para regionales)
+        region = REGIONAL_MAP.get(pid, "")
+
         tipo_raw = tp.get("type", []) if tp else []
         tipo = "/".join(TYPE_ES.get(t, t.lower()) for t in tipo_raw) if tipo_raw else "desconocido"
         nombre = st.get("pokemon_name") or released_info.get("name") or f"Pokemon {pid}"
@@ -121,7 +232,11 @@ def build_rows(stats, types, released, levels_by_id):
                 "id": pid,
                 "Nombre": nombre,
                 "Tipo": tipo,
-                "Nivel": nivel,
+                "NivelBase": nivel_base,
+                "CategoriaGO": categoria_go,
+                "EtiquetasGO": ",".join(etiquetas),
+                "esBebe": "sí" if es_bebe else "no",
+                "Region": region,
                 "Ataque Base": st.get("base_attack", ""),
                 "Defensa Base": st.get("base_defense", ""),
                 "Stamina Base": st.get("base_stamina", ""),
@@ -129,40 +244,40 @@ def build_rows(stats, types, released, levels_by_id):
             }
         )
 
-    rows.sort(key=lambda r: (r["id"], r["Nombre"].lower()))
+    rows.sort(key=lambda r: r["id"])
     return rows
+
+
+CSV_FIELDS = [
+    "Nombre",
+    "Tipo",
+    "NivelBase",
+    "CategoriaGO",
+    "EtiquetasGO",
+    "esBebe",
+    "Region",
+    "Ataque Base",
+    "Defensa Base",
+    "Stamina Base",
+    "fechaActualizacion",
+]
+
+SNAPSHOT_FIELDS = ["Nombre", "Tipo", "NivelBase", "CategoriaGO", "EtiquetasGO",
+                   "esBebe", "Region", "Ataque Base", "Defensa Base", "Stamina Base"]
 
 
 def write_csv(rows, path):
     with open(path, "w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(
-            f,
-            fieldnames=[
-                "Nombre",
-                "Tipo",
-                "Nivel",
-                "Ataque Base",
-                "Defensa Base",
-                "Stamina Base",
-                "fechaActualizacion",
-            ],
-        )
+        writer = csv.DictWriter(f, fieldnames=CSV_FIELDS)
         writer.writeheader()
         for row in rows:
-            writer.writerow({k: row[k] for k in writer.fieldnames})
+            writer.writerow({k: row[k] for k in CSV_FIELDS})
 
 
 def rows_by_id(rows):
     out = {}
     for row in rows:
-        out[str(row["id"])] = {
-            "Nombre": row["Nombre"],
-            "Tipo": row["Tipo"],
-            "Nivel": row["Nivel"],
-            "Ataque Base": row["Ataque Base"],
-            "Defensa Base": row["Defensa Base"],
-            "Stamina Base": row["Stamina Base"],
-        }
+        out[str(row["id"])] = {f: row[f] for f in SNAPSHOT_FIELDS}
     return out
 
 
@@ -188,7 +303,7 @@ def diff_rows(previous_rows, current_rows):
         old = previous_rows[pid]
         new = current_rows[pid]
         field_changes = {}
-        for field in ["Nombre", "Tipo", "Nivel", "Ataque Base", "Defensa Base", "Stamina Base"]:
+        for field in SNAPSHOT_FIELDS:
             if old.get(field) != new.get(field):
                 field_changes[field] = {"old": old.get(field), "new": new.get(field)}
         if field_changes:
@@ -263,9 +378,11 @@ def main():
     stats = load_json(local_files["pokemon_stats"])
     types = load_json(local_files["pokemon_types"])
     released = load_json(local_files["released_pokemon"])
-    levels_by_id = load_species_levels(local_files["pokemon_species_csv"])
+    mega_data = load_json(local_files["mega_pokemon"])
+    shadow_data = load_json(local_files["shadow_pokemon"])
+    species_data = load_species_data(local_files["pokemon_species_csv"])
 
-    rows = build_rows(stats, types, released, levels_by_id)
+    rows = build_rows(stats, types, released, mega_data, shadow_data, species_data)
     write_csv(rows, "pokeMAP.csv")
     current_rows = rows_by_id(rows)
 
