@@ -165,7 +165,7 @@ def save_json(path, data):
 
 
 def load_species_data(path):
-    """Devuelve dict {pid: {nivel_base, es_bebe}} desde el CSV de especies."""
+    """Devuelve dict {pid: {nivel_base, es_bebe, evolves_from_id}} desde species CSV."""
     data = {}
     with open(path, "r", encoding="utf-8", newline="") as f:
         reader = csv.DictReader(f)
@@ -174,6 +174,8 @@ def load_species_data(path):
                 pid = int(row["id"])
             except Exception:
                 continue
+            evolves_from_raw = row.get("evolves_from_species_id", "")
+            evolves_from_id = int(evolves_from_raw) if evolves_from_raw else None
             is_legendary = row.get("is_legendary", "0") == "1"
             is_mythical = row.get("is_mythical", "0") == "1"
             is_baby = row.get("is_baby", "0") == "1"
@@ -183,7 +185,11 @@ def load_species_data(path):
                 nivel = "legendario"
             else:
                 nivel = "normal"
-            data[pid] = {"nivel_base": nivel, "es_bebe": is_baby}
+            data[pid] = {
+                "nivel_base": nivel,
+                "es_bebe": is_baby,
+                "evolves_from_id": evolves_from_id,
+            }
     return data
 
 
@@ -230,6 +236,43 @@ def build_raid_sets(raid_data):
                 if pid not in raid_ids or tier < raid_ids[pid]:
                     raid_ids[pid] = tier
     return raid_ids
+
+
+def build_children_map(species_data, released_ids):
+    """Crea mapa {parent_id: [child_ids]} limitado al pool de Pokémon released en GO."""
+    children = {}
+    for pid, sp in species_data.items():
+        parent = sp.get("evolves_from_id")
+        if parent is None:
+            continue
+        if pid not in released_ids or parent not in released_ids:
+            continue
+        if parent not in children:
+            children[parent] = []
+        children[parent].append(pid)
+    for parent in children:
+        children[parent] = sorted(children[parent])
+    return children
+
+
+def get_descendants(pid, children_map):
+    """Devuelve todos los descendientes evolutivos alcanzables desde pid."""
+    out = []
+    stack = list(children_map.get(pid, []))
+    seen = set()
+    while stack:
+        current = stack.pop(0)
+        if current in seen:
+            continue
+        seen.add(current)
+        out.append(current)
+        stack.extend(children_map.get(current, []))
+    return out
+
+
+def pokemon_power_index(row):
+    """Índice único para comparar potencial (pondera PvE y PvP)."""
+    return int(row["ScorePvE"]) + int(row["ScorePvP_GL"]) + int(row["ScorePvP_UL"])
 
 
 def score_pve(attack, defense, stamina, tipos_json):
@@ -309,7 +352,9 @@ def build_rows(stats, types, released, mega_data, shadow_data, raid_data, specie
     raid_ids = build_raid_sets(raid_data)
 
     fecha = datetime.now().strftime("%Y-%m-%d")
-    rows = []
+    released_ids = {int(k) for k in released.keys()}
+    children_map = build_children_map(species_data, released_ids)
+    base_rows = []
 
     for pid_str, released_info in released.items():
         pid = int(pid_str)
@@ -374,7 +419,7 @@ def build_rows(stats, types, released, mega_data, shadow_data, raid_data, specie
         # Contadores
         contadores = get_counters(tipo)
 
-        rows.append(
+        base_rows.append(
             {
                 "id": pid,
                 "Nombre": nombre,
@@ -397,6 +442,37 @@ def build_rows(stats, types, released, mega_data, shadow_data, raid_data, specie
             }
         )
 
+    # Segunda pasada: potencial por evolución
+    rows_by_id = {row["id"]: row for row in base_rows}
+    for row in base_rows:
+        pid = row["id"]
+        direct_evos = children_map.get(pid, [])
+        all_desc = get_descendants(pid, children_map)
+
+        row["EvolucionaA"] = "/".join(rows_by_id[x]["Nombre"] for x in direct_evos if x in rows_by_id)
+
+        if not all_desc:
+            row["EvolucionRecomendada"] = ""
+            row["UsoEvolucionRecomendada"] = ""
+            row["ScoreEvolucionRecomendada"] = ""
+            continue
+
+        candidates = [pid] + [x for x in all_desc if x in rows_by_id]
+        best_id = max(candidates, key=lambda x: pokemon_power_index(rows_by_id[x]))
+        current_score = pokemon_power_index(rows_by_id[pid])
+        best_score = pokemon_power_index(rows_by_id[best_id])
+
+        # Solo recomendar evolución si mejora realmente el potencial
+        if best_id != pid and best_score > current_score:
+            row["EvolucionRecomendada"] = rows_by_id[best_id]["Nombre"]
+            row["UsoEvolucionRecomendada"] = rows_by_id[best_id]["UsoPrincipal"]
+            row["ScoreEvolucionRecomendada"] = best_score
+        else:
+            row["EvolucionRecomendada"] = ""
+            row["UsoEvolucionRecomendada"] = ""
+            row["ScoreEvolucionRecomendada"] = ""
+
+    rows = base_rows
     rows.sort(key=lambda r: r["id"])
     return rows
 
@@ -418,12 +494,17 @@ CSV_FIELDS = [
     "UsoPrincipal",
     "Contadores",
     "EsRaid",
+    "EvolucionaA",
+    "EvolucionRecomendada",
+    "UsoEvolucionRecomendada",
+    "ScoreEvolucionRecomendada",
     "fechaActualizacion",
 ]
 
 SNAPSHOT_FIELDS = ["Nombre", "Tipo", "NivelBase", "CategoriaGO", "EtiquetasGO",
                    "esBebe", "Region", "Ataque Base", "Defensa Base", "Stamina Base",
-                   "ScorePvE", "ScorePvP_GL", "ScorePvP_UL", "UsoPrincipal", "Contadores", "EsRaid"]
+                   "ScorePvE", "ScorePvP_GL", "ScorePvP_UL", "UsoPrincipal", "Contadores", "EsRaid",
+                   "EvolucionaA", "EvolucionRecomendada", "UsoEvolucionRecomendada", "ScoreEvolucionRecomendada"]
 
 
 def write_csv(rows, path):
@@ -489,7 +570,11 @@ def write_excel(rows, path):
     ws.column_dimensions["N"].width = 14   # UsoPrincipal
     ws.column_dimensions["O"].width = 25   # Contadores
     ws.column_dimensions["P"].width = 8    # EsRaid
-    ws.column_dimensions["Q"].width = 14   # fechaActualizacion
+    ws.column_dimensions["Q"].width = 18   # EvolucionaA
+    ws.column_dimensions["R"].width = 22   # EvolucionRecomendada
+    ws.column_dimensions["S"].width = 20   # UsoEvolucionRecomendada
+    ws.column_dimensions["T"].width = 12   # ScoreEvolucionRecomendada
+    ws.column_dimensions["U"].width = 14   # fechaActualizacion
 
     # Freeze panes en header
     ws.freeze_panes = "A2"

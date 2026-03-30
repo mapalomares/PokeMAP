@@ -145,6 +145,10 @@ def display_pokemon(pokemon):
     uso_principal = pokemon["UsoPrincipal"]
     contadores = pokemon["Contadores"]
     es_raid = pokemon["EsRaid"]
+    evoluciona_a = pokemon.get("EvolucionaA", "")
+    evolucion_recomendada = pokemon.get("EvolucionRecomendada", "")
+    uso_evo_recomendada = pokemon.get("UsoEvolucionRecomendada", "")
+    score_evo_recomendada = pokemon.get("ScoreEvolucionRecomendada", "")
 
     nivel_icon = NIVEL_EMOJI.get(nivel_base, "❓")
     categoria_icon = TIER_EMOJI.get(categoria_go, "⭕")
@@ -184,6 +188,22 @@ def display_pokemon(pokemon):
         "coleccionable": "Principalmente para colección",
     }
     print(f"   {uso_icon} {BOLD}{uso_texto.get(uso_principal, 'Desconocido').upper()}{RESET}")
+
+    # Evoluciones
+    print(f"\n🔁 {BOLD}Potencial de Evolución{RESET}")
+    if evoluciona_a:
+        print(f"   Evoluciona a: {evoluciona_a}")
+    else:
+        print(f"   Evoluciona a: —")
+
+    if evolucion_recomendada:
+        print(f"   Recomendado: {BOLD}{evolucion_recomendada}{RESET}")
+        uso_evo_texto = uso_texto.get(uso_evo_recomendada, uso_evo_recomendada)
+        print(f"   Uso recomendado tras evolucionar: {uso_evo_texto}")
+        if score_evo_recomendada:
+            print(f"   Score potencial (suma PvE+PvP): {score_evo_recomendada}")
+    else:
+        print("   Recomendado: mantener actual")
 
     # Contadores
     if contadores and contadores != "—":
