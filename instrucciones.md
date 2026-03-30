@@ -65,7 +65,34 @@ python3 check_pokemon.py togepi
 
 ---
 
-### 3. `generate_pokemap_csv.py` ← generador simple (legacy)
+### 3. App iPhone (PWA) en `docs/`
+
+La app móvil instalable está en la carpeta `docs/`.
+
+Archivos clave:
+- `docs/index.html`
+- `docs/app.js`
+- `docs/styles.css`
+- `docs/manifest.webmanifest`
+- `docs/sw.js`
+- `docs/data/pokeMAP.csv`
+
+Características:
+- Interfaz simple: escribes el nombre y devuelve utilidad/scores/evolución.
+- Instalable en iPhone desde Safari con "Añadir a pantalla de inicio".
+- Cache local vía service worker para carga rápida.
+
+Para mantener datos al día:
+- `python3 sync_pokemap_reference.py`
+- Este comando actualiza también `docs/data/pokeMAP.csv` automáticamente.
+
+Requisito de publicación:
+- Necesitas servir `docs/` por HTTPS (GitHub Pages, Netlify, Vercel, etc.).
+- GitHub Pages no está disponible para este repo privado en el plan actual.
+
+---
+
+### 4. `generate_pokemap_csv.py` ← generador simple (legacy)
 
 Versión simplificada sin control de cambios. Solo descarga y genera el CSV.
 

@@ -1,6 +1,6 @@
 # PokeMAP - Especificaciones del Proyecto
 
-> Última actualización: 2026-03-28
+> Última actualización: 2026-03-30
 
 ---
 
@@ -29,6 +29,9 @@ La base de referencia es el primer pilar del proyecto. Permite determinar para c
 | PoGoAPI stats | `https://pogoapi.net/api/v1/pokemon_stats.json` | Ataque, Defensa, Stamina base |
 | PoGoAPI tipos | `https://pogoapi.net/api/v1/pokemon_types.json` | Tipo(s) por forma |
 | PoGoAPI released | `https://pogoapi.net/api/v1/released_pokemon.json` | Catálogo Pokémon disponibles en GO |
+| PoGoAPI evolutions | `https://pogoapi.net/api/v1/pokemon_evolutions.json` | Evoluciones, caramelos y objeto requerido |
+| PoGoAPI shadow | `https://pogoapi.net/api/v1/shadow_pokemon.json` | Disponibilidad de versión sombra |
+| PoGoAPI raid bosses | `https://pogoapi.net/api/v1/raid_bosses.json` | Jefes de raid actuales |
 | Veekun species CSV | `https://raw.githubusercontent.com/veekun/pokedex/master/pokedex/data/csv/pokemon_species.csv` | flags `is_legendary` e `is_mythical` |
 
 ### Columnas del CSV de referencia (`pokeMAP.csv`)
@@ -36,17 +39,37 @@ La base de referencia es el primer pilar del proyecto. Permite determinar para c
 |---|---|
 | Nombre | Nombre del Pokémon |
 | Tipo | Tipo(s) en español separados por `/` |
-| Nivel | `normal`, `legendario` o `singular` |
+| NivelBase | `normal`, `legendario` o `singular` |
+| CategoriaGO | categoría principal GO (`normal`, `legendario`, `singular`, `ultraente`, `bebe`) |
+| EtiquetasGO | etiquetas auxiliares (`mega`, `primigenio`, `sombra`, `regional`, `bebe`) |
+| esBebe | flag para valorar intercambios |
+| Region | región exclusiva si aplica |
 | Ataque Base | Stat base GO |
 | Defensa Base | Stat base GO |
 | Stamina Base | Stat base GO |
-| fechaActualización | Fecha de la última extracción |
+| ScorePvE | score heurístico 1-100 para PvE |
+| ScorePvP_GL | score heurístico 1-100 para Gran Liga |
+| ScorePvP_UL | score heurístico 1-100 para Ultra Liga |
+| UsoPrincipal | recomendación automática (`raid`, `pve`, `pvp_gl`, `pvp_ul`, `coleccionable`) |
+| Contadores | tipos contra los que es fuerte |
+| EsRaid | si está en raids actuales |
+| EvolucionaA | evoluciones directas |
+| EvolucionRecomendada | mejor evolución por potencial total |
+| UsoEvolucionRecomendada | uso principal de la evolución objetivo |
+| ScoreEvolucionRecomendada | score total de la evolución objetivo |
+| CosteCaramelosEvolucionRecomendada | caramelos acumulados para llegar a la evolución recomendada |
+| ObjetosEvolucionRecomendada | objetos necesarios para la ruta evolutiva recomendada |
+| fechaActualizacion | Fecha de la última extracción |
 
-### Sobre la clasificación de Nivel
+### Sobre la clasificación de nivel y evolución
 - `is_legendary` → **legendario**
 - `is_mythical` → **singular**
 - Resto → **normal**
-- Las formas primigenias (Groudon, Kyogre) y mega no tienen flag `is_primal`; aparecen como formas en `mega_pokemon.json` de PoGoAPI. Se modelarán como columna `CategoriaGO` en versiones futuras.
+- Las formas primigenias (Groudon, Kyogre) se detectan en `mega_pokemon.json`.
+- Coste de evolución se calcula en base a `pokemon_evolutions.json`:
+  - `candy_required` por salto.
+  - `item_required` (ejemplo: Sinnoh Stone, Metal Coat, Upgrade).
+- Se calcula coste acumulado de caramelos y objetos para llegar al objetivo recomendado.
 
 ### Estrategia de actualización y control de cambios
 - Cada ejecución del script de sincronización:
@@ -62,7 +85,13 @@ La base de referencia es el primer pilar del proyecto. Permite determinar para c
 | Script | Función |
 |---|---|
 | `generate_pokemap_csv.py` | Generador simple: descarga fuentes y escribe `pokeMAP.csv`. |
-| `sync_pokemap_reference.py` | Script principal: descarga, hashes, delta, snapshots y CSV. Usar este en producción. |
+| `sync_pokemap_reference.py` | Script principal: descarga, hashes, delta, snapshots, CSV y XLSX. Usar este en producción. |
+| `check_pokemon.py` | Consulta rápida por nombre: utilidad, scores y recomendación evolutiva con coste. |
+
+### App iPhone sin cuenta Apple Developer
+- Se implementa como PWA en `docs/` (instalable desde Safari).
+- Interfaz simple: escribes nombre y devuelve resultado equivalente al script Python.
+- Datos locales en `docs/data/pokeMAP.csv` sincronizados por `sync_pokemap_reference.py`.
 
 ---
 
@@ -79,8 +108,14 @@ PokeMAP/
 │   ├── metadata/               # Hashes y datasets por ejecución
 │   └── reports/                # Reportes delta (Markdown)
 ├── tmp/                        # Archivos temporales (ignorados por git)
-├── docs/                       # Documentación adicional (futuro)
-├── frontend/                   # Aplicación web (futuro)
+├── docs/                       # PWA instalable para iPhone
+│   ├── index.html
+│   ├── app.js
+│   ├── styles.css
+│   ├── manifest.webmanifest
+│   ├── sw.js
+│   └── data/pokeMAP.csv
+├── frontend/                   # Reservado para evolución futura
 └── backend/                    # API REST (futuro, fase 2)
 ```
 
@@ -95,8 +130,7 @@ PokeMAP/
 ---
 
 ## 7. Próximos Pasos
-- Añadir columna `CategoriaGO` (mega, primigenio, ultraente, sombra, etc.) al CSV.
-- Definir criterio automático de "bueno para qué" (score raids, gimnasio, PvP).
-- Definir esquema de datos para colección personal, tareas e inventario.
-- Montar estructura base de frontend con navegación por módulos.
-- Crear primer prototipo de dashboard + mapa + checklist de tareas.
+- Mejorar fórmula de scoring con movimientos reales y rankings PvP externos (PvPoke).
+- Añadir filtros por presupuesto de caramelos/objetos en `check_pokemon.py` y PWA.
+- Publicar PWA en hosting HTTPS compatible con instalación iPhone.
+- Añadir persistencia de tu caja personal para comparar "lo que tienes" vs "lo ideal".

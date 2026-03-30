@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#123524">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="PokeMAP">
+  <title>PokeMAP Mobile</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg-orb orb-a"></div>
+  <div class="bg-orb orb-b"></div>
+
+  <main class="app-shell">
+    <header class="hero">
+      <h1>PokeMAP</h1>
+      <p>Consulta rápida para decidir si un Pokémon vale la pena y para qué usarlo.</p>
+    </header>
+
+    <section class="search-card">
+      <label for="pokemonName">Nombre del Pokémon</label>
+      <div class="search-row">
+        <input id="pokemonName" type="text" placeholder="Ej: rhyhorn, mewtwo, mr. mime" autocomplete="off">
+        <button id="searchBtn">Buscar</button>
+      </div>
+      <small id="helperText">También acepta búsqueda parcial.</small>
+    </section>
+
+    <section id="result" class="result-card hidden"></section>
+    <section id="error" class="error-card hidden"></section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

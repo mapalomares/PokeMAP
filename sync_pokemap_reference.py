@@ -765,6 +765,8 @@ def main():
 
     rows = build_rows(stats, types, released, evolutions_data, mega_data, shadow_data, raid_data, species_data)
     write_csv(rows, "pokeMAP.csv")
+    os.makedirs("docs/data", exist_ok=True)
+    write_csv(rows, "docs/data/pokeMAP.csv")
     write_excel(rows, "pokeMAP.xlsx")
     current_rows = rows_by_id(rows)
 
