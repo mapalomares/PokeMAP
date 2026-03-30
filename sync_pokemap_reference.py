@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
-# sync_pokemap_reference.py  — v2
+# sync_pokemap_reference.py  — v2.1
 # Columnas nuevas: NivelBase, CategoriaGO, EtiquetasGO, esBebe, Region
+# Export: CSV + Excel (pokeMAP.xlsx)
 import csv
 import hashlib
 import json
@@ -8,6 +9,13 @@ import os
 import shutil
 import subprocess
 from datetime import datetime, timezone
+
+try:
+    from openpyxl import Workbook
+    from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
+    HAS_OPENPYXL = True
+except ImportError:
+    HAS_OPENPYXL = False
 
 
 SOURCES = {
@@ -274,6 +282,64 @@ def write_csv(rows, path):
             writer.writerow({k: row[k] for k in CSV_FIELDS})
 
 
+def write_excel(rows, path):
+    """Escribe el CSV a un archivo .xlsx con estilos básicos. Requiere openpyxl."""
+    if not HAS_OPENPYXL:
+        print(f"⚠️  openpyxl no está instalado. Skipping {path}")
+        print("   Para habilitar: pip install openpyxl")
+        return
+
+    wb = Workbook()
+    ws = wb.active
+    ws.title = "PokeMAP"
+
+    # Header con estilos
+    header_fill = PatternFill(start_color="4472C4", end_color="4472C4", fill_type="solid")
+    header_font = Font(bold=True, color="FFFFFF", size=11)
+    border = Border(
+        left=Side(style="thin"),
+        right=Side(style="thin"),
+        top=Side(style="thin"),
+        bottom=Side(style="thin"),
+    )
+
+    for col_idx, field in enumerate(CSV_FIELDS, 1):
+        cell = ws.cell(row=1, column=col_idx, value=field)
+        cell.fill = header_fill
+        cell.font = header_font
+        cell.border = border
+        cell.alignment = Alignment(horizontal="center", vertical="center", wrap_text=True)
+
+    # Datos
+    for row_idx, row_data in enumerate(rows, 2):
+        for col_idx, field in enumerate(CSV_FIELDS, 1):
+            value = row_data.get(field, "")
+            cell = ws.cell(row=row_idx, column=col_idx, value=value)
+            cell.border = border
+            # Color alternado para mejor legibilidad
+            if row_idx % 2 == 0:
+                cell.fill = PatternFill(start_color="E7E6E6", end_color="E7E6E6", fill_type="solid")
+
+    # Auto-ajuste de anchos
+    ws.column_dimensions["A"].width = 20  # Nombre
+    ws.column_dimensions["B"].width = 15  # Tipo
+    ws.column_dimensions["C"].width = 12  # NivelBase
+    ws.column_dimensions["D"].width = 14  # CategoriaGO
+    ws.column_dimensions["E"].width = 25  # EtiquetasGO
+    ws.column_dimensions["F"].width = 8   # esBebe
+    ws.column_dimensions["G"].width = 25  # Region
+    ws.column_dimensions["H"].width = 12  # Ataque Base
+    ws.column_dimensions["I"].width = 12  # Defensa Base
+    ws.column_dimensions["J"].width = 12  # Stamina Base
+    ws.column_dimensions["K"].width = 16  # fechaActualizacion
+
+    # Freeze panes en header
+    ws.freeze_panes = "A2"
+
+    wb.save(path)
+    print(f"✓ Excel generado: {path}")
+
+
 def rows_by_id(rows):
     out = {}
     for row in rows:
@@ -384,6 +450,7 @@ def main():
 
     rows = build_rows(stats, types, released, mega_data, shadow_data, species_data)
     write_csv(rows, "pokeMAP.csv")
+    write_excel(rows, "pokeMAP.xlsx")
     current_rows = rows_by_id(rows)
 
     latest_hashes_path = "data/metadata/latest_hashes.json"
@@ -419,9 +486,13 @@ def main():
     write_report(report_path, now_iso, source_changes, added, removed, changed)
     shutil.copyfile(report_path, "data/reports/last_delta.md")
 
-    print(f"CSV generado: pokeMAP.csv ({len(rows)} filas)")
-    print(f"Hashes guardados en: {latest_hashes_path}")
-    print(f"Reporte delta: {report_path}")
+    print(f"✓ CSV generado: pokeMAP.csv ({len(rows)} filas)")
+    if HAS_OPENPYXL:
+        print(f"✓ Excel generado: pokeMAP.xlsx")
+    else:
+        print(f"⚠️  Excel no generado (instala openpyxl: pip install openpyxl)")
+    print(f"✓ Hashes guardados en: {latest_hashes_path}")
+    print(f"✓ Reporte delta: {report_path}")
 
 
 if __name__ == "__main__":
