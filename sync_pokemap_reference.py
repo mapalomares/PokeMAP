@@ -24,6 +24,7 @@ SOURCES = {
     "released_pokemon": "https://pogoapi.net/api/v1/released_pokemon.json",
     "mega_pokemon": "https://pogoapi.net/api/v1/mega_pokemon.json",
     "shadow_pokemon": "https://pogoapi.net/api/v1/shadow_pokemon.json",
+    "raid_bosses": "https://pogoapi.net/api/v1/raid_bosses.json",
     "pokemon_species_csv": "https://raw.githubusercontent.com/veekun/pokedex/master/pokedex/data/csv/pokemon_species.csv",
 }
 
@@ -79,6 +80,36 @@ REGIONAL_MAP = {
     875: "Global",              # Eiscue
     # Gen 9 (expandir según disponibilidad GO)
 }
+
+# Tabla de efectividad: {tipo_defensor: [tipos_super_efectivos]}
+SUPER_EFFECTIVE = {
+    "normal": ["fighting"],
+    "fire": ["water", "ground", "rock"],
+    "water": ["electric", "grass"],
+    "electric": ["ground"],
+    "grass": ["fire", "ice", "poison", "flying", "bug"],
+    "ice": ["fire", "fighting", "rock", "steel"],
+    "fighting": ["flying", "psychic", "fairy"],
+    "poison": ["ground", "psychic"],
+    "ground": ["water", "grass", "ice"],
+    "flying": ["electric", "ice", "rock"],
+    "psychic": ["bug", "ghost", "dark"],
+    "bug": ["fire", "flying", "rock"],
+    "rock": ["water", "grass", "fighting", "ground", "steel"],
+    "ghost": ["ghost", "dark"],
+    "dragon": ["ice", "dragon", "fairy"],
+    "dark": ["fighting", "bug", "fairy"],
+    "steel": ["fire", "water", "ground"],
+    "fairy": ["poison", "steel"],
+}
+
+# Inversa: {tipo_atacante: [tipos_defendidos_super_efectivamente]}
+DEALS_SUPER_TO = {}
+for defender, attackers in SUPER_EFFECTIVE.items():
+    for attacker in attackers:
+        if attacker not in DEALS_SUPER_TO:
+            DEALS_SUPER_TO[attacker] = []
+        DEALS_SUPER_TO[attacker].append(defender)
 
 TYPE_ES = {
     "Normal": "normal",
@@ -183,11 +214,99 @@ def build_shadow_set(shadow_data):
     return {int(k) for k in shadow_data.keys()}
 
 
-def build_rows(stats, types, released, mega_data, shadow_data, species_data):
+def build_raid_sets(raid_data):
+    """Devuelve {pid: tier_minimo} para raid bosses actuales."""
+    raid_ids = {}
+    if not isinstance(raid_data, dict) or "current" not in raid_data:
+        return raid_ids
+    for tier_str, bosses in raid_data.get("current", {}).items():
+        try:
+            tier = int(tier_str)
+        except ValueError:
+            continue
+        for boss in bosses:
+            pid = int(boss.get("id", 0))
+            if pid > 0:
+                if pid not in raid_ids or tier < raid_ids[pid]:
+                    raid_ids[pid] = tier
+    return raid_ids
+
+
+def score_pve(attack, defense, stamina, tipos_json):
+    """Score PvE (1-100) basado en stats."""
+    # Normalizar a 0-100 (max realistic stats ~300 attack, ~250 def, ~300 stamina)
+    atk_score = min(100, int((attack / 300.0) * 100))
+    def_score = min(100, int((defense / 250.0) * 100))
+    sta_score = min(100, int((stamina / 300.0) * 100))
+    # PvE favorece ataque fuerte
+    return int((atk_score * 0.5 + def_score * 0.2 + sta_score * 0.3))
+
+
+def score_pvp_gl(attack, defense, stamina):
+    """Score PvP Gran Liga (1-100). GL favorece alto CP pero stats balanceados.
+    CP máx en GL: 1500. Preferencia: defensa + stamina > ataque puro."""
+    # Calcular CP estimado (fórmula GO simplificada)
+    cp = ((attack + 15) * (defense + 15) * (stamina + 15)) // 10000
+    cp_score = min(100, max(50, int((cp / 1500.0) * 100)))
+    # Balance: defensa + stamina son críticos
+    def_sta = (defense + stamina) * 0.5
+    balance_score = min(100, int((def_sta / 300.0) * 100))
+    return int((cp_score * 0.4 + balance_score * 0.6))
+
+
+def score_pvp_ul(attack, defense, stamina):
+    """Score PvP Ultra Liga (1-100). UL permite CP hasta 2500.
+    Preferencia: ligeramente más ataque que GL, pero balance sigue siendo clave."""
+    cp = ((attack + 15) * (defense + 15) * (stamina + 15)) // 10000
+    cp_score = min(100, max(50, int((cp / 2500.0) * 100)))
+    atk_score = min(100, int((attack / 300.0) * 100))
+    balance_score = min(100, int(((defense + stamina) * 0.5 / 300.0) * 100))
+    return int((cp_score * 0.3 + atk_score * 0.4 + balance_score * 0.3))
+
+
+def determine_main_use(score_pve, score_pvp_gl, score_pvp_ul, raid_tier, es_raid):
+    """Determina uso principal basado en scores."""
+    if es_raid and raid_tier == 1:
+        return "raid"
+    if score_pve >= 75:
+        return "pve"
+    if score_pvp_gl >= 70:
+        return "pvp_gl"
+    if score_pvp_ul >= 70:
+        return "pvp_ul"
+    return "coleccionable"
+
+
+def get_counters(tipos_str):
+    """Devuelve tipos contra los que es fuerte (como string separado por /)."""
+    if not tipos_str or tipos_str == "desconocido":
+        return ""
+    tipos = tipos_str.split("/")
+    strong_against = set()
+    for tipo in tipos:
+        tipo_en = None
+        for en, es in TYPE_ES.items():
+            if es == tipo.lower():
+                tipo_en = en.lower()
+                break
+        if tipo_en and tipo_en in DEALS_SUPER_TO:
+            strong_against.update(DEALS_SUPER_TO[tipo_en])
+    if not strong_against:
+        return ""
+    # Traducir de vuelta a español
+    result = []
+    for t in sorted(strong_against):
+        es = TYPE_ES.get(t.capitalize(), t)
+        result.append(es)
+    return "/".join(result[:3])  # Top 3 solo
+
+
+def build_rows(stats, types, released, mega_data, shadow_data, raid_data, species_data):
     stats_by_id = pick_preferred_form(stats)
     types_by_id = pick_preferred_form(types)
     mega_ids, primal_ids = build_mega_sets(mega_data)
     shadow_ids = build_shadow_set(shadow_data)
+    raid_ids = build_raid_sets(raid_data)
 
     fecha = datetime.now().strftime("%Y-%m-%d")
     rows = []
@@ -235,6 +354,26 @@ def build_rows(stats, types, released, mega_data, shadow_data, species_data):
         tipo = "/".join(TYPE_ES.get(t, t.lower()) for t in tipo_raw) if tipo_raw else "desconocido"
         nombre = st.get("pokemon_name") or released_info.get("name") or f"Pokemon {pid}"
 
+        # Stats
+        attack = int(st.get("base_attack", 0))
+        defense = int(st.get("base_defense", 0))
+        stamina = int(st.get("base_stamina", 0))
+
+        # Scores
+        pve_score = score_pve(attack, defense, stamina, tipo)
+        pvp_gl_score = score_pvp_gl(attack, defense, stamina)
+        pvp_ul_score = score_pvp_ul(attack, defense, stamina)
+
+        # Raid
+        es_raid = "sí" if pid in raid_ids else "no"
+        raid_tier = raid_ids.get(pid, 0)
+
+        # Uso principal
+        uso_principal = determine_main_use(pve_score, pvp_gl_score, pvp_ul_score, raid_tier, es_raid == "sí")
+
+        # Contadores
+        contadores = get_counters(tipo)
+
         rows.append(
             {
                 "id": pid,
@@ -245,9 +384,15 @@ def build_rows(stats, types, released, mega_data, shadow_data, species_data):
                 "EtiquetasGO": ",".join(etiquetas),
                 "esBebe": "sí" if es_bebe else "no",
                 "Region": region,
-                "Ataque Base": st.get("base_attack", ""),
-                "Defensa Base": st.get("base_defense", ""),
-                "Stamina Base": st.get("base_stamina", ""),
+                "Ataque Base": attack,
+                "Defensa Base": defense,
+                "Stamina Base": stamina,
+                "ScorePvE": pve_score,
+                "ScorePvP_GL": pvp_gl_score,
+                "ScorePvP_UL": pvp_ul_score,
+                "UsoPrincipal": uso_principal,
+                "Contadores": contadores,
+                "EsRaid": es_raid,
                 "fechaActualizacion": fecha,
             }
         )
@@ -267,11 +412,18 @@ CSV_FIELDS = [
     "Ataque Base",
     "Defensa Base",
     "Stamina Base",
+    "ScorePvE",
+    "ScorePvP_GL",
+    "ScorePvP_UL",
+    "UsoPrincipal",
+    "Contadores",
+    "EsRaid",
     "fechaActualizacion",
 ]
 
 SNAPSHOT_FIELDS = ["Nombre", "Tipo", "NivelBase", "CategoriaGO", "EtiquetasGO",
-                   "esBebe", "Region", "Ataque Base", "Defensa Base", "Stamina Base"]
+                   "esBebe", "Region", "Ataque Base", "Defensa Base", "Stamina Base",
+                   "ScorePvE", "ScorePvP_GL", "ScorePvP_UL", "UsoPrincipal", "Contadores", "EsRaid"]
 
 
 def write_csv(rows, path):
@@ -321,17 +473,23 @@ def write_excel(rows, path):
                 cell.fill = PatternFill(start_color="E7E6E6", end_color="E7E6E6", fill_type="solid")
 
     # Auto-ajuste de anchos
-    ws.column_dimensions["A"].width = 20  # Nombre
-    ws.column_dimensions["B"].width = 15  # Tipo
-    ws.column_dimensions["C"].width = 12  # NivelBase
-    ws.column_dimensions["D"].width = 14  # CategoriaGO
-    ws.column_dimensions["E"].width = 25  # EtiquetasGO
-    ws.column_dimensions["F"].width = 8   # esBebe
-    ws.column_dimensions["G"].width = 25  # Region
-    ws.column_dimensions["H"].width = 12  # Ataque Base
-    ws.column_dimensions["I"].width = 12  # Defensa Base
-    ws.column_dimensions["J"].width = 12  # Stamina Base
-    ws.column_dimensions["K"].width = 16  # fechaActualizacion
+    ws.column_dimensions["A"].width = 20   # Nombre
+    ws.column_dimensions["B"].width = 15   # Tipo
+    ws.column_dimensions["C"].width = 12   # NivelBase
+    ws.column_dimensions["D"].width = 14   # CategoriaGO
+    ws.column_dimensions["E"].width = 25   # EtiquetasGO
+    ws.column_dimensions["F"].width = 8    # esBebe
+    ws.column_dimensions["G"].width = 18   # Region
+    ws.column_dimensions["H"].width = 12   # Ataque Base
+    ws.column_dimensions["I"].width = 12   # Defensa Base
+    ws.column_dimensions["J"].width = 12   # Stamina Base
+    ws.column_dimensions["K"].width = 10   # ScorePvE
+    ws.column_dimensions["L"].width = 12   # ScorePvP_GL
+    ws.column_dimensions["M"].width = 12   # ScorePvP_UL
+    ws.column_dimensions["N"].width = 14   # UsoPrincipal
+    ws.column_dimensions["O"].width = 25   # Contadores
+    ws.column_dimensions["P"].width = 8    # EsRaid
+    ws.column_dimensions["Q"].width = 14   # fechaActualizacion
 
     # Freeze panes en header
     ws.freeze_panes = "A2"
@@ -446,9 +604,10 @@ def main():
     released = load_json(local_files["released_pokemon"])
     mega_data = load_json(local_files["mega_pokemon"])
     shadow_data = load_json(local_files["shadow_pokemon"])
+    raid_data = load_json(local_files["raid_bosses"])
     species_data = load_species_data(local_files["pokemon_species_csv"])
 
-    rows = build_rows(stats, types, released, mega_data, shadow_data, species_data)
+    rows = build_rows(stats, types, released, mega_data, shadow_data, raid_data, species_data)
     write_csv(rows, "pokeMAP.csv")
     write_excel(rows, "pokeMAP.xlsx")
     current_rows = rows_by_id(rows)
