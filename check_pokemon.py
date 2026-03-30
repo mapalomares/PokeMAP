@@ -149,6 +149,8 @@ def display_pokemon(pokemon):
     evolucion_recomendada = pokemon.get("EvolucionRecomendada", "")
     uso_evo_recomendada = pokemon.get("UsoEvolucionRecomendada", "")
     score_evo_recomendada = pokemon.get("ScoreEvolucionRecomendada", "")
+    coste_caramelos_evo = pokemon.get("CosteCaramelosEvolucionRecomendada", "")
+    objetos_evo = pokemon.get("ObjetosEvolucionRecomendada", "")
 
     nivel_icon = NIVEL_EMOJI.get(nivel_base, "❓")
     categoria_icon = TIER_EMOJI.get(categoria_go, "⭕")
@@ -202,6 +204,10 @@ def display_pokemon(pokemon):
         print(f"   Uso recomendado tras evolucionar: {uso_evo_texto}")
         if score_evo_recomendada:
             print(f"   Score potencial (suma PvE+PvP): {score_evo_recomendada}")
+        if coste_caramelos_evo:
+            print(f"   Coste caramelos: {coste_caramelos_evo}")
+        if objetos_evo:
+            print(f"   Objeto requerido: {objetos_evo}")
     else:
         print("   Recomendado: mantener actual")
 

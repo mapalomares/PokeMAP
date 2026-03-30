@@ -127,6 +127,12 @@ cat data/metadata/hash_history.jsonl
 | UsoPrincipal | raid/pve/pvp_gl/pvp_ul/coleccionable | Recomendación automática de uso |
 | Contadores | Tipos (hasta 3) | Tipos vs los que este Pokémon es fuerte |
 | EsRaid | `sí` / `no` | Si está en raids activos de PoGoAPI |
+| EvolucionaA | Texto o vacío | Evoluciones directas disponibles |
+| EvolucionRecomendada | Texto o vacío | Mejor evolución por potencial total |
+| UsoEvolucionRecomendada | enum o vacío | Uso principal de la evolución recomendada |
+| ScoreEvolucionRecomendada | Número o vacío | Suma de scores PvE+PvP de la mejor evolución |
+| CosteCaramelosEvolucionRecomendada | Número o vacío | Caramelos totales hasta la evolución recomendada |
+| ObjetosEvolucionRecomendada | Texto o vacío | Objetos requeridos (ej. Sinnoh Stone) |
 | fechaActualizacion | `YYYY-MM-DD` | Fecha de sincronización local |
 
 > ⚠️ La fecha es la del día en que ejecutas el script, no la que publica la API (las APIs públicas no exponen fecha de actualización).

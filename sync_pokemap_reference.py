@@ -22,6 +22,7 @@ SOURCES = {
     "pokemon_stats": "https://pogoapi.net/api/v1/pokemon_stats.json",
     "pokemon_types": "https://pogoapi.net/api/v1/pokemon_types.json",
     "released_pokemon": "https://pogoapi.net/api/v1/released_pokemon.json",
+    "pokemon_evolutions": "https://pogoapi.net/api/v1/pokemon_evolutions.json",
     "mega_pokemon": "https://pogoapi.net/api/v1/mega_pokemon.json",
     "shadow_pokemon": "https://pogoapi.net/api/v1/shadow_pokemon.json",
     "raid_bosses": "https://pogoapi.net/api/v1/raid_bosses.json",
@@ -255,6 +256,34 @@ def build_children_map(species_data, released_ids):
     return children
 
 
+def build_evolution_graph(evo_data, released_ids):
+    """Crea grafo {from_id: [{to_id, candy, item}]} limitado a Pokémon released en GO."""
+    edge_map = {}
+    for entry in evo_data:
+        from_id = int(entry.get("pokemon_id", 0))
+        if from_id == 0 or from_id not in released_ids:
+            continue
+        for evo in entry.get("evolutions", []):
+            to_id = int(evo.get("pokemon_id", 0))
+            if to_id == 0 or to_id not in released_ids:
+                continue
+            candy = int(evo.get("candy_required", 0) or 0)
+            item = (evo.get("item_required") or "").strip()
+            key = (from_id, to_id)
+            # Si hay duplicados por formas, quedarse con el menor coste de caramelos.
+            if key not in edge_map or candy < edge_map[key]["candy"]:
+                edge_map[key] = {"to_id": to_id, "candy": candy, "item": item}
+
+    graph = {}
+    for (from_id, _), edge in edge_map.items():
+        if from_id not in graph:
+            graph[from_id] = []
+        graph[from_id].append(edge)
+    for from_id in graph:
+        graph[from_id] = sorted(graph[from_id], key=lambda e: (e["to_id"], e["candy"]))
+    return graph
+
+
 def get_descendants(pid, children_map):
     """Devuelve todos los descendientes evolutivos alcanzables desde pid."""
     out = []
@@ -268,6 +297,32 @@ def get_descendants(pid, children_map):
         out.append(current)
         stack.extend(children_map.get(current, []))
     return out
+
+
+def get_descendant_paths(pid, evo_graph):
+    """Devuelve {target_id: {candy, items, path_ids}} con el camino más barato en caramelos."""
+    best = {}
+    queue = []
+    for edge in evo_graph.get(pid, []):
+        queue.append((edge["to_id"], edge["candy"], [edge["item"]] if edge["item"] else [], [pid, edge["to_id"]]))
+
+    while queue:
+        node, candy_sum, items, path_ids = queue.pop(0)
+        prev = best.get(node)
+        if prev is not None and candy_sum >= prev["candy"]:
+            continue
+        best[node] = {"candy": candy_sum, "items": items, "path_ids": path_ids}
+
+        for edge in evo_graph.get(node, []):
+            next_id = edge["to_id"]
+            if next_id in path_ids:
+                continue
+            next_items = list(items)
+            if edge["item"]:
+                next_items.append(edge["item"])
+            queue.append((next_id, candy_sum + edge["candy"], next_items, path_ids + [next_id]))
+
+    return best
 
 
 def pokemon_power_index(row):
@@ -344,7 +399,7 @@ def get_counters(tipos_str):
     return "/".join(result[:3])  # Top 3 solo
 
 
-def build_rows(stats, types, released, mega_data, shadow_data, raid_data, species_data):
+def build_rows(stats, types, released, evolutions_data, mega_data, shadow_data, raid_data, species_data):
     stats_by_id = pick_preferred_form(stats)
     types_by_id = pick_preferred_form(types)
     mega_ids, primal_ids = build_mega_sets(mega_data)
@@ -354,6 +409,7 @@ def build_rows(stats, types, released, mega_data, shadow_data, raid_data, specie
     fecha = datetime.now().strftime("%Y-%m-%d")
     released_ids = {int(k) for k in released.keys()}
     children_map = build_children_map(species_data, released_ids)
+    evo_graph = build_evolution_graph(evolutions_data, released_ids)
     base_rows = []
 
     for pid_str, released_info in released.items():
@@ -446,8 +502,9 @@ def build_rows(stats, types, released, mega_data, shadow_data, raid_data, specie
     rows_by_id = {row["id"]: row for row in base_rows}
     for row in base_rows:
         pid = row["id"]
-        direct_evos = children_map.get(pid, [])
-        all_desc = get_descendants(pid, children_map)
+        direct_evos = [e["to_id"] for e in evo_graph.get(pid, [])]
+        paths = get_descendant_paths(pid, evo_graph)
+        all_desc = sorted(paths.keys()) if paths else get_descendants(pid, children_map)
 
         row["EvolucionaA"] = "/".join(rows_by_id[x]["Nombre"] for x in direct_evos if x in rows_by_id)
 
@@ -455,6 +512,8 @@ def build_rows(stats, types, released, mega_data, shadow_data, raid_data, specie
             row["EvolucionRecomendada"] = ""
             row["UsoEvolucionRecomendada"] = ""
             row["ScoreEvolucionRecomendada"] = ""
+            row["CosteCaramelosEvolucionRecomendada"] = ""
+            row["ObjetosEvolucionRecomendada"] = ""
             continue
 
         candidates = [pid] + [x for x in all_desc if x in rows_by_id]
@@ -467,10 +526,16 @@ def build_rows(stats, types, released, mega_data, shadow_data, raid_data, specie
             row["EvolucionRecomendada"] = rows_by_id[best_id]["Nombre"]
             row["UsoEvolucionRecomendada"] = rows_by_id[best_id]["UsoPrincipal"]
             row["ScoreEvolucionRecomendada"] = best_score
+            best_path = paths.get(best_id, {"candy": "", "items": []})
+            row["CosteCaramelosEvolucionRecomendada"] = best_path.get("candy", "")
+            items = sorted(set(i for i in best_path.get("items", []) if i))
+            row["ObjetosEvolucionRecomendada"] = "/".join(items)
         else:
             row["EvolucionRecomendada"] = ""
             row["UsoEvolucionRecomendada"] = ""
             row["ScoreEvolucionRecomendada"] = ""
+            row["CosteCaramelosEvolucionRecomendada"] = ""
+            row["ObjetosEvolucionRecomendada"] = ""
 
     rows = base_rows
     rows.sort(key=lambda r: r["id"])
@@ -498,13 +563,16 @@ CSV_FIELDS = [
     "EvolucionRecomendada",
     "UsoEvolucionRecomendada",
     "ScoreEvolucionRecomendada",
+    "CosteCaramelosEvolucionRecomendada",
+    "ObjetosEvolucionRecomendada",
     "fechaActualizacion",
 ]
 
 SNAPSHOT_FIELDS = ["Nombre", "Tipo", "NivelBase", "CategoriaGO", "EtiquetasGO",
                    "esBebe", "Region", "Ataque Base", "Defensa Base", "Stamina Base",
                    "ScorePvE", "ScorePvP_GL", "ScorePvP_UL", "UsoPrincipal", "Contadores", "EsRaid",
-                   "EvolucionaA", "EvolucionRecomendada", "UsoEvolucionRecomendada", "ScoreEvolucionRecomendada"]
+                   "EvolucionaA", "EvolucionRecomendada", "UsoEvolucionRecomendada", "ScoreEvolucionRecomendada",
+                   "CosteCaramelosEvolucionRecomendada", "ObjetosEvolucionRecomendada"]
 
 
 def write_csv(rows, path):
@@ -574,7 +642,9 @@ def write_excel(rows, path):
     ws.column_dimensions["R"].width = 22   # EvolucionRecomendada
     ws.column_dimensions["S"].width = 20   # UsoEvolucionRecomendada
     ws.column_dimensions["T"].width = 12   # ScoreEvolucionRecomendada
-    ws.column_dimensions["U"].width = 14   # fechaActualizacion
+    ws.column_dimensions["U"].width = 14   # CosteCaramelosEvolucionRecomendada
+    ws.column_dimensions["V"].width = 20   # ObjetosEvolucionRecomendada
+    ws.column_dimensions["W"].width = 14   # fechaActualizacion
 
     # Freeze panes en header
     ws.freeze_panes = "A2"
@@ -687,12 +757,13 @@ def main():
     stats = load_json(local_files["pokemon_stats"])
     types = load_json(local_files["pokemon_types"])
     released = load_json(local_files["released_pokemon"])
+    evolutions_data = load_json(local_files["pokemon_evolutions"])
     mega_data = load_json(local_files["mega_pokemon"])
     shadow_data = load_json(local_files["shadow_pokemon"])
     raid_data = load_json(local_files["raid_bosses"])
     species_data = load_species_data(local_files["pokemon_species_csv"])
 
-    rows = build_rows(stats, types, released, mega_data, shadow_data, raid_data, species_data)
+    rows = build_rows(stats, types, released, evolutions_data, mega_data, shadow_data, raid_data, species_data)
     write_csv(rows, "pokeMAP.csv")
     write_excel(rows, "pokeMAP.xlsx")
     current_rows = rows_by_id(rows)
