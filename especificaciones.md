@@ -56,7 +56,7 @@ La base de referencia es el primer pilar del proyecto. Permite determinar para c
 | EvolucionaA | evoluciones directas |
 | EvolucionRecomendada | mejor evolución por potencial total |
 | UsoEvolucionRecomendada | uso principal de la evolución objetivo |
-| ScoreEvolucionRecomendada | score total de la evolución objetivo |
+| ScoreEvolucionRecomendada | score pico de la evolución objetivo (mejor modo entre PvE/PvP) |
 | CosteCaramelosEvolucionRecomendada | caramelos acumulados para llegar a la evolución recomendada |
 | ObjetosEvolucionRecomendada | objetos necesarios para la ruta evolutiva recomendada |
 | fechaActualizacion | Fecha de la última extracción |

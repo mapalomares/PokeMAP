@@ -325,9 +325,30 @@ def get_descendant_paths(pid, evo_graph):
     return best
 
 
-def pokemon_power_index(row):
-    """Índice único para comparar potencial (pondera PvE y PvP)."""
-    return int(row["ScorePvE"]) + int(row["ScorePvP_GL"]) + int(row["ScorePvP_UL"])
+def pokemon_scores(row):
+    """Devuelve scores por modo para comparaciones de utilidad."""
+    return {
+        "pve": int(row["ScorePvE"]),
+        "pvp_gl": int(row["ScorePvP_GL"]),
+        "pvp_ul": int(row["ScorePvP_UL"]),
+    }
+
+
+def pokemon_peak_mode_and_score(row):
+    """Devuelve (modo, score_pico, segundo_mejor_score)."""
+    scores = pokemon_scores(row)
+    mode = max(scores, key=scores.get)
+    ordered = sorted(scores.values(), reverse=True)
+    second = ordered[1] if len(ordered) > 1 else 0
+    return mode, scores[mode], second
+
+
+def pokemon_peak_rank(row):
+    """Tupla de ranking por pico; desempata por segundo y tercer score."""
+    values = sorted(pokemon_scores(row).values(), reverse=True)
+    while len(values) < 3:
+        values.append(0)
+    return values[0], values[1], values[2]
 
 
 def score_pve(attack, defense, stamina, tipos_json):
@@ -517,15 +538,15 @@ def build_rows(stats, types, released, evolutions_data, mega_data, shadow_data, 
             continue
 
         candidates = [pid] + [x for x in all_desc if x in rows_by_id]
-        best_id = max(candidates, key=lambda x: pokemon_power_index(rows_by_id[x]))
-        current_score = pokemon_power_index(rows_by_id[pid])
-        best_score = pokemon_power_index(rows_by_id[best_id])
+        best_id = max(candidates, key=lambda x: pokemon_peak_rank(rows_by_id[x]))
+        current_mode, current_peak, _ = pokemon_peak_mode_and_score(rows_by_id[pid])
+        best_mode, best_peak, _ = pokemon_peak_mode_and_score(rows_by_id[best_id])
 
-        # Solo recomendar evolución si mejora realmente el potencial
-        if best_id != pid and best_score > current_score:
+        # Solo recomendar evolución si mejora el pico de utilidad en algún modo.
+        if best_id != pid and best_peak > current_peak:
             row["EvolucionRecomendada"] = rows_by_id[best_id]["Nombre"]
-            row["UsoEvolucionRecomendada"] = rows_by_id[best_id]["UsoPrincipal"]
-            row["ScoreEvolucionRecomendada"] = best_score
+            row["UsoEvolucionRecomendada"] = best_mode
+            row["ScoreEvolucionRecomendada"] = best_peak
             best_path = paths.get(best_id, {"candy": "", "items": []})
             row["CosteCaramelosEvolucionRecomendada"] = best_path.get("candy", "")
             items = sorted(set(i for i in best_path.get("items", []) if i))

@@ -157,7 +157,7 @@ cat data/metadata/hash_history.jsonl
 | EvolucionaA | Texto o vacío | Evoluciones directas disponibles |
 | EvolucionRecomendada | Texto o vacío | Mejor evolución por potencial total |
 | UsoEvolucionRecomendada | enum o vacío | Uso principal de la evolución recomendada |
-| ScoreEvolucionRecomendada | Número o vacío | Suma de scores PvE+PvP de la mejor evolución |
+| ScoreEvolucionRecomendada | Número o vacío | Mejor score por modo (pico entre PvE/PvP GL/PvP UL) de la evolución objetivo |
 | CosteCaramelosEvolucionRecomendada | Número o vacío | Caramelos totales hasta la evolución recomendada |
 | ObjetosEvolucionRecomendada | Texto o vacío | Objetos requeridos (ej. Sinnoh Stone) |
 | fechaActualizacion | `YYYY-MM-DD` | Fecha de sincronización local |

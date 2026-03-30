@@ -203,7 +203,7 @@ def display_pokemon(pokemon):
         uso_evo_texto = uso_texto.get(uso_evo_recomendada, uso_evo_recomendada)
         print(f"   Uso recomendado tras evolucionar: {uso_evo_texto}")
         if score_evo_recomendada:
-            print(f"   Score potencial (suma PvE+PvP): {score_evo_recomendada}")
+            print(f"   Score pico potencial (mejor modo): {score_evo_recomendada}")
         if coste_caramelos_evo:
             print(f"   Coste caramelos: {coste_caramelos_evo}")
         if objetos_evo:
