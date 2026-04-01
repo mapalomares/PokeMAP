@@ -6,8 +6,10 @@ import csv
 import hashlib
 import json
 import os
+import re
 import shutil
 import subprocess
+import urllib.parse
 from datetime import datetime, timezone
 
 try:
@@ -28,6 +30,8 @@ SOURCES = {
     "raid_bosses": "https://pogoapi.net/api/v1/raid_bosses.json",
     "pokemon_species_csv": "https://raw.githubusercontent.com/veekun/pokedex/master/pokedex/data/csv/pokemon_species.csv",
 }
+
+POKEBATTLER_RAIDS_URL = "https://www.pokebattler.com/raids"
 
 # IDs de Ultra Bestias (estables entre generaciones)
 ULTRA_BEAST_IDS = {793, 794, 795, 796, 797, 798, 799, 803, 804, 805, 806}
@@ -142,6 +146,93 @@ def ensure_dirs():
 
 def run_curl(url, output_path):
     subprocess.run(["curl", "-fsSL", url, "-o", output_path], check=True)
+
+
+def normalize_pokebattler_key(name):
+    """Normaliza nombres para casar Pokémon locales con claves POKEBATTLER_STYLE."""
+    if not name:
+        return ""
+    text = str(name).upper()
+    text = text.replace("♀", "_F").replace("♂", "_M")
+    text = re.sub(r"[^A-Z0-9]+", "_", text)
+    text = re.sub(r"_+", "_", text).strip("_")
+    return text
+
+
+def extract_rehydrate_payload_from_html(html_text):
+    """Extrae y decodifica el JSON de window.REHYDRATE de Pokebattler."""
+    patterns = [
+        ('window.REHYDRATE=JSON.parse(decodeURIComponent("', '"))'),
+        ('window.REHYDRATE = JSON.parse(decodeURIComponent("', '"))'),
+        ("window.REHYDRATE=JSON.parse(decodeURIComponent('", "'))"),
+        ("window.REHYDRATE = JSON.parse(decodeURIComponent('", "'))"),
+    ]
+
+    for prefix, suffix in patterns:
+        start = html_text.find(prefix)
+        if start == -1:
+            continue
+        start += len(prefix)
+        end = html_text.find(suffix, start)
+        if end == -1:
+            continue
+        encoded = html_text[start:end]
+        return json.loads(urllib.parse.unquote(encoded))
+
+    raise ValueError("No se encontró window.REHYDRATE en el HTML de Pokebattler")
+
+
+def build_pokebattler_pve_scores(payload):
+    """Crea un score PvE (1-100) por clave Pokemon usando señal comunitaria de rankings."""
+    rankings_store = payload.get("raidRankingsStore", {})
+    if not isinstance(rankings_store, dict):
+        return {}
+
+    raw_scores = {}
+    for pokemon_key, entry in rankings_store.items():
+        if not isinstance(entry, dict):
+            continue
+        per_tier = entry.get("rankings")
+        if not isinstance(per_tier, dict):
+            continue
+
+        values = []
+        for maybe_list in per_tier.values():
+            if not isinstance(maybe_list, list):
+                continue
+            for val in maybe_list:
+                if isinstance(val, int) and val > 0:
+                    values.append(val)
+
+        if not values:
+            continue
+
+        best = min(values)
+        avg = sum(values) / len(values)
+        raw_scores[pokemon_key] = (1.0 / best) * 0.7 + (1.0 / avg) * 0.3
+
+    if not raw_scores:
+        return {}
+
+    min_raw = min(raw_scores.values())
+    max_raw = max(raw_scores.values())
+    if max_raw == min_raw:
+        return {k: 70 for k in raw_scores}
+
+    normalized = {}
+    for key, raw in raw_scores.items():
+        norm_0_1 = (raw - min_raw) / (max_raw - min_raw)
+        normalized[key] = max(1, min(100, int(round(1 + norm_0_1 * 99))))
+    return normalized
+
+
+def load_pokebattler_pve_scores(output_path):
+    """Descarga Pokebattler /raids y devuelve mapa normalizado de score PvE comunitario."""
+    run_curl(POKEBATTLER_RAIDS_URL, output_path)
+    with open(output_path, "r", encoding="utf-8") as f:
+        html = f.read()
+    payload = extract_rehydrate_payload_from_html(html)
+    return build_pokebattler_pve_scores(payload)
 
 
 def sha256_file(path):
@@ -420,7 +511,7 @@ def get_counters(tipos_str):
     return "/".join(result[:3])  # Top 3 solo
 
 
-def build_rows(stats, types, released, evolutions_data, mega_data, shadow_data, raid_data, species_data):
+def build_rows(stats, types, released, evolutions_data, mega_data, shadow_data, raid_data, species_data, pve_scores_community=None):
     stats_by_id = pick_preferred_form(stats)
     types_by_id = pick_preferred_form(types)
     mega_ids, primal_ids = build_mega_sets(mega_data)
@@ -482,7 +573,18 @@ def build_rows(stats, types, released, evolutions_data, mega_data, shadow_data, 
         stamina = int(st.get("base_stamina", 0))
 
         # Scores
-        pve_score = score_pve(attack, defense, stamina, tipo)
+        pve_score_base = score_pve(attack, defense, stamina, tipo)
+        normalized_name = normalize_pokebattler_key(nombre)
+        community_score = None
+        if pve_scores_community:
+            community_score = pve_scores_community.get(normalized_name)
+        # La señal comunitaria se usa como refuerzo: nunca debe empeorar el score base.
+        if isinstance(community_score, int):
+            blended = int(round(community_score * 0.3 + pve_score_base * 0.7))
+            pve_score = max(pve_score_base, blended)
+        else:
+            pve_score = pve_score_base
+
         pvp_gl_score = score_pvp_gl(attack, defense, stamina)
         pvp_ul_score = score_pvp_ul(attack, defense, stamina)
 
@@ -784,7 +886,25 @@ def main():
     raid_data = load_json(local_files["raid_bosses"])
     species_data = load_species_data(local_files["pokemon_species_csv"])
 
-    rows = build_rows(stats, types, released, evolutions_data, mega_data, shadow_data, raid_data, species_data)
+    pokebattler_html_path = os.path.join(raw_dir, "pokebattler_raids.html")
+    try:
+        pve_scores_community = load_pokebattler_pve_scores(pokebattler_html_path)
+        print(f"✓ Score PvE comunitario cargado desde Pokebattler: {len(pve_scores_community)} entradas")
+    except Exception as exc:
+        pve_scores_community = {}
+        print(f"⚠️  No se pudo cargar score PvE comunitario de Pokebattler ({exc}); usando heurístico")
+
+    rows = build_rows(
+        stats,
+        types,
+        released,
+        evolutions_data,
+        mega_data,
+        shadow_data,
+        raid_data,
+        species_data,
+        pve_scores_community=pve_scores_community,
+    )
     write_csv(rows, "pokeMAP.csv")
     os.makedirs("docs/data", exist_ok=True)
     write_csv(rows, "docs/data/pokeMAP.csv")

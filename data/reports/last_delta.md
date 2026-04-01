@@ -1,7 +1,110 @@
 # Delta PokeMAP
 
-- Fecha ejecucion UTC: 2026-03-30T18:29:40.179688+00:00
+- Fecha ejecucion UTC: 2026-04-01T09:31:19.137216+00:00
 - Fuentes con hash cambiado: 0
 - Pokemon nuevos: 0
 - Pokemon eliminados: 0
-- Pokemon modificados: 0
+- Pokemon modificados: 932
+
+## Cambios de campos (muestra)
+- ID 1: {"ScorePvE": {"old": 83, "new": 56}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}, "EvolucionRecomendada": {"old": "Ivysaur", "new": "Venusaur"}, "ScoreEvolucionRecomendada": {"old": 86, "new": 73}, "CosteCaramelosEvolucionRecomendada": {"old": 25, "new": 125}}
+- ID 2: {"ScorePvE": {"old": 86, "new": 64}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}, "EvolucionRecomendada": {"old": "", "new": "Venusaur"}, "UsoEvolucionRecomendada": {"old": "", "new": "pve"}, "ScoreEvolucionRecomendada": {"old": "", "new": 73}, "CosteCaramelosEvolucionRecomendada": {"old": "", "new": 100}}
+- ID 3: {"ScorePvE": {"old": 84, "new": 73}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}}
+- ID 4: {"ScorePvE": {"old": 83, "new": 55}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}, "ScoreEvolucionRecomendada": {"old": 88, "new": 76}}
+- ID 5: {"ScorePvE": {"old": 87, "new": 64}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}, "ScoreEvolucionRecomendada": {"old": 88, "new": 76}}
+- ID 6: {"ScorePvE": {"old": 88, "new": 76}}
+- ID 7: {"ScorePvE": {"old": 83, "new": 54}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}, "EvolucionRecomendada": {"old": "Wartortle", "new": "Blastoise"}, "ScoreEvolucionRecomendada": {"old": 86, "new": 70}, "CosteCaramelosEvolucionRecomendada": {"old": 25, "new": 125}}
+- ID 8: {"ScorePvE": {"old": 86, "new": 62}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}, "EvolucionRecomendada": {"old": "", "new": "Blastoise"}, "UsoEvolucionRecomendada": {"old": "", "new": "pve"}, "ScoreEvolucionRecomendada": {"old": "", "new": 70}, "CosteCaramelosEvolucionRecomendada": {"old": "", "new": 100}}
+- ID 9: {"ScorePvE": {"old": 83, "new": 70}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}}
+- ID 10: {"ScorePvE": {"old": 80, "new": 46}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}, "ScoreEvolucionRecomendada": {"old": 85, "new": 65}}
+- ID 11: {"ScorePvE": {"old": 82, "new": 48}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}, "ScoreEvolucionRecomendada": {"old": 85, "new": 65}}
+- ID 12: {"ScorePvE": {"old": 85, "new": 65}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}}
+- ID 13: {"ScorePvE": {"old": 80, "new": 46}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}, "ScoreEvolucionRecomendada": {"old": 84, "new": 65}}
+- ID 14: {"ScorePvE": {"old": 80, "new": 46}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}, "ScoreEvolucionRecomendada": {"old": 84, "new": 65}}
+- ID 15: {"ScorePvE": {"old": 84, "new": 65}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}}
+- ID 16: {"ScorePvE": {"old": 81, "new": 50}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}, "ScoreEvolucionRecomendada": {"old": 86, "new": 69}}
+- ID 17: {"ScorePvE": {"old": 84, "new": 58}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}, "ScoreEvolucionRecomendada": {"old": 86, "new": 69}}
+- ID 18: {"ScorePvE": {"old": 86, "new": 69}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}}
+- ID 19: {"ScorePvE": {"old": 82, "new": 51}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}, "ScoreEvolucionRecomendada": {"old": 84, "new": 63}}
+- ID 20: {"ScorePvE": {"old": 84, "new": 63}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}}
+- ID 21: {"ScorePvE": {"old": 82, "new": 53}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}, "ScoreEvolucionRecomendada": {"old": 85, "new": 67}}
+- ID 22: {"ScorePvE": {"old": 85, "new": 67}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}}
+- ID 23: {"ScorePvE": {"old": 82, "new": 53}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}, "ScoreEvolucionRecomendada": {"old": 86, "new": 67}}
+- ID 24: {"ScorePvE": {"old": 86, "new": 67}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}}
+- ID 25: {"ScorePvE": {"old": 83, "new": 54}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}, "EvolucionRecomendada": {"old": "", "new": "Raichu"}, "UsoEvolucionRecomendada": {"old": "", "new": "pve"}, "ScoreEvolucionRecomendada": {"old": "", "new": 67}, "CosteCaramelosEvolucionRecomendada": {"old": "", "new": 50}}
+- ID 26: {"ScorePvE": {"old": 80, "new": 67}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}}
+- ID 27: {"ScorePvE": {"old": 84, "new": 59}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}, "EvolucionRecomendada": {"old": "", "new": "Sandslash"}, "UsoEvolucionRecomendada": {"old": "", "new": "pve"}, "ScoreEvolucionRecomendada": {"old": "", "new": 69}, "CosteCaramelosEvolucionRecomendada": {"old": "", "new": 50}}
+- ID 28: {"ScorePvE": {"old": 80, "new": 69}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}}
+- ID 29: {"EvolucionRecomendada": {"old": "Nidorina", "new": "Nidoqueen"}, "ScoreEvolucionRecomendada": {"old": 84, "new": 70}, "CosteCaramelosEvolucionRecomendada": {"old": 25, "new": 125}}
+- ID 30: {"ScorePvE": {"old": 84, "new": 60}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}, "EvolucionRecomendada": {"old": "", "new": "Nidoqueen"}, "UsoEvolucionRecomendada": {"old": "", "new": "pve"}, "ScoreEvolucionRecomendada": {"old": "", "new": 70}, "CosteCaramelosEvolucionRecomendada": {"old": "", "new": 100}}
+- ID 31: {"ScorePvE": {"old": 81, "new": 70}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}}
+- ID 32: {"ScoreEvolucionRecomendada": {"old": 87, "new": 73}}
+- ID 33: {"ScorePvE": {"old": 83, "new": 60}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}, "ScoreEvolucionRecomendada": {"old": 87, "new": 73}}
+- ID 34: {"ScorePvE": {"old": 87, "new": 73}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}}
+- ID 35: {"ScorePvE": {"old": 84, "new": 58}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}, "EvolucionRecomendada": {"old": "", "new": "Clefable"}, "UsoEvolucionRecomendada": {"old": "", "new": "pve"}, "ScoreEvolucionRecomendada": {"old": "", "new": 70}, "CosteCaramelosEvolucionRecomendada": {"old": "", "new": 50}}
+- ID 36: {"ScorePvE": {"old": 81, "new": 70}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}}
+- ID 37: {"ScorePvE": {"old": 82, "new": 53}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}, "EvolucionRecomendada": {"old": "", "new": "Ninetales"}, "UsoEvolucionRecomendada": {"old": "", "new": "pve"}, "ScoreEvolucionRecomendada": {"old": "", "new": 68}, "CosteCaramelosEvolucionRecomendada": {"old": "", "new": 50}}
+- ID 38: {"ScorePvE": {"old": 80, "new": 68}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}}
+- ID 39: {"ScorePvE": {"old": 83, "new": 57}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}, "ScoreEvolucionRecomendada": {"old": 86, "new": 71}}
+- ID 40: {"ScorePvE": {"old": 86, "new": 71}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}}
+- ID 41: {"ScorePvE": {"old": 81, "new": 50}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}, "EvolucionRecomendada": {"old": "Golbat", "new": "Crobat"}, "ScoreEvolucionRecomendada": {"old": 85, "new": 72}, "CosteCaramelosEvolucionRecomendada": {"old": 25, "new": 125}}
+- ID 42: {"ScorePvE": {"old": 85, "new": 67}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}, "EvolucionRecomendada": {"old": "", "new": "Crobat"}, "UsoEvolucionRecomendada": {"old": "", "new": "pve"}, "ScoreEvolucionRecomendada": {"old": "", "new": 72}, "CosteCaramelosEvolucionRecomendada": {"old": "", "new": 100}}
+- ID 43: {"ScorePvE": {"old": 84, "new": 58}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}, "ScoreEvolucionRecomendada": {"old": 86, "new": 72}}
+- ID 44: {"ScorePvE": {"old": 84, "new": 63}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}, "ScoreEvolucionRecomendada": {"old": 86, "new": 72}}
+- ID 45: {"ScorePvE": {"old": 86, "new": 72}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}}
+- ID 46: {"ScorePvE": {"old": 83, "new": 55}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}, "ScoreEvolucionRecomendada": {"old": 84, "new": 65}}
+- ID 47: {"ScorePvE": {"old": 84, "new": 65}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}}
+- ID 48: {"ScorePvE": {"old": 83, "new": 56}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}, "ScoreEvolucionRecomendada": {"old": 85, "new": 68}}
+- ID 49: {"ScorePvE": {"old": 85, "new": 68}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}}
+- ID 50: {"ScorePvE": {"old": 84, "new": 50}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}, "EvolucionRecomendada": {"old": "", "new": "Dugtrio"}, "UsoEvolucionRecomendada": {"old": "", "new": "pve"}, "ScoreEvolucionRecomendada": {"old": "", "new": 62}, "CosteCaramelosEvolucionRecomendada": {"old": "", "new": 50}}
+- ID 51: {"ScorePvE": {"old": 83, "new": 62}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}}
+- ID 52: {"ScorePvE": {"old": 82, "new": 51}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}, "ScoreEvolucionRecomendada": {"old": 88, "new": 72}}
+- ID 53: {"ScorePvE": {"old": 86, "new": 65}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}}
+- ID 54: {"ScorePvE": {"old": 83, "new": 57}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}, "EvolucionRecomendada": {"old": "", "new": "Golduck"}, "UsoEvolucionRecomendada": {"old": "", "new": "pve"}, "ScoreEvolucionRecomendada": {"old": "", "new": 70}, "CosteCaramelosEvolucionRecomendada": {"old": "", "new": 50}}
+- ID 55: {"ScorePvE": {"old": 81, "new": 70}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}}
+- ID 56: {"ScorePvE": {"old": 84, "new": 58}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}, "EvolucionRecomendada": {"old": "Primeape", "new": "Annihilape"}, "ScoreEvolucionRecomendada": {"old": 86, "new": 78}, "CosteCaramelosEvolucionRecomendada": {"old": 50, "new": 150}}
+- ID 57: {"ScorePvE": {"old": 86, "new": 70}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}, "EvolucionRecomendada": {"old": "", "new": "Annihilape"}, "UsoEvolucionRecomendada": {"old": "", "new": "pve"}, "ScoreEvolucionRecomendada": {"old": "", "new": 78}, "CosteCaramelosEvolucionRecomendada": {"old": "", "new": 100}}
+- ID 58: {"ScorePvE": {"old": 85, "new": 59}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}, "EvolucionRecomendada": {"old": "", "new": "Arcanine"}, "UsoEvolucionRecomendada": {"old": "", "new": "pve"}, "ScoreEvolucionRecomendada": {"old": "", "new": 76}, "CosteCaramelosEvolucionRecomendada": {"old": "", "new": 50}}
+- ID 59: {"ScorePvE": {"old": 85, "new": 76}}
+- ID 60: {"ScorePvE": {"old": 82, "new": 52}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}, "EvolucionRecomendada": {"old": "Poliwhirl", "new": "Poliwrath"}, "ScoreEvolucionRecomendada": {"old": 84, "new": 71}, "CosteCaramelosEvolucionRecomendada": {"old": 25, "new": 125}}
+- ID 61: {"ScorePvE": {"old": 84, "new": 61}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}, "EvolucionRecomendada": {"old": "", "new": "Poliwrath"}, "UsoEvolucionRecomendada": {"old": "", "new": "pve"}, "ScoreEvolucionRecomendada": {"old": "", "new": 71}, "CosteCaramelosEvolucionRecomendada": {"old": "", "new": 100}}
+- ID 62: {"ScorePvE": {"old": 81, "new": 71}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}}
+- ID 63: {"ScorePvE": {"old": 90, "new": 64}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}, "EvolucionRecomendada": {"old": "", "new": "Alakazam"}, "UsoEvolucionRecomendada": {"old": "", "new": "pve"}, "ScoreEvolucionRecomendada": {"old": "", "new": 76}, "CosteCaramelosEvolucionRecomendada": {"old": "", "new": 125}}
+- ID 64: {"ScorePvE": {"old": 86, "new": 69}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}, "EvolucionRecomendada": {"old": "", "new": "Alakazam"}, "UsoEvolucionRecomendada": {"old": "", "new": "pve"}, "ScoreEvolucionRecomendada": {"old": "", "new": 76}, "CosteCaramelosEvolucionRecomendada": {"old": "", "new": 100}}
+- ID 65: {"ScorePvE": {"old": 84, "new": 76}}
+- ID 66: {"ScorePvE": {"old": 84, "new": 60}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}, "EvolucionRecomendada": {"old": "Machoke", "new": "Machamp"}, "ScoreEvolucionRecomendada": {"old": 92, "new": 78}, "CosteCaramelosEvolucionRecomendada": {"old": 25, "new": 125}}
+- ID 67: {"ScorePvE": {"old": 92, "new": 71}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}, "EvolucionRecomendada": {"old": "", "new": "Machamp"}, "UsoEvolucionRecomendada": {"old": "", "new": "pve"}, "ScoreEvolucionRecomendada": {"old": "", "new": 78}, "CosteCaramelosEvolucionRecomendada": {"old": "", "new": 100}}
+- ID 68: {"ScorePvE": {"old": 89, "new": 78}}
+- ID 69: {"ScorePvE": {"old": 83, "new": 57}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}, "ScoreEvolucionRecomendada": {"old": 86, "new": 72}}
+- ID 70: {"ScorePvE": {"old": 84, "new": 63}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}, "ScoreEvolucionRecomendada": {"old": 86, "new": 72}}
+- ID 71: {"ScorePvE": {"old": 86, "new": 72}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}}
+- ID 72: {"ScorePvE": {"old": 83, "new": 56}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}, "EvolucionRecomendada": {"old": "", "new": "Tentacruel"}, "UsoEvolucionRecomendada": {"old": "", "new": "pve"}, "ScoreEvolucionRecomendada": {"old": "", "new": 70}, "CosteCaramelosEvolucionRecomendada": {"old": "", "new": 50}}
+- ID 73: {"ScorePvE": {"old": 81, "new": 70}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}}
+- ID 74: {"ScorePvE": {"old": 84, "new": 59}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}, "ScoreEvolucionRecomendada": {"old": 87, "new": 76}}
+- ID 75: {"ScorePvE": {"old": 84, "new": 65}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}, "ScoreEvolucionRecomendada": {"old": 87, "new": 76}}
+- ID 76: {"ScorePvE": {"old": 87, "new": 76}}
+- ID 77: {"ScorePvE": {"old": 85, "new": 64}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}, "EvolucionRecomendada": {"old": "", "new": "Rapidash"}, "UsoEvolucionRecomendada": {"old": "", "new": "pve"}, "ScoreEvolucionRecomendada": {"old": "", "new": 70}, "CosteCaramelosEvolucionRecomendada": {"old": "", "new": 50}}
+- ID 78: {"ScorePvE": {"old": 81, "new": 70}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}}
+- ID 79: {"ScorePvE": {"old": 84, "new": 60}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}, "EvolucionRecomendada": {"old": "", "new": "Slowbro"}, "UsoEvolucionRecomendada": {"old": "", "new": "pve"}, "ScoreEvolucionRecomendada": {"old": "", "new": 71}, "CosteCaramelosEvolucionRecomendada": {"old": "", "new": 50}}
+- ID 80: {"ScorePvE": {"old": 81, "new": 71}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}}
+- ID 81: {"ScorePvE": {"old": 84, "new": 60}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}, "EvolucionRecomendada": {"old": "Magneton", "new": "Magnezone"}, "ScoreEvolucionRecomendada": {"old": 86, "new": 77}, "CosteCaramelosEvolucionRecomendada": {"old": 25, "new": 125}}
+- ID 82: {"ScorePvE": {"old": 86, "new": 72}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}, "EvolucionRecomendada": {"old": "", "new": "Magnezone"}, "UsoEvolucionRecomendada": {"old": "", "new": "pve"}, "ScoreEvolucionRecomendada": {"old": "", "new": 77}, "CosteCaramelosEvolucionRecomendada": {"old": "", "new": 100}}
+- ID 84: {"ScorePvE": {"old": 84, "new": 58}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}, "ScoreEvolucionRecomendada": {"old": 88, "new": 72}}
+- ID 85: {"ScorePvE": {"old": 88, "new": 72}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}}
+- ID 86: {"ScorePvE": {"old": 83, "new": 56}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}, "EvolucionRecomendada": {"old": "", "new": "Dewgong"}, "UsoEvolucionRecomendada": {"old": "", "new": "pve"}, "ScoreEvolucionRecomendada": {"old": "", "new": 65}, "CosteCaramelosEvolucionRecomendada": {"old": "", "new": 50}}
+- ID 87: {"ScorePvE": {"old": 79, "new": 65}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}}
+- ID 88: {"ScorePvE": {"old": 85, "new": 62}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}, "EvolucionRecomendada": {"old": "", "new": "Muk"}, "UsoEvolucionRecomendada": {"old": "", "new": "pve"}, "ScoreEvolucionRecomendada": {"old": "", "new": 73}, "CosteCaramelosEvolucionRecomendada": {"old": "", "new": 50}}
+- ID 89: {"ScorePvE": {"old": 82, "new": 73}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}}
+- ID 90: {"ScorePvE": {"old": 83, "new": 56}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}, "EvolucionRecomendada": {"old": "", "new": "Cloyster"}, "UsoEvolucionRecomendada": {"old": "", "new": "pve"}, "ScoreEvolucionRecomendada": {"old": "", "new": 70}, "CosteCaramelosEvolucionRecomendada": {"old": "", "new": 50}}
+- ID 91: {"ScorePvE": {"old": 81, "new": 70}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}}
+- ID 92: {"ScorePvE": {"old": 84, "new": 60}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}, "ScoreEvolucionRecomendada": {"old": 88, "new": 77}}
+- ID 93: {"ScorePvE": {"old": 86, "new": 68}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}, "ScoreEvolucionRecomendada": {"old": 88, "new": 77}}
+- ID 94: {"ScorePvE": {"old": 88, "new": 77}}
+- ID 95: {"ScorePvE": {"old": 82, "new": 58}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}, "EvolucionRecomendada": {"old": "", "new": "Steelix"}, "UsoEvolucionRecomendada": {"old": "", "new": "pve"}, "ScoreEvolucionRecomendada": {"old": "", "new": 69}, "CosteCaramelosEvolucionRecomendada": {"old": "", "new": 50}, "ObjetosEvolucionRecomendada": {"old": "", "new": "Metal Coat"}}
+- ID 96: {"ScorePvE": {"old": 86, "new": 57}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}, "EvolucionRecomendada": {"old": "", "new": "Hypno"}, "UsoEvolucionRecomendada": {"old": "", "new": "pve"}, "ScoreEvolucionRecomendada": {"old": "", "new": 67}, "CosteCaramelosEvolucionRecomendada": {"old": "", "new": 50}}
+- ID 97: {"ScorePvE": {"old": 80, "new": 67}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}}
+- ID 98: {"ScorePvE": {"old": 85, "new": 63}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}, "ScoreEvolucionRecomendada": {"old": 86, "new": 75}}
+- ID 99: {"ScorePvE": {"old": 86, "new": 75}}
+- ID 100: {"ScorePvE": {"old": 83, "new": 55}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}, "EvolucionRecomendada": {"old": "", "new": "Electrode"}, "UsoEvolucionRecomendada": {"old": "", "new": "pve"}, "ScoreEvolucionRecomendada": {"old": "", "new": 65}, "CosteCaramelosEvolucionRecomendada": {"old": "", "new": 50}}
+- ID 101: {"ScorePvE": {"old": 79, "new": 65}, "UsoPrincipal": {"old": "pve", "new": "coleccionable"}}
+- ... y 832 cambios mas
